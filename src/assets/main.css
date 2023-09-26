@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600');
+::-webkit-scrollbar {background: #333; width: 12px;} /* barra de rolagem toda */
+::-webkit-scrollbar-thumb {background: #333; border-radius: 0;} /* parte da barra que se movimenta */
+::-webkit-scrollbar-track {background: #fff;} /* fundo da barra de rolagem, parte fixa */
+::-webkit-scrollbar-track-piece {background:#fff;} /* fundo da barra de rolagem, parte que ainda falta rolar */
+::-webkit-scrollbar-cosrner {background: dotted;} /* canto inferior direito da barra de rolagem */
 
 body {
     font-family: 'Josefin Sans', sans-serif;
@@ -8,3 +13,4 @@ body {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+

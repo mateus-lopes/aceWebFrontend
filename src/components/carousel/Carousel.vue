@@ -14,16 +14,8 @@
         class="mySwiper"
     >
         <swiper-slide v-for="(item, index) in urls" :key="index">
-            <SliderImg :url="getUrl(item.url)" />
+            <GetImg :url="getUrl(item.url)" />
         </swiper-slide>
-        <template #container-end>
-            <div class="autoplay-progress">
-            <svg viewBox="0 0 48 48" ref="progressCircle">
-                <circle cx="24" cy="24" r="20"></circle>
-            </svg>
-            <span ref="progressContent"></span>
-            </div>
-    </template>
     </swiper>
 </template>
 <script>
@@ -36,7 +28,7 @@
     import 'swiper/css/pagination';
     import 'swiper/css/navigation';
 
-    import SliderImg from './SliderImg.vue';
+    import GetImg from '../GetImg.vue';
     import urlImagem1 from '@/assets/img/slider/1.jpg';
     import urlImagem2 from '@/assets/img/slider/2.jpg';
 
@@ -47,7 +39,7 @@
     components: {
         Swiper,
         SwiperSlide,
-        SliderImg,
+        GetImg,
     }, 
     data() {
         return {

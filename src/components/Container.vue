@@ -1,5 +1,5 @@
 <template lang="">
-    <div class="m-auto w-4/6 bg-red-500">
+    <div class="m-auto w-5/6 bg-blue-200">
         <slot></slot>
     </div>
 </template>
