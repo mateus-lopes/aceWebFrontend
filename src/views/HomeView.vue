@@ -1,20 +1,22 @@
 <template lang="">
   <div>
     <header>
-      <TopLine />
-      NAVMENU
       <Carousel />
     </header>
+    <main>
+      <ProductsGroup />
+    </main>
   </div>
 </template>
+
 <script>
-import Carousel from '../components/carousel/Carousel.vue';
-import TopLine from '../components/TopLine.vue';
+import Carousel from '@/components/carousel/Carousel.vue';
+import ProductsGroup from '@/components/ProductsGroup.vue';
 
 export default {
   components: {
     Carousel,
-    TopLine
+    ProductsGroup,
   }
 }
 </script>

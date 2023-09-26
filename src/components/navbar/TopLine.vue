@@ -1,8 +1,8 @@
 <template lang="">
-    <small class="uppercase">
+    <small class="uppercase font-normal">
         <div class="bg-yellow px-3 py-2 flex justify-between">
             <p>
-                Frete grátis a partir de R$ 399,00 para todo o Brasil
+                Frete grátis a partir de R$ 399,00 para todo Brasil
             </p>
             <div class="flex gap-2">
                 <router-link to="lojas">Lojas</router-link>
@@ -12,10 +12,9 @@
     </small>
 </template>
 <script>
-export default {
+export default {    
     
 }
 </script>
-<style lang="">
-    
+<style lang="css">
 </style>
