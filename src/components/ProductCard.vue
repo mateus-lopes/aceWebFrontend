@@ -1,5 +1,5 @@
 <template lang="">
-    <main class="product w-96">
+    <main class="product w-80">
             <!-- <GetImg :src="product.img" /> -->
             <img src="../assets/img/boots/F4.png" alt="">
             <router-link to="#">
