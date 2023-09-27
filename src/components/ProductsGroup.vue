@@ -1,7 +1,7 @@
 <template lang="">
     <main>
-        <SectionTitle />
-        <div class="flex w-full justify-between">
+        <SectionTitle :dark="dark" :title="title" />
+        <div class="flex w-full justify-center border-box" :class="{ 'text-white': dark }">
             <div v-for="(item, index) in products" :key="index">
                 <ProductCard :product="item" />
             </div>
@@ -68,6 +68,7 @@ export default {
                     descont: 19,
                     img: '',
                     n_colors: 4,
+                    promotion: 100,
                 },
                 {
                     title: 'Tênis ACE Joyride Run',
@@ -86,6 +87,17 @@ export default {
                     n_colors: 1,
                 }
             ],
+            backgroundLine: (this.dark == true) ? '#fff' : '#000',
+        }
+    },
+    props: {
+        dark: {
+            type: Boolean,
+            default: false,
+        },
+        title: {
+            type: String,
+            required: true,
         }
     }
 };
@@ -104,7 +116,7 @@ export default {
     content: '';
     height: 1.6px;
     width: 100%;
-    background-color: #333;
+    background-color: v-bind(backgroundLine);
     margin-bottom: 20px;
     width: 15%;
     display: inline-block;
@@ -115,7 +127,7 @@ export default {
     content: '';
     height: 1.6px;
     width: 100%;
-    background-color: #333;
+    background-color: v-bind(backgroundLine);
     margin-top: 20px;
     width: 15%;
     display: inline-block;
