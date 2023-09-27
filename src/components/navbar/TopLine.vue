@@ -1,20 +1,19 @@
 <template lang="">
-    <small class="uppercase font-normal">
-        <div class="bg-yellow px-3 py-2 flex justify-between">
-            <p>
-                Frete grátis a partir de R$ 399,00 para todo Brasil
-            </p>
-            <div class="flex gap-2">
-                <router-link to="lojas">Lojas</router-link>
-                <router-link to="atendimento">Atendimento</router-link>
+    <main class="w-full bg-yellow px-6">
+        <small class="uppercase text-xs">
+            <div class="py-2 flex justify-between">
+                <p>
+                    Frete grátis a partir de R$ 399,00 para todo Brasil
+                </p>
+                <div class="flex gap-4">
+                    <router-link class="hover:underline" to="lojas">Lojas</router-link>
+                    <router-link class="hover:underline" to="atendimento">Atendimento</router-link>
+                </div>
             </div>
-        </div>
-    </small>
+        </small>
+    </main>
 </template>
-<script>
-export default {    
-    
-}
+<script setup>
 </script>
 <style lang="css">
 </style>

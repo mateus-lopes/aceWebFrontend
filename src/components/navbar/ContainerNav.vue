@@ -33,19 +33,3 @@
 </template>
 <script setup>
 </script>
-<style lang="css">
-    /* centralização da logo */
-    .center {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80px;
-        height: 80px;
-    }
-</style>

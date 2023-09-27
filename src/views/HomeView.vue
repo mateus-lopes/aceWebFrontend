@@ -22,6 +22,9 @@
       </div>
     </main>
     <FooterContainer />
+    <router-link to="about">
+      MENU 2
+    </router-link>
   </div>
 </template>
 

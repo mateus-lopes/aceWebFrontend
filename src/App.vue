@@ -1,12 +1,12 @@
 <script setup>
-import TopLine from './components/navbar/TopLine.vue';
-import ContainerNav from "./components/navbar/ContainerNav.vue"
+import NavBar from './components/navbar/NavBar.vue';
 
 </script>
 
 <template>
-  <TopLine />
-  <ContainerNav />
-  <RouterView />
+  <NavBar />
+  <main class="mt-16">
+    <RouterView />
+  </main>
 </template>
 
