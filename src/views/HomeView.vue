@@ -10,17 +10,18 @@
       <Container class="my-16">
         <SectionParallax />
       </Container>
-      <div class="bg-gray-800 w-full pb-16">
+      <div class="bg-darkin w-full pb-16">
         <Container>
           <ProductsGroup title="Destaques Femininos" :dark=true />
         </Container>
       </div>
-      <div class="bg-dark w-full pb-16">
+      <div class="bg-dark w-full py-16">
         <Container>
           <SectionHistory />
         </Container>
       </div>
     </main>
+    <FooterContainer />
   </div>
 </template>
 
@@ -30,14 +31,15 @@ import ProductsGroup from '@/components/ProductsGroup.vue';
 import Container from '@/components/Container.vue';
 import SectionParallax from '@/components/SectionParallax.vue';
 import SectionHistory from '@/components/SectionHistory.vue';
-
+import FooterContainer from '@/components/footer/FooterContainer.vue';
 export default {
   components: {
     Carousel,
     ProductsGroup,
     Container,
     SectionParallax,
-    SectionHistory
+    SectionHistory,
+    FooterContainer
   }
 }
 </script>

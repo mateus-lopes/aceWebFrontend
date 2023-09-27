@@ -14,7 +14,8 @@ export default {
         'vermelho': '#DC3545',
         'azul-escuro': '#004AAD',
         'rosa': '#FFAEBC',
-        'dark': '#222',
+        'darkin': '#343a40',
+        'dark': '#111',
         'yellow': '#f1f100'
     },
     width: {
