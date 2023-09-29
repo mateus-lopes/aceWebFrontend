@@ -1,5 +1,5 @@
 <template lang="">
-    <footer>
+    <footer class="text-gray-700">
         <Container>
             <FooterNav />
             <div>

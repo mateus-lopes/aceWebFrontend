@@ -8,13 +8,15 @@
         <ProductsGroup title="Destaques Masculino" />
       </Container>
       <Container class="my-16">
+        <ProductsGroup title="Destaques Femininos" />
+      </Container>
+      <Container class="my-16">
         <SectionParallax />
       </Container>
-      <div class="bg-darkin w-full pb-16">
+      <!-- <div class="bg-darkin w-full pb-16">
         <Container>
-          <ProductsGroup title="Destaques Femininos" :dark=true />
         </Container>
-      </div>
+      </div> -->
       <div class="bg-dark w-full py-16">
         <Container>
           <SectionHistory />

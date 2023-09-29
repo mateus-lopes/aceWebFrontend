@@ -3,21 +3,25 @@
             <!-- <GetImg :src="product.img" /> -->
             <img src="../assets/img/boots/F4.png" alt="">
             <router-link to="#">
-                    <button class="shadow-xl uppercase mt-2 opacity-0 bg-primary text-white w-full flex items-center justify-center py-4">
-                        Comprar
-                    </button>
-                </router-link>
-            <h1 class="text-2xl font-bold pt-4">{{ product.title }}</h1>
+                <button class="shadow-xl uppercase mt-2 opacity-0 bg-primary hover:bg-black text-white w-full flex items-center justify-center py-4">
+                    Comprar
+                </button>
+            </router-link>
+            <h1 class="text-xl my-4">{{ product.title }}</h1>
             <div class="flex justify-start items-center">
                 <button class="mr-2"  v-for="(item, index) in product.categories" :key="index">
-                    <small class="p-1 text-white" :class="item.color">{{ item.title }}</small>
+                    <router-link :to="item.url">
+                        <small class="p-1 text-white" :class="item.color">{{ item.title }}</small>
+                    </router-link>
                 </button>
             </div>
-            <p class="text-xl font-bold mt-2">
+            <p class="text-xl font-bold pt-2">
                 R$ {{ getPromotion }}
                 <span v-if="product.promotion > 0" class="text-base text-red-500"> {{ product.promotion }}% OFF </span>
             </p>
-            <p>até 10x de R$ {{ getCreditPrice }}</p>
+            <p class="pb-2 text-gray-700">
+                até 10x de R$ {{ getCreditPrice }}
+            </p>
             <small>
                 <p class="text-gray-500"> {{ getColors }} </p>
             </small>
@@ -36,9 +40,22 @@ export default {
             required: true,
         }
     },
+    methods: {
+        getPrice(price) {
+            if(price > 9999) {
+                return  price.toString().slice(0,10)
+            } else if(price > 999) {
+                return  price.toString().slice(0,8)
+            } else if(price > 99){
+                return  price.toString().slice(0,6)
+            } else {
+                return  price.toString().slice(0,5)
+            }
+        }
+    },
     computed: {
         getCreditPrice() {
-            return Math.floor((this.product.price / 10) * 100) / 100
+            return Math.floor((this.getPromotion / 10) * 100) / 100
         },
         getColors() {
             let text = this.product.n_colors > 1 ? ' cores' : ' cor'
@@ -46,9 +63,10 @@ export default {
         },
         getPromotion() {
             if(this.product.promotion){
-                return this.product.price - (this.product.price * (this.product.promotion / 100))
+                let price = this.product.price - (this.product.price * (this.product.promotion / 100))
+                return this.getPrice(price)
             } else {
-                return this.product.price
+                return this.getPrice(this.product.price)
             }
         }
     },

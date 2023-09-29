@@ -26,10 +26,12 @@ export default {
                         {
                             title: 'Corrida',
                             color: 'bg-azul-claro',
+                            url: '#',
                         },
                         {
                             title: 'Feminino',
                             color: 'bg-rosa',
+                            url: '#',
                         },
                     ],
                     price: 899.99,
@@ -42,13 +44,15 @@ export default {
                         {
                             title: 'Corrida',
                             color: 'bg-azul-claro',
+                            url: '#',
                         },
                         {
                             title: 'Masculino',
                             color: 'bg-azul-escuro',
+                            url: '#',
                         },
                     ],
-                    price: 699.99,
+                    price: 12000.99,
                     img: '',
                     n_colors: 1,
                 },
@@ -58,17 +62,19 @@ export default {
                         {
                             title: 'Caminhada',
                             color: 'bg-vermelho',
+                            url: '#',
                         },
                         {
                             title: 'Masculino',
                             color: 'bg-azul-escuro',
+                            url: '#',
                         },
                     ],
                     price: 249.99,
                     descont: 19,
                     img: '',
                     n_colors: 4,
-                    promotion: 100,
+                    promotion: 80,
                 },
                 {
                     title: 'Tênis ACE Joyride Run',
@@ -76,13 +82,15 @@ export default {
                         {
                             title: 'Corrida',
                             color: 'bg-azul-claro',
+                            url: '#',
                         },
                         {
                             title: 'Unissex',
                             color: 'bg-verde',
+                            url: '#',
                         },
                     ],
-                    price: 699.99,
+                    price: 6999.99,
                     img: '',
                     n_colors: 1,
                 }
