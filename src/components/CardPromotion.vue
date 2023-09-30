@@ -1,5 +1,5 @@
 <template>
-    <main class="transition-all hover:opacity-75 aspect-h-1 aspect-w-1 overflow-hidden rounded-lg cursor-pointer">
+    <main class="transition-all hover:opacity-75 overflow-hidden lg:rounded-lg cursor-pointer">
         <router-link :to="link">
             <GetImg :src="src" class="w-full" alt="" />
         </router-link>

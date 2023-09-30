@@ -1,6 +1,6 @@
 <template lang="">
     <div>
-        <h2 class="text-xl font-bold pb-2 text-black">
+        <h2 class="text-lg font-bold pb-2 text-black">
             {{title}}
         </h2>
         <ul>

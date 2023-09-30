@@ -3,18 +3,19 @@
         <SectionTitle :dark="dark" :title="title" />
         <div class="flex w-full justify-center border-box" :class="{ 'text-white': dark }">
             <div v-for="(item, index) in products" :key="index">
-                <ProductCard :product="item" />
+                <ProductItem :product="item" />
             </div>
         </div>
     </main>
 </template>
+
 <script>
-import ProductCard from './ProductCard.vue';
+import ProductItem from './ProductItem.vue';
 import SectionTitle from './SectionTitle.vue';
 
 export default {
     components: {
-        ProductCard,
+        ProductItem,
         SectionTitle,
     },
     data() {
@@ -52,9 +53,10 @@ export default {
                             url: '#',
                         },
                     ],
-                    price: 12000.99,
+                    price: 1099.99,
                     img: '',
                     n_colors: 1,
+                    promotion: 100,
                 },
                 {
                     title: 'Tênis ACE Raybow Dash',
@@ -90,7 +92,7 @@ export default {
                             url: '#',
                         },
                     ],
-                    price: 6999.99,
+                    price: 699.99,
                     img: '',
                     n_colors: 1,
                 }
@@ -112,11 +114,11 @@ export default {
 
 </script>
 <style lang="css">
-.detail-line {
+@media screen and (min-width: 768px) {
+    .detail-line {
     text-align: center;
     text-transform: uppercase;
     font-weight: 300;
-    font-size: 1.5em;
     display: flex;
 }
 
@@ -140,5 +142,6 @@ export default {
     width: 15%;
     display: inline-block;
     margin: 0 0 0 40px;
+}   
 }
 </style>

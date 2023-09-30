@@ -1,50 +1,36 @@
 <template lang="">
   <div>
-    <header>
-      <Carousel />
-    </header>
-    <main>
+    <Carousel />
+    <Container>
+      <ProductSlider title="Destaques Masculino" />
+    </Container>
+    <Container class="my-16">
+      <ProductSlider title="Destaques Femininos" />
+    </Container>
+    <Container class="mt-16 lg:my-16">
+      <SectionPromotion />
+    </Container>
+    <section class="bg-dark w-full lg:py-16">
       <Container>
-        <ProductsGroup title="Destaques Masculino" />
+        <SectionHistory />
       </Container>
-      <Container class="my-16">
-        <ProductsGroup title="Destaques Femininos" />
-      </Container>
-      <Container class="my-16">
-        <SectionParallax />
-      </Container>
-      <!-- <div class="bg-darkin w-full pb-16">
-        <Container>
-        </Container>
-      </div> -->
-      <div class="bg-dark w-full py-16">
-        <Container>
-          <SectionHistory />
-        </Container>
-      </div>
-    </main>
-    <FooterContainer />
-    <router-link to="about">
-      MENU 2
-    </router-link>
+    </section>
   </div>
 </template>
 
 <script>
 import Carousel from '@/components/carousel/Carousel.vue';
-import ProductsGroup from '@/components/ProductsGroup.vue';
+import ProductSlider from '@/components/ProductSlider.vue';
 import Container from '@/components/Container.vue';
-import SectionParallax from '@/components/SectionParallax.vue';
+import SectionPromotion from '@/components/SectionPromotion.vue';
 import SectionHistory from '@/components/SectionHistory.vue';
-import FooterContainer from '@/components/footer/FooterContainer.vue';
 export default {
   components: {
     Carousel,
-    ProductsGroup,
+    ProductSlider,
     Container,
-    SectionParallax,
+    SectionPromotion,
     SectionHistory,
-    FooterContainer
   }
 }
 </script>

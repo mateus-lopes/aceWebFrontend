@@ -1,23 +1,13 @@
 <template>
-    <main class="flex justify-center py-16 gap-24 items-start relative w-full">
-        <div>
+    <main class="flex justify-center items-center py-16 relative w-full">
+        <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-6 gap-8">
             <FooterLinks title="Instirucional" :links="info_corp" />
-        </div>
-        <div>
             <FooterLinks title="Produtos" :links="categorias" />
-        </div>
-        <div>
             <FooterLinks title="Coleções" :links="colections" />
+            <FooterLinks title="Lojas" :links="categorias" class="md:pt-16 xl:p-0" />
+            <FooterLinks title="Siga-nos" :links="social_media" class="md:pt-16 xl:p-0 xl:hidden 2xl:block" />
+            <FooterLinks title="Suporte" :links="suporte" class="md:pt-16 xl:p-0" />
         </div>
-        <div>
-            <FooterLinks title="Suporte" :links="suporte" />
-        </div>
-        <div>
-            <FooterLinks title="Lojas" :links="categorias" />
-        </div>
-        <div>
-            <FooterLinks title="Siga-nos" :links="social_media" />
-        </div>  
     </main>
 </template>
 <script>

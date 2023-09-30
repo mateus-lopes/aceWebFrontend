@@ -1,9 +1,9 @@
 <template lang="">
     <main class="product w-80">
             <!-- <GetImg :src="product.img" /> -->
-            <img src="../assets/img/boots/F4.png" alt="">
+            <img src="@/assets/img/boots/F4.png" alt="">
             <router-link to="#">
-                <button class="shadow-xl uppercase mt-2 opacity-0 bg-primary hover:bg-black text-white w-full flex items-center justify-center py-4">
+                <button class="shadow-xl uppercase mt-2 opacity-1 lg:opacity-0 bg-primary hover:bg-black text-white w-full flex items-center justify-center py-4">
                     Comprar
                 </button>
             </router-link>
@@ -28,11 +28,11 @@
     </main>
 </template>
 <script>
-// import GetImg from './GetImg.vue';    
+import GetImg from './GetImg.vue';    
 
 export default {
     components: {
-        // GetImg,
+        GetImg,
     },
     props: {
         product: {
@@ -73,8 +73,10 @@ export default {
 }
 </script>
 <style lang="css">
+@media screen and (min-width: 768px) {
     .product:hover button {
         opacity: 1;
         transition: all .5s ease-in-out;
     }
+}
 </style>

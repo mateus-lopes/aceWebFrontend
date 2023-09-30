@@ -1,6 +1,6 @@
 <template lang="">
     <div>
-        <ul class="flex gap-4 justify-center text-sm">
+        <ul class="flex flex-wrap gap-4 md:justify-center text-sm px-6">
             <li class="border-r pr-4 border-r-gray-400">
                 <router-link to="#" class="hover:text-black">
                     Configuração de cookies

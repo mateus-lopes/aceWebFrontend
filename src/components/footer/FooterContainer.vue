@@ -1,12 +1,12 @@
 <template lang="">
-    <footer class="text-gray-700">
+    <div class="text-gray-700">
         <Container>
             <FooterNav />
             <div>
                 <QuicklyLinks />
             </div>
         </Container>
-        <div class="flex gap-4 justify-center items-center py-16">
+        <div class="flex flex-col lg:flex-row gap-4 justify-center items-center pt-16 pb-8">
             <small class="flex gap-2">
                 <img src="@/assets/img/icons/Bandeira-do-Brasil.png" class="w-6" alt=""> 
                 BRASIL
@@ -22,7 +22,7 @@
                 © 2020 ACE Joinville SC - Todos os direitos reservados.
             </small>    
         </div>
-    </footer>
+    </div>
 </template>
 <script>
 import Container from '@/components/Container.vue';

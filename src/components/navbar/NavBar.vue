@@ -162,9 +162,12 @@
               <div class="ml-auto flex items-center z-10 mr-10">
                 <!-- Search -->
                 <div class="flex lg:ml-6">
-                  <a href="#" class="p-2 text-gray-700 hover:text-black">
+                  <a href="#" class="p-2 text-gray-700 hover:text-black flex">
                     <span class="sr-only">Search</span>
-                    <MagnifyingGlassIcon class="h-6 w-6" aria-hidden="true" />
+                    <div :class="{'hidden' : !search}" class="transition-all opacity-100 w-full">
+                        <input type="text" class="bg-gray-200 border-r-xl border-2">
+                    </div>
+                    <MagnifyingGlassIcon @click="search =! search" class="h-6 w-6" aria-hidden="true" />
                   </a>
                 </div>
 
@@ -336,6 +339,9 @@ const navigation = {
 }
 
 const open = ref(false)
+
+const search = ref(false)
+
 </script>
 <style scoped>
   .z {

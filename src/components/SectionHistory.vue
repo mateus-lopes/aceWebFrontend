@@ -1,6 +1,6 @@
 <template lang="">
     <Container>
-        <div class="w-full">
+        <div class="w-full px-6 py-16 lg:p-0">
             <img src="@/assets/img/logo.png" class='w-2/6 m-auto' alt="">
             <p class="text-center text-white py-4">
                 Fundada em 1997 na cidade de São Paulo, estado Paulista, a intenção original da marca era criar calçados

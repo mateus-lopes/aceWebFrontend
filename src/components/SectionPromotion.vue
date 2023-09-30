@@ -1,5 +1,5 @@
 <template>
-    <main class="w-full flex items-center justify-between">
+    <main class="w-full lg:flex lg:flex-row items-center justify-between gap-16">
         <div>
             <CardPromotion link="#" :src="this.url1"  />
         </div>
