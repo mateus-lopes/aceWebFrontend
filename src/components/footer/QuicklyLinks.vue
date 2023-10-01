@@ -1,29 +1,24 @@
 <template lang="">
     <div>
-        <ul class="flex flex-wrap gap-4 md:justify-center text-sm px-6">
-            <li class="border-r pr-4 border-r-gray-400">
+        <ul class="flex flex-col items-center gap-4 justify-center lg:flex-row lg:flex-wrap text-sm px-6">
+            <li class="lg:border-r pr-4 lg:border-r-gray-400">
                 <router-link to="#" class="hover:text-black">
                     Configuração de cookies
                 </router-link>
             </li>
-            <li class="border-r pr-4 border-r-gray-400">
+            <li class="lg:border-r pr-4 lg:border-r-gray-400">
                 <router-link to="#" class="hover:text-black">
                     Requisições de dados pessoais
                 </router-link>
             </li>
-            <li class="border-r pr-4 border-r-gray-400">
+            <li class="lg:border-r pr-4 lg:border-r-gray-400">
                 <router-link to="#" class="hover:text-black">
                     Termos e Condições de Navegação
                 </router-link>
             </li>
-            <li class="border-r pr-4 border-r-gray-400">
+            <li class="lg:border-r pr-4 lg:border-r-gray-400">
                 <router-link to="#" class="hover:text-black">
                     Termos e Condições
-                </router-link>
-            </li>
-            <li class="border-r pr-4 border-r-gray-400">
-                <router-link to="#" class="hover:text-black">
-                    Termos #YESadidas
                 </router-link>
             </li>
             <li>

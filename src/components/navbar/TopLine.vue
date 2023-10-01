@@ -1,17 +1,16 @@
 <template lang="">
-    <main class="w-full bg-gray-400 text-gray-900 px-6">
-        <small class="uppercase">
-            <div class="py-2 flex justify-center md:justify-between">
-                <p>
-                    Frete grátis a partir de R$ 399,00 para todo Brasil
-                </p>
-                <div class="justify-end gap-4 hidden md:flex">
-                <router-link class="hover:text-black focus:text-black focus:font-medium" to="">Lojas</router-link>
-                <router-link class="hover:text-black focus:text-black focus:font-medium" to="">Atendimento</router-link>
-                </div>
+    <small class="uppercase w-full text-white">
+        <div class="lg:flex bg-black lg:bg-yellow flex-row-reverse justify-between lg:py-1 lg:px-6">
+            <div class="justify-center lg:justify-end gap-4 flex py-2 lg:p-0 lg:text-black focus:text-black focus:font-medium">
+                <router-link class="border-r pr-4 border-r-gray-400 lg:border-r-black" to="">Atendimento</router-link>
+                <router-link class="border-r pr-4 border-r-gray-400 lg:border-r-black" to="">Registrar-se</router-link>
+                <router-link class="" to="">Entrar</router-link>
             </div>
-        </small>
-    </main>
+            <small class="block w-full text-center bg-yellow text-black lg:w-auto lg:text-xs py-2 lg:p-0">
+                Frete grátis a partir de R$ 399,00 para todo Brasil
+            </small>
+        </div>
+    </small>
 </template>
 <script setup>
 </script>
