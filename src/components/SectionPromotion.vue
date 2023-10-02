@@ -9,19 +9,21 @@
     </main>
 </template>
 <script>
-import middle_1 from '@/assets/img/middle_1.png';
-import middle_2 from '@/assets/img/middle_2.png';
 import CardPromotion from './CardPromotion.vue';
 
 export default {
     components: {
         CardPromotion,
     },
-    data() {
-        return {
-            url1: middle_1,
-            url2: middle_2,
-        }
-    }
+    props: {
+        url1: {
+            type: String,
+            required: true,
+        },
+        url2: {
+            type: String,
+            required: true,
+        },
+    },
 }
 </script>

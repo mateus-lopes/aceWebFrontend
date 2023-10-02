@@ -20,83 +20,6 @@ export default {
     },
     data() {
         return {
-            products: [
-                {
-                    title: 'Tênis ACE Zoom Pegasus',
-                    categories: [
-                        {
-                            title: 'Corrida',
-                            color: 'bg-azul-claro',
-                            url: '#',
-                        },
-                        {
-                            title: 'Feminino',
-                            color: 'bg-rosa',
-                            url: '#',
-                        },
-                    ],
-                    price: 899.99,
-                    img: '',
-                    n_colors: 3,
-                },
-                {
-                    title: 'Tênis ACE Joyride Run',
-                    categories: [
-                        {
-                            title: 'Corrida',
-                            color: 'bg-azul-claro',
-                            url: '#',
-                        },
-                        {
-                            title: 'Masculino',
-                            color: 'bg-azul-escuro',
-                            url: '#',
-                        },
-                    ],
-                    price: 1099.99,
-                    img: '',
-                    n_colors: 1,
-                    promotion: 100,
-                },
-                {
-                    title: 'Tênis ACE Raybow Dash',
-                    categories: [
-                        {
-                            title: 'Caminhada',
-                            color: 'bg-vermelho',
-                            url: '#',
-                        },
-                        {
-                            title: 'Masculino',
-                            color: 'bg-azul-escuro',
-                            url: '#',
-                        },
-                    ],
-                    price: 249.99,
-                    descont: 19,
-                    img: '',
-                    n_colors: 4,
-                    promotion: 80,
-                },
-                {
-                    title: 'Tênis ACE Joyride Run',
-                    categories: [
-                        {
-                            title: 'Corrida',
-                            color: 'bg-azul-claro',
-                            url: '#',
-                        },
-                        {
-                            title: 'Unissex',
-                            color: 'bg-verde',
-                            url: '#',
-                        },
-                    ],
-                    price: 699.99,
-                    img: '',
-                    n_colors: 1,
-                }
-            ],
             backgroundLine: (this.dark == true) ? '#fff' : '#000',
         }
     },
@@ -107,6 +30,10 @@ export default {
         },
         title: {
             type: String,
+            required: true,
+        },
+        products: {
+            type: Array,
             required: true,
         }
     }

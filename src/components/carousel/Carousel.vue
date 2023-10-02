@@ -52,10 +52,7 @@
 
     // (provisorio até linkar cm o banco)
     import GetImg from '../GetImg.vue';
-    import urlImagem1 from '@/assets/img/slider/1.jpg';
-    import urlImagem2 from '@/assets/img/slider/2.jpg';
-    import urlImagem1_m from '@/assets/img/slider/1 - moblie.jpg';
-    import urlImagem2_m from '@/assets/img/slider/2 - moblie.jpg';
+    
 
     export default {
     components: {
@@ -63,20 +60,21 @@
         SwiperSlide,
         GetImg,
     }, 
+    props: {
+        urls1: {
+            type: Array,
+            required: true,
+        },
+        urls2: {
+            type: Array,
+            required: true,
+        },
+    },
     setup() {
         const progressCircle = ref(null);
         const progressContent = ref(null);
-        const urls2 = [
-            { url: urlImagem1 },
-            { url: urlImagem2 },
-        ]
-        const urls1 = [
-            { url: urlImagem1_m },
-            { url: urlImagem2_m }
-        ]
-        return {
-            urls1,
-            urls2,
+    
+        return {        
             progressCircle,
             progressContent,
             modules: [Autoplay, Pagination, Navigation],
