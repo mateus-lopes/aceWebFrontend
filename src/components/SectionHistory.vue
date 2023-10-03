@@ -1,4 +1,4 @@
-<template lang="">
+<template>
     <Container>
         <div class="w-full px-6 py-16 lg:p-0">
             <img src="@/assets/img/logo.png" class='w-2/6 m-auto' alt="">
@@ -9,19 +9,19 @@
             <p class="text-center text-gray-500">
                 "Se você não arriscar nunca será capaz de saber aonde poderia chegar."
             </p>
-            <IconsUl />
+            <IconsList />
         </div>
     </Container>
 </template>
 <script>
 import Container from '@/components/Container.vue';
-import IconsUl from '@/components/IconsUl.vue';
+import IconsList from '@/components/IconsList.vue';
 
 
 export default {
     components: {
         Container,
-        IconsUl,
+        IconsList,
     }
 }
 </script>

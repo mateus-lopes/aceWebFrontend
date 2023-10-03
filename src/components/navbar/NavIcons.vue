@@ -1,4 +1,4 @@
-<template lang="">
+<template>
     <div class="ml-auto flex items-center z-10 mr-10">
         <!-- Search -->
         <SearchIcon />

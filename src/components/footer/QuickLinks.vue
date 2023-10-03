@@ -1,4 +1,4 @@
-<template lang="">
+<template>
     <div>
         <ul class="flex flex-col items-center gap-4 justify-center lg:flex-row lg:flex-wrap text-sm px-6">
             <li class="lg:border-r pr-4 lg:border-r-gray-400">
@@ -29,11 +29,3 @@
         </ul>
     </div>
 </template>
-<script>
-export default {
-    
-}
-</script>
-<style lang="">
-    
-</style>

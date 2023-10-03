@@ -1,4 +1,4 @@
-<template lang="">
+<template>
     <img :src="getUrl(url)" alt="">
 </template>
 

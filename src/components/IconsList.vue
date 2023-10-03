@@ -1,4 +1,4 @@
-<template lang="">
+<template>
     <ul class="flex justify-center items-center gap-3 py-4">
         <li>
             <router-link to="#" class="text-primary">

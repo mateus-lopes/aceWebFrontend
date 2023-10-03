@@ -11,7 +11,7 @@
 
 <script>
 import ProductItem from './ProductItem.vue';
-import SectionTitle from './SectionTitle.vue';
+import SectionTitle from './SliderTitle.vue';
 
 export default {
     components: {

@@ -1,8 +1,8 @@
-<template lang="">
+<template>
     <div class="text-gray-700">
         <Container>
             <FooterNav />
-            <QuicklyLinks />
+            <QuickLinks />
             <LastFooter />
         </Container>
     </div>
@@ -10,18 +10,15 @@
 <script>
 import Container from '@/components/Container.vue';
 import FooterNav from '@/components/footer/FooterNav.vue';
-import QuicklyLinks from '@/components/footer/QuicklyLinks.vue';
+import QuickLinks from '@/components/footer/QuickLinks.vue';
 import LastFooter from '@/components/footer/LastFooter.vue';
 
 export default {
     components: {
         Container,
         FooterNav,
-        QuicklyLinks,
+        QuickLinks,
         LastFooter,
     }
 }
 </script>
-<style lang="">
-    
-</style>

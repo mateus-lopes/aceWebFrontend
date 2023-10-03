@@ -1,4 +1,4 @@
-<template lang="">
+<template>
     <small class="uppercase w-full text-white text-sm">
         <div class="lg:flex bg-black lg:bg-yellow flex-row-reverse justify-between lg:py-1 lg:px-6">
             <div class="justify-center lg:justify-end gap-4 flex py-2 lg:p-0 lg:text-black focus:text-black focus:font-medium">

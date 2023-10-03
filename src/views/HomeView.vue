@@ -1,5 +1,5 @@
 <template lang="">
-  <div>
+  <TemplateView>
     <Carousel :urls1="urls1" :urls2="urls2" />
     <Container class="my-16">
       <ProductSlider title="Melhores Ofertas" :products="products" />
@@ -18,10 +18,11 @@
         <SectionHistory />
       </Container>
     </section>
-  </div>
+  </TemplateView>
 </template>
 
 <script>
+import TemplateView from '@/components/TemplateContainer.vue';
 import Carousel from '@/components/carousel/Carousel.vue';
 import ProductSlider from '@/components/ProductSlider.vue';
 import Container from '@/components/Container.vue';
@@ -40,6 +41,7 @@ import urlImagem2_m from '@/assets/img/slider/2 - moblie.jpg';
 
 export default {
   components: {
+    TemplateView,
     Carousel,
     ProductSlider,
     Container,

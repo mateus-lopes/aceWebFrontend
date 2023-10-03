@@ -1,4 +1,4 @@
-<template lang="">
+<template>
     <div>
         <h2 class="text-lg font-bold pb-2 text-black">
             {{title}}
@@ -26,6 +26,6 @@ export default {
     }
 }
 </script>
-<style lang="">
+<style>
     
 </style>
