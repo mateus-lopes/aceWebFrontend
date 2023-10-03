@@ -5,10 +5,10 @@
             BRASIL
         </small>
         <small class="block">desenvolvido por 
-            <span class="text-red-600 hover:underline">
-                <router-link to="https://github.com/mateus-lopes">
+            <span class="text-red-600 underline">
+                <a href="https://github.com/mateus-lopes">
                     mateus-lopes
-                </router-link>
+                </a>
             </span>
         </small>
         <small class="block">

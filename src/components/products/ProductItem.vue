@@ -1,5 +1,5 @@
 <template lang="">
-    <main class="product w-80">
+    <main class="product w-80 pb-12">
             <!-- <GetImg :src="product.img" /> -->
             <img src="@/assets/img/boots/F4.png" alt="">
             <router-link to="#">
@@ -15,6 +15,7 @@
                     </router-link>
                 </button>
             </div>
+            
             <p class="text-xl font-bold pt-2">
                 R$ {{ getPromotion }}
                 <span v-if="product.promotion > 0" class="text-base text-red-500"> {{ product.promotion }}% OFF </span>
@@ -28,11 +29,11 @@
     </main>
 </template>
 <script>
-import GetImg from './GetImg.vue';    
+// import GetImg from '@/components/GetImg.vue';    
 
 export default {
     components: {
-        GetImg,
+        // GetImg,
     },
     props: {
         product: {

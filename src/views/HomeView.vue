@@ -1,14 +1,14 @@
 <template lang="">
   <TemplateView>
     <Carousel :urls1="urls1" :urls2="urls2" />
-    <Container class="my-16">
-      <ProductSlider title="Melhores Ofertas" :products="products" />
     <Container>
-      <ProductSlider title="Mais Vendidos" :products="products" />
+      <SectionSlider title="Melhores Ofertas" :products="products" />
     </Container>
     <Container class="my-16">
-      <ProductSlider title="Acessórios" :products="products" />
+      <SectionSlider title="Mais Vendidos" :products="products" />
     </Container>
+    <Container class="my-16">
+      <SectionSlider title="Acessórios" :products="products" />
     </Container>
     <Container class="mt-16 lg:my-16">
       <SectionPromotion :url1="url_middle_1" :url2="url_middle_2" />
@@ -24,10 +24,10 @@
 <script>
 import TemplateView from '@/components/TemplateContainer.vue';
 import Carousel from '@/components/carousel/Carousel.vue';
-import ProductSlider from '@/components/ProductSlider.vue';
 import Container from '@/components/Container.vue';
 import SectionPromotion from '@/components/SectionPromotion.vue';
 import SectionHistory from '@/components/SectionHistory.vue';
+import SectionSlider from '@/components/SectionSlider.vue';
 
 // card promotion
 import middle_1 from '@/assets/img/middle_1.png';
@@ -43,13 +43,163 @@ export default {
   components: {
     TemplateView,
     Carousel,
-    ProductSlider,
+    SectionSlider,
     Container,
     SectionPromotion,
     SectionHistory,
   },
   setup() {
     const products = [
+      {
+          title: 'Tênis ACE Zoom Pegasus',
+          categories: [
+              {
+                  title: 'Corrida',
+                  color: 'bg-azul-claro',
+                  url: '#',
+              },
+              {
+                  title: 'Feminino',
+                  color: 'bg-rosa',
+                  url: '#',
+              },
+          ],
+          price: 899.99,
+          img: '',
+          n_colors: 3,
+      },
+      {
+          title: 'Tênis ACE Joyride Run',
+          categories: [
+              {
+                  title: 'Corrida',
+                  color: 'bg-azul-claro',
+                  url: '#',
+              },
+              {
+                  title: 'Masculino',
+                  color: 'bg-azul-escuro',
+                  url: '#',
+              },
+          ],
+          price: 1099.99,
+          img: '',
+          n_colors: 1,
+          promotion: 100,
+      },
+      {
+          title: 'Tênis ACE Raybow Dash',
+          categories: [
+              {
+                  title: 'Caminhada',
+                  color: 'bg-vermelho',
+                  url: '#',
+              },
+              {
+                  title: 'Masculino',
+                  color: 'bg-azul-escuro',
+                  url: '#',
+              },
+          ],
+          price: 249.99,
+          descont: 19,
+          img: '',
+          n_colors: 4,
+          promotion: 80,
+      },
+      {
+          title: 'Tênis ACE Joyride Run',
+          categories: [
+              {
+                  title: 'Corrida',
+                  color: 'bg-azul-claro',
+                  url: '#',
+              },
+              {
+                  title: 'Unissex',
+                  color: 'bg-verde',
+                  url: '#',
+              },
+          ],
+          price: 699.99,
+          img: '',
+          n_colors: 1,
+      },
+      {
+          title: 'Tênis ACE Zoom Pegasus',
+          categories: [
+              {
+                  title: 'Corrida',
+                  color: 'bg-azul-claro',
+                  url: '#',
+              },
+              {
+                  title: 'Feminino',
+                  color: 'bg-rosa',
+                  url: '#',
+              },
+          ],
+          price: 899.99,
+          img: '',
+          n_colors: 3,
+      },
+      {
+          title: 'Tênis ACE Joyride Run',
+          categories: [
+              {
+                  title: 'Corrida',
+                  color: 'bg-azul-claro',
+                  url: '#',
+              },
+              {
+                  title: 'Masculino',
+                  color: 'bg-azul-escuro',
+                  url: '#',
+              },
+          ],
+          price: 1099.99,
+          img: '',
+          n_colors: 1,
+          promotion: 100,
+      },
+      {
+          title: 'Tênis ACE Raybow Dash',
+          categories: [
+              {
+                  title: 'Caminhada',
+                  color: 'bg-vermelho',
+                  url: '#',
+              },
+              {
+                  title: 'Masculino',
+                  color: 'bg-azul-escuro',
+                  url: '#',
+              },
+          ],
+          price: 249.99,
+          descont: 19,
+          img: '',
+          n_colors: 4,
+          promotion: 80,
+      },
+      {
+          title: 'Tênis ACE Joyride Run',
+          categories: [
+              {
+                  title: 'Corrida',
+                  color: 'bg-azul-claro',
+                  url: '#',
+              },
+              {
+                  title: 'Unissex',
+                  color: 'bg-verde',
+                  url: '#',
+              },
+          ],
+          price: 699.99,
+          img: '',
+          n_colors: 1,
+      },
       {
           title: 'Tênis ACE Zoom Pegasus',
           categories: [

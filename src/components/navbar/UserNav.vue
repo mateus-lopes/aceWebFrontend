@@ -12,5 +12,5 @@
 </template>
 <script setup>
 import { UserIcon } from '@heroicons/vue/24/outline'
-const conected = false
+const conected = false;
 </script>

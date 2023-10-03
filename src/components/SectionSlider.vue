@@ -1,27 +1,18 @@
 <template lang="">
     <main>
         <SectionTitle :dark="dark" :title="title" />
-        <div class="flex w-full justify-center border-box" :class="{ 'text-white': dark }">
-            <div v-for="(item, index) in products" :key="index">
-                <ProductItem :product="item" />
-            </div>
-        </div>
+        <ProductSlider :dark="dark" :products="products" />
     </main>
 </template>
 
 <script>
-import ProductItem from './ProductItem.vue';
-import SectionTitle from './SliderTitle.vue';
+import SectionTitle from '@/components/SliderTitle.vue';
+import ProductSlider from '@/components/products/ProductSlider.vue';
 
 export default {
     components: {
-        ProductItem,
         SectionTitle,
-    },
-    data() {
-        return {
-            backgroundLine: (this.dark == true) ? '#fff' : '#000',
-        }
+        ProductSlider,
     },
     props: {
         dark: {
@@ -35,6 +26,11 @@ export default {
         products: {
             type: Array,
             required: true,
+        }
+    },
+    data() {
+        return {
+            backgroundLine: (this.dark == true) ? '#fff' : '#000',
         }
     }
 };

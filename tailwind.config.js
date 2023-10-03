@@ -20,6 +20,7 @@ export default {
     },
     width: {
       'special': '300px',
+      '3xl': '1600px',
     }
   },
   plugins: [
