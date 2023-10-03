@@ -1,3 +1,4 @@
+[![Status do Projeto](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)](https://github.com/mateus-lopes/aceWebFrontend)
 # AceStore
 
 **AceStore** é um projeto elegante de e-commerce desenvolvido para a empresa fictícia ACE Store. Este Frontend é construído com tecnologias modernas, incluindo Vue 3, Tailwind CSS, Swiper, proporcionando uma experiência excepcional aos usuários.
