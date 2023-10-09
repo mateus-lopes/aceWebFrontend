@@ -1,5 +1,5 @@
 <template lang="">
-    <main class="product w-80 pb-12">
+    <main class="product w-max-80 pb-12 px-14 md:px-4 lg:px-0">
             <!-- <GetImg :src="product.img" /> -->
             <img src="@/assets/img/boots/F4.png" alt="">
             <router-link to="#">
@@ -9,13 +9,12 @@
             </router-link>
             <h1 class="text-xl my-4">{{ product.title }}</h1>
             <div class="flex justify-start items-center">
-                <button class="mr-2"  v-for="(item, index) in product.categories" :key="index">
+                <button class="mr-2"  v-for="(item, index) in product.tags" :key="index">
                     <router-link :to="item.url">
-                        <small class="p-1 text-white" :class="item.color">{{ item.title }}</small>
+                        <small class="p-1 text-white bg-primary" :class="item.color">{{ item.title }}</small>
                     </router-link>
                 </button>
             </div>
-            
             <p class="text-xl font-bold pt-2">
                 R$ {{ getPromotion }}
                 <span v-if="product.promotion > 0" class="text-base text-red-500"> {{ product.promotion }}% OFF </span>

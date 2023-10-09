@@ -13,6 +13,7 @@
     "@headlessui/vue": "^1.7.16",
     "@heroicons/vue": "^2.0.18",
     "@tailwindcss/aspect-ratio": "^0.4.2",
+    "axios": "^1.5.1",
     "pinia": "^2.1.6",
     "swiper": "^10.0.0",
     "vue": "^3.3.4",

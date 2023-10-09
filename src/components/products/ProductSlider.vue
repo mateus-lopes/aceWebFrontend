@@ -8,6 +8,9 @@
             :pagination="{
                 clickable: true,
             }"
+            @swiper="onSwiper"
+            @slideChange="onSlideChange"
+            :navigation="true"
         >
             <swiper-slide v-for="product in products" :key="product.id">
                 <ProductItem class="m-auto" :product="product" />
@@ -21,6 +24,9 @@
             :pagination="{
                 clickable: true,
             }"
+            @swiper="onSwiper"
+            @slideChange="onSlideChange"
+            :navigation="true"
         >
             <swiper-slide v-for="product in products" :key="product.id">
                 <ProductItem class="m-auto" :product="product" />

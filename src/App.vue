@@ -1,6 +1,21 @@
-<script setup>
+<!-- <script>
+import { fetchData } from '@/plugins/axios';
 
-</script>
+export default {
+  async mounted() {
+    try {
+      this.jones = await fetchData('categories');
+    } catch (error) {
+      console.error('Erro ao buscar dados:', error);
+    }
+  },
+  data() {
+    return {
+      jones: null
+    };
+  }
+};
+</script> -->
 
 <template>
   <RouterView />
