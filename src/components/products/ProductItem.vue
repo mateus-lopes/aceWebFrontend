@@ -9,10 +9,15 @@
             </router-link>
             <h1 class="text-xl my-4">{{ product.title }}</h1>
             <div class="flex justify-start items-center">
-                <button class="mr-2"  v-for="(item, index) in product.tags" :key="index">
-                    <router-link :to="item.url">
-                        <small class="p-1 text-white bg-primary" :class="item.color">{{ item.title }}</small>
-                    </router-link>
+                <button class="mr-2"  v-for="(item, index) in product.category" :key="index">
+                    <small class="p-1 text-white bg-primary" :class="item.color">{{ item.title }}</small>
+                    <!-- <router-link :to="item.url">
+                    </router-link> -->
+                </button>
+                <button class="mr-2"  v-for="(item, index) in product.gender" :key="index">
+                    <small class="p-1 text-white bg-primary" :class="item.color">{{ item.title }}</small>
+                    <!-- <router-link :to="item.url">
+                    </router-link> -->
                 </button>
             </div>
             <p class="text-xl font-bold pt-2">
@@ -58,8 +63,10 @@ export default {
             return Math.floor((this.getPromotion / 10) * 100) / 100
         },
         getColors() {
-            let text = this.product.n_colors > 1 ? ' cores' : ' cor'
-            return this.product.n_colors + text
+            
+            let colors = this.product.colors.split(', ').length
+            let text = colors > 1 ? ' cores' : ' cor'
+            return colors + text
         },
         getPromotion() {
             if(this.product.promotion){

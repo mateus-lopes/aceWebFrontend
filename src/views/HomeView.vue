@@ -2,16 +2,13 @@
   <TemplateView>
     <Carousel :urls1="urls1" :urls2="urls2" />
     <Container>
-      <SectionSlider title="Melhores Ofertas" :products="products2" />
-    </Container>
-    <!-- {{ products2[0] }} -->
-    {{ products2 }}
-    {{ categories2 }}
-    <Container class="my-16">
-      <SectionSlider title="Mais Vendidos" :products="products" />
+      <SectionSlider title="Melhores Ofertas" :products="products_all" />
     </Container>
     <Container class="my-16">
-      <SectionSlider title="Acessórios" :products="products" />
+      <SectionSlider title="Mais Vendidos" :products="products_all" />
+    </Container>
+    <Container class="my-16">
+      <SectionSlider title="Acessórios" :products="products_all" />
     </Container>
     <Container class="mt-16 lg:my-16">
       <SectionPromotion :url1="url_middle_1" :url2="url_middle_2" />
@@ -33,7 +30,7 @@ import Container from '@/components/Container.vue';
 import SectionPromotion from '@/components/SectionPromotion.vue';
 import SectionHistory from '@/components/SectionHistory.vue';
 import SectionSlider from '@/components/SectionSlider.vue';
-import { fetchData } from '@/plugins/axios';
+import { products } from '../lib/product';
 
 // card promotion
 import middle_1 from '@/assets/img/middle_1.png';
@@ -54,275 +51,32 @@ export default {
         SectionPromotion,
         SectionHistory,
     },
-    data() {
-        return {
-            products2: null,
-            categories2: null
-        };
-    },
     setup() {
-        const products = [
-        {
-            title: 'Tênis ACE Zoom Pegasus',
-            category: [
-                {
-                    title: 'Corrida',
-                    color: 'bg-azul-claro',
-                    url: '#',
-                },
-                {
-                    title: 'Feminino',
-                    color: 'bg-rosa',
-                    url: '#',
-                },
-            ],
-            price: 899.99,
-            img: '',
-            n_colors: 3,
-        },
-        {
-            title: 'Tênis ACE Joyride Run',
-            category: [
-                {
-                    title: 'Corrida',
-                    color: 'bg-azul-claro',
-                    url: '#',
-                },
-                {
-                    title: 'Masculino',
-                    color: 'bg-azul-escuro',
-                    url: '#',
-                },
-            ],
-            price: 1099.99,
-            img: '',
-            n_colors: 1,
-            promotion: 100,
-        },
-        {
-            title: 'Tênis ACE Raybow Dash',
-            category: [
-                {
-                    title: 'Caminhada',
-                    color: 'bg-vermelho',
-                    url: '#',
-                },
-                {
-                    title: 'Masculino',
-                    color: 'bg-azul-escuro',
-                    url: '#',
-                },
-            ],
-            price: 249.99,
-            descont: 19,
-            img: '',
-            n_colors: 4,
-            promotion: 80,
-        },
-        {
-            title: 'Tênis ACE Joyride Run',
-            category: [
-                {
-                    title: 'Corrida',
-                    color: 'bg-azul-claro',
-                    url: '#',
-                },
-                {
-                    title: 'Unissex',
-                    color: 'bg-verde',
-                    url: '#',
-                },
-            ],
-            price: 699.99,
-            img: '',
-            n_colors: 1,
-        },
-        {
-            title: 'Tênis ACE Zoom Pegasus',
-            category: [
-                {
-                    title: 'Corrida',
-                    color: 'bg-azul-claro',
-                    url: '#',
-                },
-                {
-                    title: 'Feminino',
-                    color: 'bg-rosa',
-                    url: '#',
-                },
-            ],
-            price: 899.99,
-            img: '',
-            n_colors: 3,
-        },
-        {
-            title: 'Tênis ACE Joyride Run',
-            category: [
-                {
-                    title: 'Corrida',
-                    color: 'bg-azul-claro',
-                    url: '#',
-                },
-                {
-                    title: 'Masculino',
-                    color: 'bg-azul-escuro',
-                    url: '#',
-                },
-            ],
-            price: 1099.99,
-            img: '',
-            n_colors: 1,
-            promotion: 100,
-        },
-        {
-            title: 'Tênis ACE Raybow Dash',
-            category: [
-                {
-                    title: 'Caminhada',
-                    color: 'bg-vermelho',
-                    url: '#',
-                },
-                {
-                    title: 'Masculino',
-                    color: 'bg-azul-escuro',
-                    url: '#',
-                },
-            ],
-            price: 249.99,
-            descont: 19,
-            img: '',
-            n_colors: 4,
-            promotion: 80,
-        },
-        {
-            title: 'Tênis ACE Joyride Run',
-            category: [
-                {
-                    title: 'Corrida',
-                    color: 'bg-azul-claro',
-                    url: '#',
-                },
-                {
-                    title: 'Unissex',
-                    color: 'bg-verde',
-                    url: '#',
-                },
-            ],
-            price: 699.99,
-            img: '',
-            n_colors: 1,
-        },
-        {
-            title: 'Tênis ACE Zoom Pegasus',
-            category: [
-                {
-                    title: 'Corrida',
-                    color: 'bg-azul-claro',
-                    url: '#',
-                },
-                {
-                    title: 'Feminino',
-                    color: 'bg-rosa',
-                    url: '#',
-                },
-            ],
-            price: 899.99,
-            img: '',
-            n_colors: 3,
-        },
-        {
-            title: 'Tênis ACE Joyride Run',
-            category: [
-                {
-                    title: 'Corrida',
-                    color: 'bg-azul-claro',
-                    url: '#',
-                },
-                {
-                    title: 'Masculino',
-                    color: 'bg-azul-escuro',
-                    url: '#',
-                },
-            ],
-            price: 1099.99,
-            img: '',
-            n_colors: 1,
-            promotion: 100,
-        },
-        {
-            title: 'Tênis ACE Raybow Dash',
-            category: [
-                {
-                    title: 'Caminhada',
-                    color: 'bg-vermelho',
-                    url: '#',
-                },
-                {
-                    title: 'Masculino',
-                    color: 'bg-azul-escuro',
-                    url: '#',
-                },
-            ],
-            price: 249.99,
-            descont: 19,
-            img: '',
-            n_colors: 4,
-            promotion: 80,
-        },
-        {
-            title: 'Tênis ACE Joyride Run',
-            category: [
-                {
-                    title: 'Corrida',
-                    color: 'bg-azul-claro',
-                    url: '#',
-                },
-                {
-                    title: 'Unissex',
-                    color: 'bg-verde',
-                    url: '#',
-                },
-            ],
-            price: 699.99,
-            img: '',
-            n_colors: 1,
-        }
-        ]
         const url_middle_1 = middle_1;
         const url_middle_2 = middle_2;
         const urls1 = [
-        { url: urlImagem1_m },
-        { url: urlImagem2_m }
+            { url: urlImagem1_m },
+            { url: urlImagem2_m }
         ]
         const urls2 = [
-        { url: urlImagem1 },
-        { url: urlImagem2 },
+            { url: urlImagem1 },
+            { url: urlImagem2 },
         ]
         return {
-            products,
             url_middle_1,
             url_middle_2,
             urls1,
             urls2,
         }
     },
+    data() {
+        return {
+            products_all: null
+        };
+    },
     async mounted() {
         try {
-            // Fetch products and category concurrently using Promise.all
-            const [products, categories, genders] = await Promise.all([
-                fetchData('products'),
-                fetchData('categories'),
-                fetchData('genders')
-            ]);
-
-            this.products2 = products;
-
-            // Map through products and assign categories based on category id
-            this.products2.forEach((el) => {
-                el.category = categories.filter((cat) => cat.id === el.category);
-                el.gender = genders.filter((cat) => cat.id === el.gender);
-            });
-
+            this.products_all = await products()
         } catch (error) {
             console.error('Erro ao buscar dados:', error);
         }

@@ -1,17 +1,19 @@
 <template>
-  <div class="bg-vermelho p-44 text-white">
-    {{ products2 }}
-    <!-- <ProductItem class="m-auto" :product="products2[0]" /> -->
+  <div class="bg-vermelho w-screen h-screen gap-2 justify-center items-center text-white flex">
+        <div class="w-6/12" v-for="product in products2" :key="product.id">
+            <ProductItem class="m-auto" :product="product" />
+            {{ products2 }}
+        </div>
   </div>
 </template>
 
 <script>
 import ProductItem from '../components/products/ProductItem.vue';
-import { fetchData } from '@/plugins/axios';
+import { products } from '../lib/product';
 
 export default {
     components: {
-        // ProductItem
+        ProductItem
     },
     data() {
         return {
@@ -20,21 +22,7 @@ export default {
     },
     async mounted() {
         try {
-            // Fetch products and category concurrently using Promise.all
-            const [products, categories, genders] = await Promise.all([
-                fetchData('products'),
-                fetchData('categories'),
-                fetchData('genders')
-            ]);
-
-            this.products2 = products;
-
-            // Map through products and assign categories based on category id
-            this.products2.forEach((el) => {
-                el.category = categories.filter((cat) => cat.id === el.category);
-                el.gender = genders.filter((cat) => cat.id === el.gender);
-            });
-
+            this.products2 = await products()
         } catch (error) {
             console.error('Erro ao buscar dados:', error);
         }
