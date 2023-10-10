@@ -1,4 +1,4 @@
-<template lang="">
+<template>
   <TemplateView>
     <Carousel :urls1="urls1" :urls2="urls2" />
     <Container>
@@ -19,8 +19,6 @@
       </Container>
     </section>
   </TemplateView>
-  <div class="bg-vermelho p-44 text-white">
-  </div>
 </template>
 
 <script>

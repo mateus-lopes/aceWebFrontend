@@ -1,7 +1,6 @@
 <template lang="">
     <main class="product w-max-80 pb-12 px-14 md:px-4 lg:px-0">
-            <!-- <GetImg :src="product.img" /> -->
-            <img src="@/assets/img/boots/F4.png" alt="">
+            <GetImg :src="getCapa()" />
             <router-link to="#">
                 <button class="shadow-xl uppercase mt-2 opacity-1 lg:opacity-0 bg-primary hover:bg-black text-white w-full flex items-center justify-center py-4">
                     Comprar
@@ -9,15 +8,19 @@
             </router-link>
             <h1 class="text-xl my-4">{{ product.title }}</h1>
             <div class="flex justify-start items-center">
-                <button class="mr-2"  v-for="(item, index) in product.category" :key="index">
-                    <small class="p-1 text-white bg-primary" :class="item.color">{{ item.title }}</small>
-                    <!-- <router-link :to="item.url">
-                    </router-link> -->
+                <button class="mr-2">
+                    <router-link :to="product.category.url">
+                        <small class="p-1 text-white bg-primary" :class="getTagColor">
+                            {{ product.category.title }}
+                        </small>
+                    </router-link>
                 </button>
-                <button class="mr-2"  v-for="(item, index) in product.gender" :key="index">
-                    <small class="p-1 text-white bg-primary" :class="item.color">{{ item.title }}</small>
-                    <!-- <router-link :to="item.url">
-                    </router-link> -->
+                <button class="mr-2">
+                    <router-link :to="product.gender.url">
+                        <small class="p-1 text-white bg-primary" :class="product.gender.color">
+                            {{ product.gender.title }}
+                        </small>
+                    </router-link>
                 </button>
             </div>
             <p class="text-xl font-bold pt-2">
@@ -33,11 +36,11 @@
     </main>
 </template>
 <script>
-// import GetImg from '@/components/GetImg.vue';    
+import GetImg from '@/components/GetImg.vue';    
 
 export default {
     components: {
-        // GetImg,
+        GetImg,
     },
     props: {
         product: {
@@ -56,7 +59,10 @@ export default {
             } else {
                 return  price.toString().slice(0,5)
             }
-        }
+        },
+        getCapa() {
+            return this.product.images[0].file
+        },
     },
     computed: {
         getCreditPrice() {
@@ -75,6 +81,9 @@ export default {
             } else {
                 return this.getPrice(this.product.price)
             }
+        },
+        getTagColor() {
+            return this.product.category.color
         }
     },
 }

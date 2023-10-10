@@ -9,14 +9,8 @@ export default {
       colors: {
         'primary': '#004AAD',
         'secondary': '#343a40',
-        'azul-claro': '#17A2B8',
-        'verde': '#28A745',
-        'vermelho': '#DC3545',
-        'azul-escuro': '#004AAD',
-        'rosa': '#FFAEBC',
         'darkin': '#343a40',
         'dark': '#111',
-        'yellow': '#f1f100'
     },
     width: {
       'special': '300px',
@@ -24,7 +18,6 @@ export default {
     }
   },
   plugins: [
-    require('@tailwindcss/aspect-ratio'),
   ],
   }
 }
