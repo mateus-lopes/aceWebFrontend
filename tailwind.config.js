@@ -11,6 +11,13 @@ export default {
         'secondary': '#343a40',
         'darkin': '#343a40',
         'dark': '#111',
+        'blue-light': '#17A2B8',
+        'green': '#28A745',
+        'red': '#8f1823',
+        'blue-dark': '#004AAD',
+        'pink': '#FFAEBC',
+        'yellow': '#f1f100',
+        'danger': '#dc3545',
     },
     width: {
       'special': '300px',

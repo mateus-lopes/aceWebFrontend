@@ -47,7 +47,7 @@ export default {
 
 .detail-line::before {
     content: '';
-    height: 1.6px;
+    height: 1px;
     width: 100%;
     background-color: v-bind(backgroundLine);
     margin-bottom: 20px;
@@ -58,7 +58,7 @@ export default {
 
 .detail-line::after {
     content: '';
-    height: 1.6px;
+    height: 1px;
     width: 100%;
     background-color: v-bind(backgroundLine);
     margin-top: 20px;

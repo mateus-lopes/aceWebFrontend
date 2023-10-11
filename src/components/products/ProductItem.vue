@@ -25,7 +25,7 @@
             </div>
             <p class="text-xl font-bold pt-2">
                 R$ {{ getPromotion }}
-                <span v-if="product.promotion > 0" class="text-base text-red-500"> {{ product.promotion }}% OFF </span>
+                <span v-if="product.promotion > 0" class="text-base text-danger"> {{ product.promotion }}% OFF </span>
             </p>
             <p class="pb-2 text-gray-700">
                 até 10x de R$ {{ getCreditPrice }}
