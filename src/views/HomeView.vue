@@ -23,6 +23,7 @@
           <SectionHistory />
         </Container>
       </section>
+      <testPinia />
     </TemplateView>
   </div>
 </template>
@@ -35,7 +36,9 @@ import SectionPromotion from '@/components/SectionPromotion.vue'
 import SectionHistory from '@/components/SectionHistory.vue'
 import SectionSlider from '@/components/SectionSlider.vue'
 import Loader from '@/components/LoaderDiv.vue'
+import testPinia from '../components/testPinia.vue'
 import { products } from '../lib/product'
+import { useCounterStore } from '@/stores/counter.js'
 
 // PROVISORIO ATE LIGAR AO BANCO DE DADOS
 import middle_1 from '@/assets/img/middle_1.png'
@@ -53,7 +56,20 @@ export default {
     Container,
     SectionPromotion,
     SectionHistory,
-    Loader
+    Loader,
+    testPinia
+  },
+  setup() {
+    const counter = useCounterStore()
+    counter.count++
+    // with autocompletion ✨
+    counter.$patch({ count: counter.count + 1 })
+    // or using an action instead
+    counter.increment()
+    function add() {
+      counter.count++
+    }
+    return { counter, add }
   },
   data() {
     return {
