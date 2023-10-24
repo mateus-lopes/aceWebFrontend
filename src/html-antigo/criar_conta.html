@@ -1,77 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
-        <!-- SEO Meta Tags -->
-        <meta name="description" content=" ">
-        <meta name="author" content=" ">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-        <!-- Website Title -->
-        <title>ACE | Criar Conta</title>
-        
-        <!-- Styles -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-        <link href="css/style-main.css" rel="stylesheet">
-        <link href="css/style-dash.css" rel="stylesheet">
-        <!-- Favicon  --> 
-        <link rel="icon" href="img/icons/Bandeira-do-Brasil.png">
-    </head>
-    <body class="text-dark bg-white">
-        <!-- Topo !-->
-        <div class="container-fluid bg-black mb-5">
-            <header class="row">
-                <div class="col-12">
-                    <nav class="navbar-login mx-auto">
-                        <a class="navbar-brand" href="index.html" data-toggle="tooltip" data-placement="bottom" title="Crie um login para ter acesso" ><img class="mx-auto" src="img/logo.png" alt="" width="100%"></a>
-                    </nav>
-                </div>
-            </header>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content=" " />
+    <meta name="author" content=" " />
+
+    <!-- Website Title -->
+    <title>ACE | Criar Conta</title>
+
+    <!-- Styles -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style-main.css" rel="stylesheet" />
+    <link href="css/style-dash.css" rel="stylesheet" />
+    <!-- Favicon  -->
+    <link rel="icon" href="img/icons/Bandeira-do-Brasil.png" />
+  </head>
+  <body class="text-dark bg-white">
+    <!-- Topo !-->
+    <div class="container-fluid bg-black mb-5">
+      <header class="row">
+        <div class="col-12">
+          <nav class="navbar-login mx-auto">
+            <a
+              class="navbar-brand"
+              href="index.html"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title="Crie um login para ter acesso"
+              ><img class="mx-auto" src="img/logo.png" alt="" width="100%"
+            /></a>
+          </nav>
         </div>
-        <div class="espacador py-lg-4"></div>
-        <!-- Seção de login -->
-        <div class="container card-login">
-            <div class="row">
-                <div class="col-12 text-left px-5">
-                    <div class="h3 pb-3">Criar Acesso</div>
-                    <div class="form-group">
-                        <div class="form-group">
-                            <label for="nome" class="h6">Seu Nome</label>
-                            <input type="nome" class="form-control" name="nome" placeholder="Digite seu Nome Completo" id="nome">
-                        </div>
-                        <div class="form-group">
-                            <label for="email" class="h6">Seu Email</label>
-                            <input type="email" class="form-control" name="email" placeholder="Digite seu Email" id="email">
-                        </div>
-                        <div class="form-group">
-                            <label for="password" class="h6">Sua Senha</label>
-                            <input type="password" class="form-control" name="password" placeholder="Digite sua Senha" id="password">
-                        </div>
-                        <button type="button" class="btn btn-login btn-block" onclick="criarConta()"> Criar Conta </button>
-                        <div class="text-center">
-                            <a href="login.html" class="d-block small mt-3 text-muted">Já tenho uma conta</a>
-                        </div>
-                    </div>
-                </div>
+      </header>
+    </div>
+    <div class="espacador py-lg-4"></div>
+    <!-- Seção de login -->
+    <div class="container card-login">
+      <div class="row">
+        <div class="col-12 text-left px-5">
+          <div class="h3 pb-3">Criar Acesso</div>
+          <div class="form-group">
+            <div class="form-group">
+              <label for="nome" class="h6">Seu Nome</label>
+              <input
+                type="nome"
+                class="form-control"
+                name="nome"
+                placeholder="Digite seu Nome Completo"
+                id="nome"
+              />
             </div>
+            <div class="form-group">
+              <label for="email" class="h6">Seu Email</label>
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                placeholder="Digite seu Email"
+                id="email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="password" class="h6">Sua Senha</label>
+              <input
+                type="password"
+                class="form-control"
+                name="password"
+                placeholder="Digite sua Senha"
+                id="password"
+              />
+            </div>
+            <button type="button" class="btn btn-login btn-block" onclick="criarConta()">
+              Criar Conta
+            </button>
+            <div class="text-center">
+              <a href="login.html" class="d-block small mt-3 text-muted">Já tenho uma conta</a>
+            </div>
+          </div>
         </div>
-       <!-- Scripts -->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <script>
-            $(function () {
-                $('[data-toggle="tooltip"]').tooltip()
-            })
-        </script>
-        <!-- Alert bonito -->
-        <script src="https://unpkg.com/sweetalert2@9/dist/sweetalert2.all.js"></script>
-        <!-- The core Firebase JS SDK is always required and must be listed first -->
-        <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-auth.js"></script>
-        <script src="js/init.js"></script>
-        <script src="js/auth.js"></script>
-    </body>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+    <!-- Alert bonito -->
+    <script src="https://unpkg.com/sweetalert2@9/dist/sweetalert2.all.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-auth.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/auth.js"></script>
+  </body>
 </html>

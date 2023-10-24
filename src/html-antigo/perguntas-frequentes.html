@@ -1,552 +1,881 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
     <!-- SEO Meta Tags -->
-    <meta name="description" content=" ">
-    <meta name="author" content=" ">
+    <meta name="description" content=" " />
+    <meta name="author" content=" " />
 
     <!-- Website Title -->
     <title>ACE | Official Store</title>
-    
+
     <!-- Styles -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <link href="css/style-main.css" rel="stylesheet">
-	<!-- Favicon  --> 
-    <link rel="icon" href="img/icons/Bandeira-do-Brasil.png">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style-main.css" rel="stylesheet" />
+    <!-- Favicon  -->
+    <link rel="icon" href="img/icons/Bandeira-do-Brasil.png" />
+  </head>
+  <body>
     <!-- header top !-->
     <div class="container-fluid bg-top">
-        <div class="row">
-            <div class="col-12 col-md-7">
-                <small class="atc-msg">FRETE GRÁTIS A PARTIR DE R$ 399,90 PARA TODO BRASIL</small>
-            </div>    
-            <div class="d-none d-md-block col-md-5">
-                <small class="atc-links"><a href="#" class="text-dark">LOJAS</a> &nbsp;&nbsp; <a href="#" class="text-dark">ATENDIMENTO</a></small>
-            </div>    
+      <div class="row">
+        <div class="col-12 col-md-7">
+          <small class="atc-msg">FRETE GRÁTIS A PARTIR DE R$ 399,90 PARA TODO BRASIL</small>
         </div>
+        <div class="d-none d-md-block col-md-5">
+          <small class="atc-links"
+            ><a href="#" class="text-dark">LOJAS</a> &nbsp;&nbsp;
+            <a href="#" class="text-dark">ATENDIMENTO</a></small
+          >
+        </div>
+      </div>
     </div>
     <!-- header !-->
     <header id="header" class="header-black">
-        <div id="main">
-            <nav class="list-group list-group-flush">
-                <a href="index.html" class="list-group-item list-group-item-action">Home </a>
-                <a href="promocao.html" class="list-group-item list-group-item-action">Black friday</a>
-                <a href="nossos-produtos.html" class="list-group-item list-group-item-action">Produtos </a>
-                <a href="perfil.html" class="list-group-item list-group-item-action">Minha Conta </a>
-                <a href="#" class="list-group-item list-group-item-action" onclick="logout()">Sair </a>
-                <ul class="icons">
-                    <li class="icon">
-                        <i class="fab fa-youtube"></i>
-                    </li>
-                    <li class="icon">
-                        <i class="fab fa-twitter"></i>
-                    </li>
-                    <li class="icon">
-                        <i class="fab fa-instagram"></i>
-                    </li>
-                </ul>
-            </nav>
-            <button id="main-toggler-bottom" class="btn-close">
-                <span class="sr-only">Sair</span>
-                <span><i class="fas fa-times text-light"></i></span>
-            </button>
+      <div id="main">
+        <nav class="list-group list-group-flush">
+          <a href="index.html" class="list-group-item list-group-item-action">Home </a>
+          <a href="promocao.html" class="list-group-item list-group-item-action">Black friday</a>
+          <a href="nossos-produtos.html" class="list-group-item list-group-item-action"
+            >Produtos
+          </a>
+          <a href="perfil.html" class="list-group-item list-group-item-action">Minha Conta </a>
+          <a href="#" class="list-group-item list-group-item-action" onclick="logout()">Sair </a>
+          <ul class="icons">
+            <li class="icon">
+              <i class="fab fa-youtube"></i>
+            </li>
+            <li class="icon">
+              <i class="fab fa-twitter"></i>
+            </li>
+            <li class="icon">
+              <i class="fab fa-instagram"></i>
+            </li>
+          </ul>
+        </nav>
+        <button id="main-toggler-bottom" class="btn-close">
+          <span class="sr-only">Sair</span>
+          <span><i class="fas fa-times text-light"></i></span>
+        </button>
+      </div>
+      <div class="navbar navbar-dark text-center bg-nav">
+        <a id="main-toggle" href="perfil.html" class="nav-link ml-3 text-white z-1">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 16 16"
+            class="bi bi-list"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+        </a>
+        <div class="logo">
+          <div class="container-logo">
+            <a href="index.html"><img src="img/logo.png" alt="" /></a>
+          </div>
         </div>
-        <div class="navbar navbar-dark text-center bg-nav">
-            <a id="main-toggle" href="perfil.html" class="nav-link ml-3 text-white z-1">
-                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                </svg>
+        <a href="perfil-carrinho.html" class="d-none d-md-block nav-link ml-auto text-white z-1">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 16 16"
+            class="bi bi-cart3"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+            />
+          </svg>
+        </a>
+        <button class="nav-link btn usuario z-1" type="button">
+          <a
+            id="navbarDropdown"
+            href="#"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            class="nav-link text-light dropdown-toggle"
+          >
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 16 16"
+              class="d-md-none bi bi-person-circle"
+              fill="white"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"
+              />
+              <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+              <path
+                fill-rule="evenodd"
+                d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"
+              />
+            </svg>
+            <span id="user2" class="d-none d-md-inline"> Entrar </span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item nav-link text-dark" href="perfil.html">
+              <span id="user" class="d-md-none">Usuário</span>
+              <span class="d-none d-md-block">Perfil</span>
             </a>
-            <div class="logo">
-                <div class="container-logo">
-                    <a href="index.html"><img src="img/logo.png" alt=""></a>
-                </div>
-            </div>
-            <a href="perfil-carrinho.html" class="d-none d-md-block nav-link ml-auto text-white z-1">
-                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
-                </svg>
-            </a>
-            <button class="nav-link btn usuario z-1" type="button">
-                <a id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link text-light dropdown-toggle">
-                    
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="d-md-none bi bi-person-circle" fill="white" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"/>
-                        <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                        <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
-                    </svg>
-                    <span id="user2" class="d-none d-md-inline">
-                        Entrar 
-                    </span>
-                </a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item nav-link text-dark" href="perfil.html">
-                        <span id="user" class="d-md-none">Usuário</span>
-                        <span class="d-none d-md-block">Perfil</span>
-                    </a>
-                    <a class="dropdown-item nav-link text-dark" href="#">Carrinho</a>
-                    <a class="dropdown-item nav-link text-dark" href="#" onclick="logout()">Sair</a>
-                </div>
-            </button>
-        </div>
+            <a class="dropdown-item nav-link text-dark" href="#">Carrinho</a>
+            <a class="dropdown-item nav-link text-dark" href="#" onclick="logout()">Sair</a>
+          </div>
+        </button>
+      </div>
     </header>
     <!-- main !-->
     <main class="text-center text-md-left">
-        <div class="container-fluid bg-white">
-            <div class="container masc-destaque py-5">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="grade-perfil px-md-5 py-md-4 mt-4">  
-                            <div class="col-12">
-                                <h3 class="mt-2">Perguntas Frequentes</h3>
-                                <div class="row mt-3">
-                                    <div class="accordion w-100" id="perguntas-frequentes">
-                                        <div class="card">
-                                            <div class="card-header" id="onze-card">
-                                                <h2 class="mb-0">
-                                                    <button class="btn btn-link text-dark btn-block text-left" type="button" data-toggle="collapse" data-target="#onze" aria-expanded="true" aria-controls="onze">
-                                                        Tratamento de dados pessoais.
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                            <div id="onze" class="collapse show" aria-labelledby="onze-card" data-parent="#perguntas-frequentes">
-                                                <div class="card-body p-3">
-                                                    <p>
-                                                        Pra sua segurança, a gente não altera o CPF no cadastro.
-                                                    </p>
-                                                    <p>
-                                                        Se você quer fazer um pedido pra outra pessoa, você pode incluir o endereço de entrega dela na hora de fechar o pedido ;)
-                                                    </p>
-                                                    <p>
-                                                        Mas se a compra realmente precisa ser feita no nome de outra pessoa, ela precisa criar uma conta na americanas com os dados dela.
-                                                    </p>
-                                                    <p>
-                                                        Você pode cancelar o pedido em andamento acessando Meus Pedidos, clicando sobre o pedido e depois em cancelar a compra, e aí o pedido precisa ser refeito com o cadastro da outra pessoa :)
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="headingOne">
-                                                <h2 class="mb-0">
-                                                    <button class="btn btn-link text-dark btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                                        Quero alterar o CPF do meu pedido, como faço?   
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#perguntas-frequentes">
-                                                <div class="card-body p-3">
-                                                    <p>
-                                                        Pra sua segurança, a gente não altera o CPF no cadastro.
-                                                    </p>
-                                                    <p>
-                                                        Se você quer fazer um pedido pra outra pessoa, você pode incluir o endereço de entrega dela na hora de fechar o pedido ;)
-                                                    </p>
-                                                    <p>
-                                                        Mas se a compra realmente precisa ser feita no nome de outra pessoa, ela precisa criar uma conta na americanas com os dados dela.
-                                                    </p>
-                                                    <p>
-                                                        Você pode cancelar o pedido em andamento acessando Meus Pedidos, clicando sobre o pedido e depois em cancelar a compra, e aí o pedido precisa ser refeito com o cadastro da outra pessoa :)
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="headingTwo">
-                                                <h2 class="mb-0">
-                                                    <button class="btn btn-link text-dark btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                        Como rastreio a entrega?
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#perguntas-frequentes">
-                                                <div class="card-body p-3">
-                                                    <p>
-                                                        Pra saber do andamento da sua entrega, você pode:
-                                                    </p>
-                                                    <p>
-                                                        - pelo Whatsapp, enviar a mensagem "andamento do pedido" para o nosso número 11-99167-4221. Ah, e se você indicou no seu cadastro que quer receber notificações pelo WhatsApp, vai receber essas mensagens automaticamente ;)
-                                                    </p>
-                                                    <p>
-                                                        - acessar Meus Pedidos, clicar sob re sua compra e, então, em acompanhar envio
-                                                    </p>
-                                                    <p>
-                                                        - ficar de olho no seu e-mail cadastrado, porque a gente envia mensagens por lá a cada atualização no pedido ;)
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="headingThree">
-                                                <h2 class="mb-0">
-                                                    <button class="btn btn-link text-dark btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                        Quero cancelar meu pedido. O que tenho que fazer?
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#perguntas-frequentes">
-                                                <div class="card-body p-3">
-                                                    <p>
-                                                        Pra cancelar o pedido, depende da etapa da compra. Dá uma olhadinha:
-                                                    </p>
-                                                    <p>
-                                                        antes do pagamento: se você comprar com boleto ou com cartão de crédito, mas a autorização do pagamento não acontecer no prazo, a gente cancela seu pedido automaticamente;  
-                                                        com pagamento aprovado e sem NF emitida ainda: depois que o pagamento foi aprovado, se a Nota Fiscal ainda não foi emitida, você pode acessar Meus Pedidos, clicar sobre a entrega e depois em cancelar a compra; 
-                                                        com pagamento aprovado e produto a caminho ou entregue: depois que a Nota Fiscal foi emitida e até 07 dias corridos a partir da data da entrega, você informa pra gente que quer cancelar a compra e nessa se não foi entregue pode recusar a entrega. 
-                                                        Mesmo que você recuse o produto no ato da entrega, precisa registrar o cancelamento em nosso site pra solicitar o reembolso, tá? 
-                                                    </p>
-                                                    <p>
-                                                        Pra solicitar o cancelamento, você acessa Meus Pedidos, clica sobre a entrega e depois em trocar ou devolver.  
-                                                    </p>
-                                                    <p>
-                                                        Aí é só preencher a solicitação, contando pra gente os detalhes de porque não quer mais o produto. 
-                                                    </p>
-                                                    <p>
-                                                        A gente vai te enviar um e-mail pra confirmar sua solicitação ;)
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="headingFour">
-                                                <h2 class="mb-0">
-                                                    <button class="btn btn-link text-dark btn-block text-left collapsed" type="button"  data-toggle="collapse" data-target="#four" aria-expanded="false" aria-controls="four">
-                                                    Já fiz o pagamento da compra, porque ainda não foi aprovado?
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                            <div id="four" class="collapse" aria-labelledby="headingFour" data-parent="#perguntas-frequentes">
-                                                <div class="card-body p-3">
-                                                    <p>
-                                                        Todo pagamento tem um prazo pra aprovação, de acordo ao tipo:                                                 
-                                                    </p>
-                                                    <p>
-                                                        Boleto: o banco pode enviar a confirmação do recebimento em até 3 (três) dias úteis. 
-                                                    </p>
-                                                    <p>
-                                                        Vale: depende do valor dele, se for:  
-                                                    </p>
-                                                    <p>
-                                                        menor que o da compra,você vai poder pagar a diferença somente com cartão de crédito;  
-                                                        maior ou igual ao da compra, o pagamento vai ser confirmado em até 72h :)  
-                                                        Cartão de crédito: o pagamento pode ser aprovado em até 2 (dois) dias corridos.   
-                                                    </p>
-                                                    <p>
-                                                        Pra pagamento com cartão mais saldo de conta Ame Digital, só é possível usar um cartão de crédito, que não pode ser emitido no exterior. 
-                                                    </p>
-                                                    <p>
-                                                        Se o pagamento com cartão de crédito não for aprovado, vamos te informar pelo e-mail de cadastro como seguir. É importante saber com a administradora do cartão qual foi o motivo, tá? 
-                                                    </p>
-                                                    <p>
-                                                        Pra tentar pagar com outro cartão, acesse Meus Pedidos, clique sobre a compra, depois em detalhe do pedido, acesse usar outro cartão e refaça o pagamento. 
-                                                    </p>
-                                                    <p>
-                                                        Ah, o prazo de entrega só passa a ser contado a partir da aprovação do pagamento, tá?  
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="five-label">
-                                                <h2 class="mb-0">
-                                                    <button class="btn btn-link text-dark btn-block text-left collapsed" type="button"  data-toggle="collapse" data-target="#five" aria-expanded="false" aria-controls="five">
-                                                        Mudei o e-mail, consigo alterar no meu cadastro?
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                            <div id="five" class="collapse" aria-labelledby="five-label" data-parent="#perguntas-frequentes">
-                                                <div class="card-body p-3">
-                                                    <p>
-                                                        menor que o da compra,você vai poder pagar a diferença somente com cartão de crédito;  
-                                                        maior ou igual ao da compra, o pagamento vai ser confirmado em até 72h :)  
-                                                        Cartão de crédito: o pagamento pode ser aprovado em até 2 (dois) dias corridos.   
-                                                    </p>
-                                                    <p>
-                                                        Pra pagamento com cartão mais saldo de conta Ame Digital, só é possível usar um cartão de crédito, que não pode ser emitido no exterior. 
-                                                        Se o pagamento com cartão de crédito não for aprovado, vamos te informar pelo e-mail de cadastro como seguir. É importante saber com a administradora do cartão qual foi o motivo, tá? 
-                                                    </p>
-                                                    <p>
-                                                        Pra tentar pagar com outro cartão, acesse Meus Pedidos, clique sobre a compra, depois em detalhe do pedido, acesse usar outro cartão e refaça o pagamento. 
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="six-label">
-                                                <h2 class="mb-0">
-                                                    <button class="btn btn-link text-dark btn-block text-left collapsed" type="button"  data-toggle="collapse" data-target="#six" aria-expanded="false" aria-controls="six">
-                                                        Quando vai ser o reembolso do meu pedido?
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                            <div id="six" class="collapse" aria-labelledby="six-label" data-parent="#perguntas-frequentes">
-                                                <div class="card-body p-3">
-                                                    <p>
-                                                        Pra tentar pagar com outro cartão, acesse Meus Pedidos, clique sobre a compra, depois em detalhe do pedido, acesse usar outro cartão e refaça o pagamento. 
-                                                    </p>
-                                                    <p>
-                                                        Pra pagamento com cartão mais saldo de conta Ame Digital, só é possível usar um cartão de crédito, que não pode ser emitido no exterior. 
-                                                        Se o pagamento com cartão de crédito não for aprovado, vamos te informar pelo e-mail de cadastro como seguir. É importante saber com a administradora do cartão qual foi o motivo, tá? 
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="seven-label">
-                                                <h2 class="mb-0">
-                                                    <button class="btn btn-link text-dark btn-block text-left collapsed" type="button"  data-toggle="collapse" data-target="#seven" aria-expanded="false" aria-controls="seven">
-                                                        Preciso da emissão da Nota Fiscal do meu pedido.
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                            <div id="seven" class="collapse" aria-labelledby="seven-label" data-parent="#perguntas-frequentes">
-                                                <div class="card-body p-3">
-                                                    <p>
-                                                        antes do pagamento: se você comprar com boleto ou com cartão de crédito, mas a autorização do pagamento não acontecer no prazo, a gente cancela seu pedido automaticamente;  
-                                                        com pagamento aprovado e sem NF emitida ainda: depois que o pagamento foi aprovado, se a Nota Fiscal ainda não foi emitida, você pode acessar Meus Pedidos, clicar sobre a entrega e depois em cancelar a compra; 
-                                                        com pagamento aprovado e produto a caminho ou entregue: depois que a Nota Fiscal foi emitida e até 07 dias corridos a partir da data da entrega, você informa pra gente que quer cancelar a compra e nessa se não foi entregue pode recusar a entrega. 
-                                                        Mesmo que você recuse o produto no ato da entrega, precisa registrar o cancelamento em nosso site pra solicitar o reembolso, tá? 
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="oito-label">
-                                                <h2 class="mb-0">
-                                                    <button class="btn btn-link text-dark btn-block text-left collapsed" type="button"  data-toggle="collapse" data-target="#oito" aria-expanded="false" aria-controls="oito">
-                                                        O que é o DANFE?
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                            <div id="oito" class="collapse" aria-labelledby="oito-label" data-parent="#perguntas-frequentes">
-                                                <div class="card-body p-3">
-                                                    <p>
-                                                        antes do pagamento: se você comprar com boleto ou com cartão de crédito, mas a autorização do pagamento não acontecer no prazo, a gente cancela seu pedido automaticamente;  
-                                                        com pagamento aprovado e sem NF emitida ainda: depois que o pagamento foi aprovado, se a Nota Fiscal ainda não foi emitida, você pode acessar Meus Pedidos, clicar sobre a entrega e depois em cancelar a compra; 
-                                                        com pagamento aprovado e produto a caminho ou entregue: depois que a Nota Fiscal foi emitida e até 07 dias corridos a partir da data da entrega, você informa pra gente que quer cancelar a compra e nessa se não foi entregue pode recusar a entrega. 
-                                                        Mesmo que você recuse o produto no ato da entrega, precisa registrar o cancelamento em nosso site pra solicitar o reembolso, tá? 
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="nine-label">
-                                                <h2 class="mb-0">
-                                                    <button class="btn btn-link text-dark btn-block text-left collapsed" type="button"  data-toggle="collapse" data-target="#nine" aria-expanded="false" aria-controls="nine">
-                                                        Quero alterar a forma de pagamento
-                                                    </button>
-                                                </h2>
-                                            </div>
-                                            <div id="nine" class="collapse" aria-labelledby="nine-label" data-parent="#perguntas-frequentes">
-                                                <div class="card-body p-3">
-                                                    <p>
-                                                        antes do pagamento: se você comprar com boleto ou com cartão de crédito, mas a autorização do pagamento não acontecer no prazo, a gente cancela seu pedido automaticamente;  
-                                                        com pagamento aprovado e sem NF emitida ainda: depois que o pagamento foi aprovado, se a Nota Fiscal ainda não foi emitida, você pode acessar Meus Pedidos, clicar sobre a entrega e depois em cancelar a compra; 
-                                                        com pagamento aprovado e produto a caminho ou entregue: depois que a Nota Fiscal foi emitida e até 07 dias corridos a partir da data da entrega, você informa pra gente que quer cancelar a compra e nessa se não foi entregue pode recusar a entrega. 
-                                                        Mesmo que você recuse o produto no ato da entrega, precisa registrar o cancelamento em nosso site pra solicitar o reembolso, tá? 
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button type="button" onclick="saveProfile()" class="btn btn-login btn-block mt-4">Fale conosco</button>
-                                    <a href="index.html" class="btn btn-login bg-dark btn-block mt-4">Voltar a Página Inicial</a>
-                                </div>
-                            </div>
+      <div class="container-fluid bg-white">
+        <div class="container masc-destaque py-5">
+          <div class="row">
+            <div class="col-12">
+              <div class="grade-perfil px-md-5 py-md-4 mt-4">
+                <div class="col-12">
+                  <h3 class="mt-2">Perguntas Frequentes</h3>
+                  <div class="row mt-3">
+                    <div class="accordion w-100" id="perguntas-frequentes">
+                      <div class="card">
+                        <div class="card-header" id="onze-card">
+                          <h2 class="mb-0">
+                            <button
+                              class="btn btn-link text-dark btn-block text-left"
+                              type="button"
+                              data-toggle="collapse"
+                              data-target="#onze"
+                              aria-expanded="true"
+                              aria-controls="onze"
+                            >
+                              Tratamento de dados pessoais.
+                            </button>
+                          </h2>
                         </div>
+                        <div
+                          id="onze"
+                          class="collapse show"
+                          aria-labelledby="onze-card"
+                          data-parent="#perguntas-frequentes"
+                        >
+                          <div class="card-body p-3">
+                            <p>Pra sua segurança, a gente não altera o CPF no cadastro.</p>
+                            <p>
+                              Se você quer fazer um pedido pra outra pessoa, você pode incluir o
+                              endereço de entrega dela na hora de fechar o pedido ;)
+                            </p>
+                            <p>
+                              Mas se a compra realmente precisa ser feita no nome de outra pessoa,
+                              ela precisa criar uma conta na americanas com os dados dela.
+                            </p>
+                            <p>
+                              Você pode cancelar o pedido em andamento acessando Meus Pedidos,
+                              clicando sobre o pedido e depois em cancelar a compra, e aí o pedido
+                              precisa ser refeito com o cadastro da outra pessoa :)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingOne">
+                          <h2 class="mb-0">
+                            <button
+                              class="btn btn-link text-dark btn-block text-left collapsed"
+                              type="button"
+                              data-toggle="collapse"
+                              data-target="#collapseOne"
+                              aria-expanded="false"
+                              aria-controls="collapseOne"
+                            >
+                              Quero alterar o CPF do meu pedido, como faço?
+                            </button>
+                          </h2>
+                        </div>
+                        <div
+                          id="collapseOne"
+                          class="collapse"
+                          aria-labelledby="headingOne"
+                          data-parent="#perguntas-frequentes"
+                        >
+                          <div class="card-body p-3">
+                            <p>Pra sua segurança, a gente não altera o CPF no cadastro.</p>
+                            <p>
+                              Se você quer fazer um pedido pra outra pessoa, você pode incluir o
+                              endereço de entrega dela na hora de fechar o pedido ;)
+                            </p>
+                            <p>
+                              Mas se a compra realmente precisa ser feita no nome de outra pessoa,
+                              ela precisa criar uma conta na americanas com os dados dela.
+                            </p>
+                            <p>
+                              Você pode cancelar o pedido em andamento acessando Meus Pedidos,
+                              clicando sobre o pedido e depois em cancelar a compra, e aí o pedido
+                              precisa ser refeito com o cadastro da outra pessoa :)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingTwo">
+                          <h2 class="mb-0">
+                            <button
+                              class="btn btn-link text-dark btn-block text-left collapsed"
+                              type="button"
+                              data-toggle="collapse"
+                              data-target="#collapseTwo"
+                              aria-expanded="false"
+                              aria-controls="collapseTwo"
+                            >
+                              Como rastreio a entrega?
+                            </button>
+                          </h2>
+                        </div>
+                        <div
+                          id="collapseTwo"
+                          class="collapse"
+                          aria-labelledby="headingTwo"
+                          data-parent="#perguntas-frequentes"
+                        >
+                          <div class="card-body p-3">
+                            <p>Pra saber do andamento da sua entrega, você pode:</p>
+                            <p>
+                              - pelo Whatsapp, enviar a mensagem "andamento do pedido" para o nosso
+                              número 11-99167-4221. Ah, e se você indicou no seu cadastro que quer
+                              receber notificações pelo WhatsApp, vai receber essas mensagens
+                              automaticamente ;)
+                            </p>
+                            <p>
+                              - acessar Meus Pedidos, clicar sob re sua compra e, então, em
+                              acompanhar envio
+                            </p>
+                            <p>
+                              - ficar de olho no seu e-mail cadastrado, porque a gente envia
+                              mensagens por lá a cada atualização no pedido ;)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingThree">
+                          <h2 class="mb-0">
+                            <button
+                              class="btn btn-link text-dark btn-block text-left collapsed"
+                              type="button"
+                              data-toggle="collapse"
+                              data-target="#collapseThree"
+                              aria-expanded="false"
+                              aria-controls="collapseThree"
+                            >
+                              Quero cancelar meu pedido. O que tenho que fazer?
+                            </button>
+                          </h2>
+                        </div>
+                        <div
+                          id="collapseThree"
+                          class="collapse"
+                          aria-labelledby="headingThree"
+                          data-parent="#perguntas-frequentes"
+                        >
+                          <div class="card-body p-3">
+                            <p>
+                              Pra cancelar o pedido, depende da etapa da compra. Dá uma olhadinha:
+                            </p>
+                            <p>
+                              antes do pagamento: se você comprar com boleto ou com cartão de
+                              crédito, mas a autorização do pagamento não acontecer no prazo, a
+                              gente cancela seu pedido automaticamente; com pagamento aprovado e sem
+                              NF emitida ainda: depois que o pagamento foi aprovado, se a Nota
+                              Fiscal ainda não foi emitida, você pode acessar Meus Pedidos, clicar
+                              sobre a entrega e depois em cancelar a compra; com pagamento aprovado
+                              e produto a caminho ou entregue: depois que a Nota Fiscal foi emitida
+                              e até 07 dias corridos a partir da data da entrega, você informa pra
+                              gente que quer cancelar a compra e nessa se não foi entregue pode
+                              recusar a entrega. Mesmo que você recuse o produto no ato da entrega,
+                              precisa registrar o cancelamento em nosso site pra solicitar o
+                              reembolso, tá?
+                            </p>
+                            <p>
+                              Pra solicitar o cancelamento, você acessa Meus Pedidos, clica sobre a
+                              entrega e depois em trocar ou devolver.
+                            </p>
+                            <p>
+                              Aí é só preencher a solicitação, contando pra gente os detalhes de
+                              porque não quer mais o produto.
+                            </p>
+                            <p>A gente vai te enviar um e-mail pra confirmar sua solicitação ;)</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingFour">
+                          <h2 class="mb-0">
+                            <button
+                              class="btn btn-link text-dark btn-block text-left collapsed"
+                              type="button"
+                              data-toggle="collapse"
+                              data-target="#four"
+                              aria-expanded="false"
+                              aria-controls="four"
+                            >
+                              Já fiz o pagamento da compra, porque ainda não foi aprovado?
+                            </button>
+                          </h2>
+                        </div>
+                        <div
+                          id="four"
+                          class="collapse"
+                          aria-labelledby="headingFour"
+                          data-parent="#perguntas-frequentes"
+                        >
+                          <div class="card-body p-3">
+                            <p>Todo pagamento tem um prazo pra aprovação, de acordo ao tipo:</p>
+                            <p>
+                              Boleto: o banco pode enviar a confirmação do recebimento em até 3
+                              (três) dias úteis.
+                            </p>
+                            <p>Vale: depende do valor dele, se for:</p>
+                            <p>
+                              menor que o da compra,você vai poder pagar a diferença somente com
+                              cartão de crédito; maior ou igual ao da compra, o pagamento vai ser
+                              confirmado em até 72h :) Cartão de crédito: o pagamento pode ser
+                              aprovado em até 2 (dois) dias corridos.
+                            </p>
+                            <p>
+                              Pra pagamento com cartão mais saldo de conta Ame Digital, só é
+                              possível usar um cartão de crédito, que não pode ser emitido no
+                              exterior.
+                            </p>
+                            <p>
+                              Se o pagamento com cartão de crédito não for aprovado, vamos te
+                              informar pelo e-mail de cadastro como seguir. É importante saber com a
+                              administradora do cartão qual foi o motivo, tá?
+                            </p>
+                            <p>
+                              Pra tentar pagar com outro cartão, acesse Meus Pedidos, clique sobre a
+                              compra, depois em detalhe do pedido, acesse usar outro cartão e refaça
+                              o pagamento.
+                            </p>
+                            <p>
+                              Ah, o prazo de entrega só passa a ser contado a partir da aprovação do
+                              pagamento, tá?
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="five-label">
+                          <h2 class="mb-0">
+                            <button
+                              class="btn btn-link text-dark btn-block text-left collapsed"
+                              type="button"
+                              data-toggle="collapse"
+                              data-target="#five"
+                              aria-expanded="false"
+                              aria-controls="five"
+                            >
+                              Mudei o e-mail, consigo alterar no meu cadastro?
+                            </button>
+                          </h2>
+                        </div>
+                        <div
+                          id="five"
+                          class="collapse"
+                          aria-labelledby="five-label"
+                          data-parent="#perguntas-frequentes"
+                        >
+                          <div class="card-body p-3">
+                            <p>
+                              menor que o da compra,você vai poder pagar a diferença somente com
+                              cartão de crédito; maior ou igual ao da compra, o pagamento vai ser
+                              confirmado em até 72h :) Cartão de crédito: o pagamento pode ser
+                              aprovado em até 2 (dois) dias corridos.
+                            </p>
+                            <p>
+                              Pra pagamento com cartão mais saldo de conta Ame Digital, só é
+                              possível usar um cartão de crédito, que não pode ser emitido no
+                              exterior. Se o pagamento com cartão de crédito não for aprovado, vamos
+                              te informar pelo e-mail de cadastro como seguir. É importante saber
+                              com a administradora do cartão qual foi o motivo, tá?
+                            </p>
+                            <p>
+                              Pra tentar pagar com outro cartão, acesse Meus Pedidos, clique sobre a
+                              compra, depois em detalhe do pedido, acesse usar outro cartão e refaça
+                              o pagamento.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="six-label">
+                          <h2 class="mb-0">
+                            <button
+                              class="btn btn-link text-dark btn-block text-left collapsed"
+                              type="button"
+                              data-toggle="collapse"
+                              data-target="#six"
+                              aria-expanded="false"
+                              aria-controls="six"
+                            >
+                              Quando vai ser o reembolso do meu pedido?
+                            </button>
+                          </h2>
+                        </div>
+                        <div
+                          id="six"
+                          class="collapse"
+                          aria-labelledby="six-label"
+                          data-parent="#perguntas-frequentes"
+                        >
+                          <div class="card-body p-3">
+                            <p>
+                              Pra tentar pagar com outro cartão, acesse Meus Pedidos, clique sobre a
+                              compra, depois em detalhe do pedido, acesse usar outro cartão e refaça
+                              o pagamento.
+                            </p>
+                            <p>
+                              Pra pagamento com cartão mais saldo de conta Ame Digital, só é
+                              possível usar um cartão de crédito, que não pode ser emitido no
+                              exterior. Se o pagamento com cartão de crédito não for aprovado, vamos
+                              te informar pelo e-mail de cadastro como seguir. É importante saber
+                              com a administradora do cartão qual foi o motivo, tá?
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="seven-label">
+                          <h2 class="mb-0">
+                            <button
+                              class="btn btn-link text-dark btn-block text-left collapsed"
+                              type="button"
+                              data-toggle="collapse"
+                              data-target="#seven"
+                              aria-expanded="false"
+                              aria-controls="seven"
+                            >
+                              Preciso da emissão da Nota Fiscal do meu pedido.
+                            </button>
+                          </h2>
+                        </div>
+                        <div
+                          id="seven"
+                          class="collapse"
+                          aria-labelledby="seven-label"
+                          data-parent="#perguntas-frequentes"
+                        >
+                          <div class="card-body p-3">
+                            <p>
+                              antes do pagamento: se você comprar com boleto ou com cartão de
+                              crédito, mas a autorização do pagamento não acontecer no prazo, a
+                              gente cancela seu pedido automaticamente; com pagamento aprovado e sem
+                              NF emitida ainda: depois que o pagamento foi aprovado, se a Nota
+                              Fiscal ainda não foi emitida, você pode acessar Meus Pedidos, clicar
+                              sobre a entrega e depois em cancelar a compra; com pagamento aprovado
+                              e produto a caminho ou entregue: depois que a Nota Fiscal foi emitida
+                              e até 07 dias corridos a partir da data da entrega, você informa pra
+                              gente que quer cancelar a compra e nessa se não foi entregue pode
+                              recusar a entrega. Mesmo que você recuse o produto no ato da entrega,
+                              precisa registrar o cancelamento em nosso site pra solicitar o
+                              reembolso, tá?
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="oito-label">
+                          <h2 class="mb-0">
+                            <button
+                              class="btn btn-link text-dark btn-block text-left collapsed"
+                              type="button"
+                              data-toggle="collapse"
+                              data-target="#oito"
+                              aria-expanded="false"
+                              aria-controls="oito"
+                            >
+                              O que é o DANFE?
+                            </button>
+                          </h2>
+                        </div>
+                        <div
+                          id="oito"
+                          class="collapse"
+                          aria-labelledby="oito-label"
+                          data-parent="#perguntas-frequentes"
+                        >
+                          <div class="card-body p-3">
+                            <p>
+                              antes do pagamento: se você comprar com boleto ou com cartão de
+                              crédito, mas a autorização do pagamento não acontecer no prazo, a
+                              gente cancela seu pedido automaticamente; com pagamento aprovado e sem
+                              NF emitida ainda: depois que o pagamento foi aprovado, se a Nota
+                              Fiscal ainda não foi emitida, você pode acessar Meus Pedidos, clicar
+                              sobre a entrega e depois em cancelar a compra; com pagamento aprovado
+                              e produto a caminho ou entregue: depois que a Nota Fiscal foi emitida
+                              e até 07 dias corridos a partir da data da entrega, você informa pra
+                              gente que quer cancelar a compra e nessa se não foi entregue pode
+                              recusar a entrega. Mesmo que você recuse o produto no ato da entrega,
+                              precisa registrar o cancelamento em nosso site pra solicitar o
+                              reembolso, tá?
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="nine-label">
+                          <h2 class="mb-0">
+                            <button
+                              class="btn btn-link text-dark btn-block text-left collapsed"
+                              type="button"
+                              data-toggle="collapse"
+                              data-target="#nine"
+                              aria-expanded="false"
+                              aria-controls="nine"
+                            >
+                              Quero alterar a forma de pagamento
+                            </button>
+                          </h2>
+                        </div>
+                        <div
+                          id="nine"
+                          class="collapse"
+                          aria-labelledby="nine-label"
+                          data-parent="#perguntas-frequentes"
+                        >
+                          <div class="card-body p-3">
+                            <p>
+                              antes do pagamento: se você comprar com boleto ou com cartão de
+                              crédito, mas a autorização do pagamento não acontecer no prazo, a
+                              gente cancela seu pedido automaticamente; com pagamento aprovado e sem
+                              NF emitida ainda: depois que o pagamento foi aprovado, se a Nota
+                              Fiscal ainda não foi emitida, você pode acessar Meus Pedidos, clicar
+                              sobre a entrega e depois em cancelar a compra; com pagamento aprovado
+                              e produto a caminho ou entregue: depois que a Nota Fiscal foi emitida
+                              e até 07 dias corridos a partir da data da entrega, você informa pra
+                              gente que quer cancelar a compra e nessa se não foi entregue pode
+                              recusar a entrega. Mesmo que você recuse o produto no ato da entrega,
+                              precisa registrar o cancelamento em nosso site pra solicitar o
+                              reembolso, tá?
+                            </p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
+                  </div>
+                  <div class="col-12">
+                    <button
+                      type="button"
+                      onclick="saveProfile()"
+                      class="btn btn-login btn-block mt-4"
+                    >
+                      Fale conosco
+                    </button>
+                    <a href="index.html" class="btn btn-login bg-dark btn-block mt-4"
+                      >Voltar a Página Inicial</a
+                    >
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </main>
     <!-- Rodapé !-->
     <footer class="bg-perfil-footer pb-1">
-        <div class="container-fluid bg-black">
-            <div class="container text-center text-light py-5">
-                <div class="row">
-                    <div class="col-12">
-                        <a href="#"> <img src="img/logo.png" class="logo-footer" alt=""> </a>
-                        <p>Fundada em 1997 na cidade de São Paulo, estado Paulista, a intenção original da marca era criar calçados <br> casuais e baratos, para pequenas cidades da região. Ao longo do tempo, a marca tornou-se mais próxima do esporte.</p>
-                        <p class="text-secondary">"Se você não arriscar nunca será capaz de saber aonde poderia chegar."</p>
-                    </div>
-                    <div class="col-12 pt-3">
-                        <ul class="list-unstyled">
-                            <li class="d-inline px-2">
-                               <a href="" class="text-blue-light"><i class="fab fa-youtube"></i></a>
-                            </li>
-                            <li class="d-inline">
-                                <a href="" class="text-blue-light"><i class="fab fa-twitter"></i></a>
-                            </li>
-                            <li class="d-inline px-2">
-                                <a href="" class="text-blue-light"><i class="fab fa-instagram"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container-fluid bg-black">
+        <div class="container text-center text-light py-5">
+          <div class="row">
+            <div class="col-12">
+              <a href="#"> <img src="img/logo.png" class="logo-footer" alt="" /> </a>
+              <p>
+                Fundada em 1997 na cidade de São Paulo, estado Paulista, a intenção original da
+                marca era criar calçados <br />
+                casuais e baratos, para pequenas cidades da região. Ao longo do tempo, a marca
+                tornou-se mais próxima do esporte.
+              </p>
+              <p class="text-secondary">
+                "Se você não arriscar nunca será capaz de saber aonde poderia chegar."
+              </p>
             </div>
-        </div>
-        <div class="container text-center text-md-left d-none d-md-block pt-md-5">
-            <div class="row border-top pt-5 border-light">
-                <div class="col-12 col-md-4 col-xl-3">
-                    <p class="text-light h6">Categorias</p>
-                    <ul class="list-unstyled mt-3">
-                        <li>
-                            <span class="mt-4"><a href="categoria-masc.html" class="text-light"> Masculino</a></span>
-                        </li>
-                        <li class="my-1 my-lg-2">
-                            <span><a href="categoria-fem.html" class="text-light"> Feminino</a></span>
-                        </li>
-                        <li>
-                            <span class="mt-4"><a href="categoria-inf.html" class="text-light"> Infantil</a></span>
-                        </li>
-                    </ul> 
-                </div>
-                <div class="d-none d-xl-block col-md-4 col-xl-3"> 
-                    <p class="text-light h6">Menu</p>
-                    <ul class="list-unstyled mt-3">
-                        <li>
-                            <span class="mt-4"><a href="index.html" class="text-light"> Home</a></span>
-                        </li>
-                        <li class="my-1 my-lg-2">
-                            <span><a href="promocao.html" class="text-light"> Black Friday</a></span>
-                        </li>
-                        <li>
-                            <span class="mt-4"><a href="nossos-produtos.html" class="text-light"> Produtos</a></span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-12 col-md-4 col-xl-3"> 
-                    <p class="text-light h6">Contato</p>
-                    <ul class="list-unstyled mt-3">
-                        <li>
-                            <span><a href="perguntas-frequentes.html" class="text-light"> Perguntas Frequentes</a></span>
-                        </li>
-                        <li class="my-1 my-xl-2">
-                            <span class="mt-4"><a href="politica.html" class="text-light"> Politica e Privacidade</a></span>
-                        </li>
-                        <li>
-                            <span class="mt-4"><a href="fale-conosco.html" class="text-light"> Fale Conosco</a></span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-12 col-md-4 col-xl-3"> 
-                    <p class="text-light h6">Recursos</p>
-                    <ul class="list-unstyled mt-3">
-                        <li>
-                            <span><a href="prazo-entrega.html" class="text-light"> Prazos de Entrega</a></span>
-                        </li>
-                        <li class="my-1 my-xl-2">
-                            <span class="mt-4"><a href="trocas-devolucao.html" class="text-light"> Trocas e Devoluções</a></span>
-                        </li>
-                        <li>
-                            <span class="mt-4"><a href="perfil.html" class="text-light"> Minha Conta</a></span>
-                        </li>
-                    </ul>
-                </div>
+            <div class="col-12 pt-3">
+              <ul class="list-unstyled">
+                <li class="d-inline px-2">
+                  <a href="" class="text-blue-light"><i class="fab fa-youtube"></i></a>
+                </li>
+                <li class="d-inline">
+                  <a href="" class="text-blue-light"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="d-inline px-2">
+                  <a href="" class="text-blue-light"><i class="fab fa-instagram"></i></a>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
-        <div class="d-block d-md-none bg-white container-fluid px-0 pt-md-5">
-            <div class="accordion" id="footer-cel">
-                <div class="card">
-                    <div class="card-header bg-dark" id="head-cel-1">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-light text-left" type="button" data-toggle="collapse" data-target="#cel-1" aria-expanded="true" aria-controls="cel-1">
-                        Categorias
-                        </button>
-                    </h2>
-                </div>
-                <div id="cel-1" class="collapse show" aria-labelledby="head-cel-1" data-parent="#footer-cel">
-                    <div class="card-body">
-                        <ul class="list-unstyled mt-3">
-                            <li>
-                                <span class="mt-4"><a href="categoria-masc.html" class="text-dark"> Masculino</a></span>
-                            </li>
-                            <li class="my-1 my-lg-2">
-                                <span><a href="categoria-fem.html" class="text-dark"> Feminino</a></span>
-                            </li>
-                            <li>
-                                <span class="mt-4"><a href="categoria-inf.html" class="text-dark"> Infantil</a></span>
-                            </li>
-                        </ul> 
-                    </div>
-                </div>
-                </div>
-                <div class="card ">
-                    <div class="card-header bg-dark" id="head-cel-2">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-light text-left collapsed" type="button" data-toggle="collapse" data-target="#cel-2" aria-expanded="false" aria-controls="cel-2">
-                            Contato
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="cel-2" class="collapse" aria-labelledby="head-cel-2" data-parent="#footer-cel">
-                        <div class="card-body">
-                            <ul class="list-unstyled mt-3">
-                                <li>
-                                    <span><a href="perguntas-frequentes.html" class="text-dark"> Perguntas Frequentes</a></span>
-                                </li>
-                                <li class="my-1 my-xl-2">
-                                    <span class="mt-4"><a href="politica.html" class="text-dark"> Politica e Privacidade</a></span>
-                                </li>
-                                <li>
-                                    <span class="mt-4"><a href="fale-conosco.html" class="text-dark"> Fale Conosco</a></span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header bg-dark" id="head-cel-3">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-light text-left h2 collapsed" type="button" data-toggle="collapse" data-target="#cel-3" aria-expanded="false" aria-controls="cel-3">
-                            Recursos
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="cel-3" class="collapse" aria-labelledby="head-cel-3" data-parent="#footer-cel">
-                        <div class="card-body">
-                            <ul class="list-unstyled mt-3">
-                                <li>
-                                    <span><a href="prazo-entrega.html" class="text-dark"> Prazos de Entrega</a></span>
-                                </li>
-                                <li class="my-1 my-xl-2">
-                                    <span class="mt-4"><a href="trocas-devolucao.html" class="text-dark"> Trocas e Devoluções</a></span>
-                                </li>
-                                <li>
-                                    <span class="mt-4"><a href="perfil.html" class="text-dark"> Minha Conta</a></span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <div class="container text-center text-md-left d-none d-md-block pt-md-5">
+        <div class="row border-top pt-5 border-light">
+          <div class="col-12 col-md-4 col-xl-3">
+            <p class="text-light h6">Categorias</p>
+            <ul class="list-unstyled mt-3">
+              <li>
+                <span class="mt-4"
+                  ><a href="categoria-masc.html" class="text-light"> Masculino</a></span
+                >
+              </li>
+              <li class="my-1 my-lg-2">
+                <span><a href="categoria-fem.html" class="text-light"> Feminino</a></span>
+              </li>
+              <li>
+                <span class="mt-4"
+                  ><a href="categoria-inf.html" class="text-light"> Infantil</a></span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="d-none d-xl-block col-md-4 col-xl-3">
+            <p class="text-light h6">Menu</p>
+            <ul class="list-unstyled mt-3">
+              <li>
+                <span class="mt-4"><a href="index.html" class="text-light"> Home</a></span>
+              </li>
+              <li class="my-1 my-lg-2">
+                <span><a href="promocao.html" class="text-light"> Black Friday</a></span>
+              </li>
+              <li>
+                <span class="mt-4"
+                  ><a href="nossos-produtos.html" class="text-light"> Produtos</a></span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 col-xl-3">
+            <p class="text-light h6">Contato</p>
+            <ul class="list-unstyled mt-3">
+              <li>
+                <span
+                  ><a href="perguntas-frequentes.html" class="text-light">
+                    Perguntas Frequentes</a
+                  ></span
+                >
+              </li>
+              <li class="my-1 my-xl-2">
+                <span class="mt-4"
+                  ><a href="politica.html" class="text-light"> Politica e Privacidade</a></span
+                >
+              </li>
+              <li>
+                <span class="mt-4"
+                  ><a href="fale-conosco.html" class="text-light"> Fale Conosco</a></span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 col-xl-3">
+            <p class="text-light h6">Recursos</p>
+            <ul class="list-unstyled mt-3">
+              <li>
+                <span><a href="prazo-entrega.html" class="text-light"> Prazos de Entrega</a></span>
+              </li>
+              <li class="my-1 my-xl-2">
+                <span class="mt-4"
+                  ><a href="trocas-devolucao.html" class="text-light"> Trocas e Devoluções</a></span
+                >
+              </li>
+              <li>
+                <span class="mt-4"><a href="perfil.html" class="text-light"> Minha Conta</a></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="d-block d-md-none bg-white container-fluid px-0 pt-md-5">
+        <div class="accordion" id="footer-cel">
+          <div class="card">
+            <div class="card-header bg-dark" id="head-cel-1">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-light text-left"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#cel-1"
+                  aria-expanded="true"
+                  aria-controls="cel-1"
+                >
+                  Categorias
+                </button>
+              </h2>
             </div>
-        </div>
-        <div class="w-100">
-            <div class="d-md-none text-center pt-md-5 bg-dark text-light">
-                <small class="d-block d-md-inline pt-2"> © 2020 ACE Joinville SC - Todos os direitos reservados. </small>
-                <small class="d-block d-md-inline py-2">Desenvolvido por <span class="text-danger">MMdeveloper</span></small>
+            <div
+              id="cel-1"
+              class="collapse show"
+              aria-labelledby="head-cel-1"
+              data-parent="#footer-cel"
+            >
+              <div class="card-body">
+                <ul class="list-unstyled mt-3">
+                  <li>
+                    <span class="mt-4"
+                      ><a href="categoria-masc.html" class="text-dark"> Masculino</a></span
+                    >
+                  </li>
+                  <li class="my-1 my-lg-2">
+                    <span><a href="categoria-fem.html" class="text-dark"> Feminino</a></span>
+                  </li>
+                  <li>
+                    <span class="mt-4"
+                      ><a href="categoria-inf.html" class="text-dark"> Infantil</a></span
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
-        </div>
-        <div class="d-none d-md-block w-100">
-            <div class="text-center pt-md-5 text-light">
-                <small class="d-block d-md-inline p-2"><img src="img/icons/Bandeira-do-Brasil.png" class="img-brasil" alt=""> BRASIL </small>
-                <small class="d-block d-md-inline p-2">Desenvolvido por <span class="text-danger">MMdeveloper</span></small>
-                <small class="d-block d-md-inline p-2"> © 2020 ACE Joinville SC - Todos os direitos reservados. </small>
+          </div>
+          <div class="card">
+            <div class="card-header bg-dark" id="head-cel-2">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-light text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#cel-2"
+                  aria-expanded="false"
+                  aria-controls="cel-2"
+                >
+                  Contato
+                </button>
+              </h2>
             </div>
+            <div id="cel-2" class="collapse" aria-labelledby="head-cel-2" data-parent="#footer-cel">
+              <div class="card-body">
+                <ul class="list-unstyled mt-3">
+                  <li>
+                    <span
+                      ><a href="perguntas-frequentes.html" class="text-dark">
+                        Perguntas Frequentes</a
+                      ></span
+                    >
+                  </li>
+                  <li class="my-1 my-xl-2">
+                    <span class="mt-4"
+                      ><a href="politica.html" class="text-dark"> Politica e Privacidade</a></span
+                    >
+                  </li>
+                  <li>
+                    <span class="mt-4"
+                      ><a href="fale-conosco.html" class="text-dark"> Fale Conosco</a></span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header bg-dark" id="head-cel-3">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-light text-left h2 collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#cel-3"
+                  aria-expanded="false"
+                  aria-controls="cel-3"
+                >
+                  Recursos
+                </button>
+              </h2>
+            </div>
+            <div id="cel-3" class="collapse" aria-labelledby="head-cel-3" data-parent="#footer-cel">
+              <div class="card-body">
+                <ul class="list-unstyled mt-3">
+                  <li>
+                    <span
+                      ><a href="prazo-entrega.html" class="text-dark"> Prazos de Entrega</a></span
+                    >
+                  </li>
+                  <li class="my-1 my-xl-2">
+                    <span class="mt-4"
+                      ><a href="trocas-devolucao.html" class="text-dark">
+                        Trocas e Devoluções</a
+                      ></span
+                    >
+                  </li>
+                  <li>
+                    <span class="mt-4"
+                      ><a href="perfil.html" class="text-dark"> Minha Conta</a></span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-    </footer>     
+      </div>
+      <div class="w-100">
+        <div class="d-md-none text-center pt-md-5 bg-dark text-light">
+          <small class="d-block d-md-inline pt-2">
+            © 2020 ACE Joinville SC - Todos os direitos reservados.
+          </small>
+          <small class="d-block d-md-inline py-2"
+            >Desenvolvido por <span class="text-danger">MMdeveloper</span></small
+          >
+        </div>
+      </div>
+      <div class="d-none d-md-block w-100">
+        <div class="text-center pt-md-5 text-light">
+          <small class="d-block d-md-inline p-2"
+            ><img src="img/icons/Bandeira-do-Brasil.png" class="img-brasil" alt="" /> BRASIL
+          </small>
+          <small class="d-block d-md-inline p-2"
+            >Desenvolvido por <span class="text-danger">MMdeveloper</span></small
+          >
+          <small class="d-block d-md-inline p-2">
+            © 2020 ACE Joinville SC - Todos os direitos reservados.
+          </small>
+        </div>
+      </div>
+    </footer>
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
     <!-- Alert bonito -->
     <script src="https://unpkg.com/sweetalert2@9/dist/sweetalert2.all.js"></script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -556,5 +885,5 @@
     <script src="js/init.js"></script>
     <script src="js/main.js"></script>
     <script src="js/auth.js"></script>
-</body>
+  </body>
 </html>

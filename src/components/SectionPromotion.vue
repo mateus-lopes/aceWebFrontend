@@ -1,29 +1,29 @@
 <template>
-    <main class="w-full lg:flex lg:flex-row items-center justify-between gap-16">
-        <div class="basis-2/4">
-            <CardPromotion link="#" :src="this.url1"  />
-        </div>
-        <div class="basis-2/4">
-            <CardPromotion link="#" :src="this.url2"  />
-        </div>
-    </main>
+  <main class="w-full lg:flex lg:flex-row items-center justify-between gap-16">
+    <div class="basis-2/4">
+      <CardPromotion link="#" :src="this.url1" />
+    </div>
+    <div class="basis-2/4">
+      <CardPromotion link="#" :src="this.url2" />
+    </div>
+  </main>
 </template>
 <script>
-import CardPromotion from '@/components/products/CardPromotion.vue';
+import CardPromotion from '@/components/products/CardPromotion.vue'
 
 export default {
-    components: {
-        CardPromotion,
+  components: {
+    CardPromotion
+  },
+  props: {
+    url1: {
+      type: String,
+      required: true
     },
-    props: {
-        url1: {
-            type: String,
-            required: true,
-        },
-        url2: {
-            type: String,
-            required: true,
-        },
-    },
+    url2: {
+      type: String,
+      required: true
+    }
+  }
 }
 </script>

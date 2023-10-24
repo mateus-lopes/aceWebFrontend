@@ -1,51 +1,50 @@
 <template lang="">
-    <main>
-        <SectionTitle :dark="dark" :title="title" />
-        <ProductSlider :dark="dark" :products="products" />
-    </main>
+  <main>
+    <SectionTitle :dark="dark" :title="title" />
+    <ProductSlider :dark="dark" :products="products" />
+  </main>
 </template>
 
 <script>
-import SectionTitle from '@/components/SliderTitle.vue';
-import ProductSlider from '@/components/products/ProductSlider.vue';
+import SectionTitle from '@/components/SliderTitle.vue'
+import ProductSlider from '@/components/products/ProductSlider.vue'
 
 export default {
-    components: {
-        SectionTitle,
-        ProductSlider,
+  components: {
+    SectionTitle,
+    ProductSlider
+  },
+  props: {
+    dark: {
+      type: Boolean,
+      default: false
     },
-    props: {
-        dark: {
-            type: Boolean,
-            default: false,
-        },
-        title: {
-            type: String,
-            required: true,
-        },
-        products: {
-            type: Array,
-            required: true,
-        }
+    title: {
+      type: String,
+      required: true
     },
-    data() {
-        return {
-            backgroundLine: (this.dark == true) ? '#fff' : '#000',
-        }
+    products: {
+      type: Array,
+      required: true
     }
-};
-
+  },
+  data() {
+    return {
+      backgroundLine: this.dark == true ? '#fff' : '#000'
+    }
+  }
+}
 </script>
 <style lang="css">
 @media screen and (min-width: 768px) {
-    .detail-line {
+  .detail-line {
     text-align: center;
     text-transform: uppercase;
     font-weight: 300;
     display: flex;
-}
+  }
 
-.detail-line::before {
+  .detail-line::before {
     content: '';
     height: 1px;
     width: 100%;
@@ -54,9 +53,9 @@ export default {
     width: 15%;
     display: inline-block;
     margin: 0 40px 0 0;
-}
+  }
 
-.detail-line::after {
+  .detail-line::after {
     content: '';
     height: 1px;
     width: 100%;
@@ -65,6 +64,6 @@ export default {
     width: 15%;
     display: inline-block;
     margin: 0 0 0 40px;
-}   
+  }
 }
 </style>

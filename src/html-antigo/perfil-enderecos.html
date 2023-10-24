@@ -1,454 +1,715 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
     <!-- SEO Meta Tags -->
-    <meta name="description" content=" ">
-    <meta name="author" content=" ">
+    <meta name="description" content=" " />
+    <meta name="author" content=" " />
 
     <!-- Website Title -->
     <title>ACE | Official Store</title>
-    
+
     <!-- Styles -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <link href="css/style-main.css" rel="stylesheet">
-	<!-- Favicon  --> 
-    <link rel="icon" href="img/icons/Bandeira-do-Brasil.png">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style-main.css" rel="stylesheet" />
+    <!-- Favicon  -->
+    <link rel="icon" href="img/icons/Bandeira-do-Brasil.png" />
+  </head>
+  <body>
     <!-- header top !-->
     <div class="container-fluid bg-top">
-        <div class="row">
-            <div class="col-12 col-md-7">
-                <small class="atc-msg">FRETE GRÁTIS A PARTIR DE R$ 399,90 PARA TODO BRASIL</small>
-            </div>    
-            <div class="d-none d-md-block col-md-5">
-                <small class="atc-links"><a href="#" class="text-dark">LOJAS</a> &nbsp;&nbsp; <a href="#" class="text-dark">ATENDIMENTO</a></small>
-            </div>    
+      <div class="row">
+        <div class="col-12 col-md-7">
+          <small class="atc-msg">FRETE GRÁTIS A PARTIR DE R$ 399,90 PARA TODO BRASIL</small>
         </div>
+        <div class="d-none d-md-block col-md-5">
+          <small class="atc-links"
+            ><a href="#" class="text-dark">LOJAS</a> &nbsp;&nbsp;
+            <a href="#" class="text-dark">ATENDIMENTO</a></small
+          >
+        </div>
+      </div>
     </div>
     <!-- header !-->
     <header id="header">
-        <div id="main">
-            <nav class="list-group list-group-flush">
-                <a href="index.html" class="list-group-item list-group-item-action">Home </a>
-                <a href="promocao.html" class="list-group-item list-group-item-action">Black friday</a>
-                <a href="nossos-produtos.html" class="list-group-item list-group-item-action">Produtos </a>
-                <a href="perfil.html" class="list-group-item list-group-item-action">Minha Conta </a>
-                <a href="#" class="list-group-item list-group-item-action" onclick="logout()">Sair </a>
-                <ul class="icons">
-                    <li class="icon">
-                        <i class="fab fa-youtube"></i>
-                    </li>
-                    <li class="icon">
-                        <i class="fab fa-twitter"></i>
-                    </li>
-                    <li class="icon">
-                        <i class="fab fa-instagram"></i>
-                    </li>
-                </ul>
-            </nav>
-            <button id="main-toggler-bottom" class="btn-close">
-                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x" fill="white" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                  </svg>
-            </button>
+      <div id="main">
+        <nav class="list-group list-group-flush">
+          <a href="index.html" class="list-group-item list-group-item-action">Home </a>
+          <a href="promocao.html" class="list-group-item list-group-item-action">Black friday</a>
+          <a href="nossos-produtos.html" class="list-group-item list-group-item-action"
+            >Produtos
+          </a>
+          <a href="perfil.html" class="list-group-item list-group-item-action">Minha Conta </a>
+          <a href="#" class="list-group-item list-group-item-action" onclick="logout()">Sair </a>
+          <ul class="icons">
+            <li class="icon">
+              <i class="fab fa-youtube"></i>
+            </li>
+            <li class="icon">
+              <i class="fab fa-twitter"></i>
+            </li>
+            <li class="icon">
+              <i class="fab fa-instagram"></i>
+            </li>
+          </ul>
+        </nav>
+        <button id="main-toggler-bottom" class="btn-close">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 16 16"
+            class="bi bi-x"
+            fill="white"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="navbar navbar-dark text-center bg-0">
+        <a id="main-toggle" href="perfil.html" class="nav-link ml-3 text-white z-1">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 16 16"
+            class="bi bi-list"
+            fill="white"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+        </a>
+        <div class="logo">
+          <div class="container-logo">
+            <a href="index.html"><img src="img/logo.png" alt="" /></a>
+          </div>
         </div>
-        <div class="navbar navbar-dark text-center bg-0">
-            <a id="main-toggle" href="perfil.html" class="nav-link ml-3 text-white z-1">
-                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list" fill="white" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                </svg>
+        <a href="perfil-carrinho.html" class="d-none d-md-block nav-link ml-auto text-white z-1">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 16 16"
+            class="bi bi-cart3"
+            fill="white"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+            />
+          </svg>
+        </a>
+        <button class="nav-link btn usuario z-1" type="button">
+          <a
+            id="navbarDropdown"
+            href="#"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            class="nav-link text-light dropdown-toggle"
+          >
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 16 16"
+              class="d-md-none bi bi-person-circle"
+              fill="white"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"
+              />
+              <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+              <path
+                fill-rule="evenodd"
+                d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"
+              />
+            </svg>
+            <span id="user2" class="d-none d-md-inline"> Entrar </span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item nav-link text-dark" href="perfil.html">
+              <span id="user" class="d-md-none">Usuário</span>
+              <span class="d-none d-md-block">Perfil</span>
             </a>
-            <div class="logo">
-                <div class="container-logo">
-                    <a href="index.html"><img src="img/logo.png" alt=""></a>
-                </div>
-            </div>
-            <a href="perfil-carrinho.html" class="d-none d-md-block nav-link ml-auto text-white z-1">
-                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3" fill="white" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
-                </svg>
-            </a>
-            <button class="nav-link btn usuario z-1" type="button">
-                <a id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link text-light dropdown-toggle">
-                    
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="d-md-none bi bi-person-circle" fill="white" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"/>
-                        <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                        <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
-                    </svg>
-                    <span id="user2" class="d-none d-md-inline">
-                        Entrar 
-                    </span>
-                </a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item nav-link text-dark" href="perfil.html">
-                        <span id="user" class="d-md-none">Usuário</span>
-                        <span class="d-none d-md-block">Perfil</span>
-                    </a>
-                    <a class="dropdown-item nav-link text-dark" href="perfil-carrinho.html">Carrinho</a>
-                    <a class="dropdown-item nav-link text-dark" href="#" onclick="logout()">Sair</a>
-                </div>
-            </button>
-        </div>
-        <div class="row area-top-img"></div>
+            <a class="dropdown-item nav-link text-dark" href="perfil-carrinho.html">Carrinho</a>
+            <a class="dropdown-item nav-link text-dark" href="#" onclick="logout()">Sair</a>
+          </div>
+        </button>
+      </div>
+      <div class="row area-top-img"></div>
     </header>
     <!-- main !-->
     <main>
-        <div class="container-fluid bg-white">
-            <div class="container masc-destaque py-5">
-                <div class="row">
-                    <div class="col-12 d-lg-none">
-                        <div class="row">
-                            <div class="col-12">
-                                <h6>Pesquisar Pedidos</h6>
-                                <form class="form-inline my-2">
-                                    <input class="form-control col-9 col-md-11" type="search" placeholder="Pesquisar..." aria-label="Pesquisar">
-                                    <button class="form-control col-3 col-md-1 btn-search my-2 my-sm-0 mx-0" type="submit">
-                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
-                                            <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
-                                          </svg>
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="col-12 d-lg-none p-0 m-0 mb-2">
-                            <nav class="navbar navbar-expand-lg navbar-dark bg-0">
-                                <a class="navbar-brand" href="#">Menu</a>
-                                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                                    </svg>
-                                </button>
-                                <div class="collapse navbar-collapse" id="navbarNav">
-                                    <ul class="navbar-nav">
-                                        <div class="grade-especifica">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <ul class="nav flex-column">
-                                                        <li class="nav-item">
-                                                            <a class="nav-link ml-0 pl-0 text-dark" href="perfil.html">Minha Conta</a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a class="nav-link ml-0 pl-0 text-dark" href="perfil-carrinho.html">Carrinho</a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a class="nav-link ml-0 pl-0 text-dark" href="perfil-pedidos.html">Meus Pedidos</a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a class="nav-link ml-0 pl-0 text-dark" href="perfil-enderecos.html">Endereços</a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a class="nav-link ml-0 pl-0 text-dark" href="perfil-cartao.html">Cartões</a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a class="nav-link ml-0 pl-0 text-dark" href="perfil-duvida.html">Dúvidas</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <hr>
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <h6>Acompanhe nossas Redes Sociais</h6>
-                                                    <ul class="list-unsryled list-inline mt-3">
-                                                        <li class="list-inline-item">
-                                                            <a href="" class="text-blue"><i class="fab fa-youtube"></i></a>
-                                                        </li>
-                                                        <li class="list-inline-item">
-                                                            <a href="" class="text-blue"><i class="fab fa-twitter"></i></a>
-                                                        </li>
-                                                        <li class="list-inline-item">
-                                                            <a href="" class="text-blue"><i class="fab fa-instagram"></i></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </ul>
-                                </div>
-                            </nav>
-                        </div>
-                    </div>
-                    <div class="d-none d-lg-block col-3">
-                        <div class="grade-especifica">
-                            <div class="row">
-                                <div class="col-12">
-                                    <h6>Pesquisar Pedidos</h6>
-                                    <form class="form-inline my-2 my-lg-0">
-                                        <input class="form-control col-lg-9 col-12" type="search" placeholder="Pesquisar..." aria-label="Pesquisar">
-                                        <button class="form-control col-12 col-lg-3 btn-search my-2 my-sm-0 mx-0" type="submit">
-                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
-                                                <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
-                                              </svg>
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                            <hr class="my-4">
-                            <div class="row">
-                                <div class="col-12">
-                                    <h6>Menu</h6>
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item">
-                                            <a class="nav-link ml-0 pl-0 text-dark" href="perfil.html">Minha Conta</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link ml-0 pl-0 text-dark" href="perfil-carrinho.html">Carrinho</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link ml-0 pl-0 text-dark" href="perfil-pedidos.html">Meus Pedidos</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link ml-0 pl-0 text-dark" href="perfil-enderecos.html">Endereços</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link ml-0 pl-0 text-dark" href="perfil-cartao.html">Cartões</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link ml-0 pl-0 text-dark" href="perfil-duvida.html">Dúvidas</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="row">
-                                <div class="col-12">
-                                    <h6>Acompanhe nossas Redes Sociais</h6>
-                                    <ul class="list-unsryled list-inline mt-3">
-                                        <li class="list-inline-item">
-                                            <a href="" class="text-blue"><i class="fab fa-youtube"></i></a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a href="" class="text-blue"><i class="fab fa-twitter"></i></a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a href="" class="text-blue"><i class="fab fa-instagram"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-9">
-                        <div class="grade-perfil px-md-5 py-md-4 mt-4">  
-                            <div class="col-12">
-                                <h3 class="mt-2">Meus Endereços</h3>
-                                <div class="row my-5">
-                                    <div class="col-4 card-endereco">
-                                        <p>
-                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-                                                <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
-                                            </svg>
-                                        </p>
-                                        <h5>Casa</h5>
-                                    </div>
-                                    <div class="col-4 add-endereco">
-                                        <h5 class="add-endereco-text">
-                                            Adicionar Novo
-                                            <span class="d-block mt-1">
-                                                <svg width=".7em" height=".7em" viewBox="0 0 16 16" class="bi bi-plus-square-fill" fill="rgb(0, 74, 173)" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
-                                                  </svg>
-                                            </span>
-                                        </h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container-fluid bg-white">
+        <div class="container masc-destaque py-5">
+          <div class="row">
+            <div class="col-12 d-lg-none">
+              <div class="row">
+                <div class="col-12">
+                  <h6>Pesquisar Pedidos</h6>
+                  <form class="form-inline my-2">
+                    <input
+                      class="form-control col-9 col-md-11"
+                      type="search"
+                      placeholder="Pesquisar..."
+                      aria-label="Pesquisar"
+                    />
+                    <button
+                      class="form-control col-3 col-md-1 btn-search my-2 my-sm-0 mx-0"
+                      type="submit"
+                    >
+                      <svg
+                        width="1em"
+                        height="1em"
+                        viewBox="0 0 16 16"
+                        class="bi bi-search"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"
+                        />
+                      </svg>
+                    </button>
+                  </form>
                 </div>
+              </div>
+              <div class="col-12 d-lg-none p-0 m-0 mb-2">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-0">
+                  <a class="navbar-brand" href="#">Menu</a>
+                  <button
+                    class="navbar-toggler border-0"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <svg
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 16 16"
+                      class="bi bi-list"
+                      fill="white"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                      />
+                    </svg>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <div class="grade-especifica">
+                        <div class="row">
+                          <div class="col-12">
+                            <ul class="nav flex-column">
+                              <li class="nav-item">
+                                <a class="nav-link ml-0 pl-0 text-dark" href="perfil.html"
+                                  >Minha Conta</a
+                                >
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link ml-0 pl-0 text-dark" href="perfil-carrinho.html"
+                                  >Carrinho</a
+                                >
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link ml-0 pl-0 text-dark" href="perfil-pedidos.html"
+                                  >Meus Pedidos</a
+                                >
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link ml-0 pl-0 text-dark" href="perfil-enderecos.html"
+                                  >Endereços</a
+                                >
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link ml-0 pl-0 text-dark" href="perfil-cartao.html"
+                                  >Cartões</a
+                                >
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link ml-0 pl-0 text-dark" href="perfil-duvida.html"
+                                  >Dúvidas</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                          <div class="col-12">
+                            <h6>Acompanhe nossas Redes Sociais</h6>
+                            <ul class="list-unsryled list-inline mt-3">
+                              <li class="list-inline-item">
+                                <a href="" class="text-blue"><i class="fab fa-youtube"></i></a>
+                              </li>
+                              <li class="list-inline-item">
+                                <a href="" class="text-blue"><i class="fab fa-twitter"></i></a>
+                              </li>
+                              <li class="list-inline-item">
+                                <a href="" class="text-blue"><i class="fab fa-instagram"></i></a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
             </div>
+            <div class="d-none d-lg-block col-3">
+              <div class="grade-especifica">
+                <div class="row">
+                  <div class="col-12">
+                    <h6>Pesquisar Pedidos</h6>
+                    <form class="form-inline my-2 my-lg-0">
+                      <input
+                        class="form-control col-lg-9 col-12"
+                        type="search"
+                        placeholder="Pesquisar..."
+                        aria-label="Pesquisar"
+                      />
+                      <button
+                        class="form-control col-12 col-lg-3 btn-search my-2 my-sm-0 mx-0"
+                        type="submit"
+                      >
+                        <svg
+                          width="1em"
+                          height="1em"
+                          viewBox="0 0 16 16"
+                          class="bi bi-search"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"
+                          />
+                        </svg>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+                <hr class="my-4" />
+                <div class="row">
+                  <div class="col-12">
+                    <h6>Menu</h6>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link ml-0 pl-0 text-dark" href="perfil.html">Minha Conta</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link ml-0 pl-0 text-dark" href="perfil-carrinho.html"
+                          >Carrinho</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link ml-0 pl-0 text-dark" href="perfil-pedidos.html"
+                          >Meus Pedidos</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link ml-0 pl-0 text-dark" href="perfil-enderecos.html"
+                          >Endereços</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link ml-0 pl-0 text-dark" href="perfil-cartao.html"
+                          >Cartões</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link ml-0 pl-0 text-dark" href="perfil-duvida.html"
+                          >Dúvidas</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <hr />
+                <div class="row">
+                  <div class="col-12">
+                    <h6>Acompanhe nossas Redes Sociais</h6>
+                    <ul class="list-unsryled list-inline mt-3">
+                      <li class="list-inline-item">
+                        <a href="" class="text-blue"><i class="fab fa-youtube"></i></a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="" class="text-blue"><i class="fab fa-twitter"></i></a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="" class="text-blue"><i class="fab fa-instagram"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-9">
+              <div class="grade-perfil px-md-5 py-md-4 mt-4">
+                <div class="col-12">
+                  <h3 class="mt-2">Meus Endereços</h3>
+                  <div class="row my-5">
+                    <div class="col-4 card-endereco">
+                      <p>
+                        <svg
+                          width="1em"
+                          height="1em"
+                          viewBox="0 0 16 16"
+                          class="bi bi-house-fill"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"
+                          />
+                        </svg>
+                      </p>
+                      <h5>Casa</h5>
+                    </div>
+                    <div class="col-4 add-endereco">
+                      <h5 class="add-endereco-text">
+                        Adicionar Novo
+                        <span class="d-block mt-1">
+                          <svg
+                            width=".7em"
+                            height=".7em"
+                            viewBox="0 0 16 16"
+                            class="bi bi-plus-square-fill"
+                            fill="rgb(0, 74, 173)"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"
+                            />
+                          </svg>
+                        </span>
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </main>
     <!-- Rodapé !-->
     <footer class="bg-perfil-footer pb-1">
-        <div class="container-fluid bg-black">
-            <div class="container text-center text-light py-5">
-                <div class="row">
-                    <div class="col-12">
-                        <a href="#"> <img src="img/logo.png" class="logo-footer" alt=""> </a>
-                        <p>Fundada em 1997 na cidade de São Paulo, estado Paulista, a intenção original da marca era criar calçados <br> casuais e baratos, para pequenas cidades da região. Ao longo do tempo, a marca tornou-se mais próxima do esporte.</p>
-                        <p class="text-secondary">"Se você não arriscar nunca será capaz de saber aonde poderia chegar."</p>
-                    </div>
-                    <div class="col-12 pt-3">
-                        <ul class="list-unstyled">
-                            <li class="d-inline px-2">
-                               <a href="" class="text-blue-light"><i class="fab fa-youtube"></i></a>
-                            </li>
-                            <li class="d-inline">
-                                <a href="" class="text-blue-light"><i class="fab fa-twitter"></i></a>
-                            </li>
-                            <li class="d-inline px-2">
-                                <a href="" class="text-blue-light"><i class="fab fa-instagram"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container-fluid bg-black">
+        <div class="container text-center text-light py-5">
+          <div class="row">
+            <div class="col-12">
+              <a href="#"> <img src="img/logo.png" class="logo-footer" alt="" /> </a>
+              <p>
+                Fundada em 1997 na cidade de São Paulo, estado Paulista, a intenção original da
+                marca era criar calçados <br />
+                casuais e baratos, para pequenas cidades da região. Ao longo do tempo, a marca
+                tornou-se mais próxima do esporte.
+              </p>
+              <p class="text-secondary">
+                "Se você não arriscar nunca será capaz de saber aonde poderia chegar."
+              </p>
             </div>
-        </div>
-        <div class="container text-center text-md-left d-none d-md-block pt-md-5">
-            <div class="row border-top pt-5 border-light">
-                <div class="col-12 col-md-4 col-xl-3">
-                    <p class="text-light h6">Categorias</p>
-                    <ul class="list-unstyled mt-3">
-                        <li>
-                            <span class="mt-4"><a href="categoria-masc.html" class="text-light"> Masculino</a></span>
-                        </li>
-                        <li class="my-1 my-lg-2">
-                            <span><a href="categoria-fem.html" class="text-light"> Feminino</a></span>
-                        </li>
-                        <li>
-                            <span class="mt-4"><a href="categoria-inf.html" class="text-light"> Infantil</a></span>
-                        </li>
-                    </ul> 
-                </div>
-                <div class="d-none d-xl-block col-md-4 col-xl-3"> 
-                    <p class="text-light h6">Menu</p>
-                    <ul class="list-unstyled mt-3">
-                        <li>
-                            <span class="mt-4"><a href="index.html" class="text-light"> Home</a></span>
-                        </li>
-                        <li class="my-1 my-lg-2">
-                            <span><a href="promocao.html" class="text-light"> Black Friday</a></span>
-                        </li>
-                        <li>
-                            <span class="mt-4"><a href="nossos-produtos.html" class="text-light"> Produtos</a></span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-12 col-md-4 col-xl-3"> 
-                    <p class="text-light h6">Contato</p>
-                    <ul class="list-unstyled mt-3">
-                        <li>
-                            <span><a href="perguntas-frequentes.html" class="text-light"> Perguntas Frequentes</a></span>
-                        </li>
-                        <li class="my-1 my-xl-2">
-                            <span class="mt-4"><a href="politica.html" class="text-light"> Politica e Privacidade</a></span>
-                        </li>
-                        <li>
-                            <span class="mt-4"><a href="fale-conosco.html" class="text-light"> Fale Conosco</a></span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-12 col-md-4 col-xl-3"> 
-                    <p class="text-light h6">Recursos</p>
-                    <ul class="list-unstyled mt-3">
-                        <li>
-                            <span><a href="prazo-entrega.html" class="text-light"> Prazos de Entrega</a></span>
-                        </li>
-                        <li class="my-1 my-xl-2">
-                            <span class="mt-4"><a href="trocas-devolucao.html" class="text-light"> Trocas e Devoluções</a></span>
-                        </li>
-                        <li>
-                            <span class="mt-4"><a href="perfil.html" class="text-light"> Minha Conta</a></span>
-                        </li>
-                    </ul>
-                </div>
+            <div class="col-12 pt-3">
+              <ul class="list-unstyled">
+                <li class="d-inline px-2">
+                  <a href="" class="text-blue-light"><i class="fab fa-youtube"></i></a>
+                </li>
+                <li class="d-inline">
+                  <a href="" class="text-blue-light"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="d-inline px-2">
+                  <a href="" class="text-blue-light"><i class="fab fa-instagram"></i></a>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
-        <div class="d-block d-md-none bg-white container-fluid px-0 pt-md-5">
-            <div class="accordion" id="footer-cel">
-                <div class="card">
-                    <div class="card-header bg-dark" id="head-cel-1">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-light text-left" type="button" data-toggle="collapse" data-target="#cel-1" aria-expanded="true" aria-controls="cel-1">
-                        Categorias
-                        </button>
-                    </h2>
-                </div>
-                <div id="cel-1" class="collapse show" aria-labelledby="head-cel-1" data-parent="#footer-cel">
-                    <div class="card-body">
-                        <ul class="list-unstyled mt-3">
-                            <li>
-                                <span class="mt-4"><a href="categoria-masc.html" class="text-dark"> Masculino</a></span>
-                            </li>
-                            <li class="my-1 my-lg-2">
-                                <span><a href="categoria-fem.html" class="text-dark"> Feminino</a></span>
-                            </li>
-                            <li>
-                                <span class="mt-4"><a href="categoria-inf.html" class="text-dark"> Infantil</a></span>
-                            </li>
-                        </ul> 
-                    </div>
-                </div>
-                </div>
-                <div class="card ">
-                    <div class="card-header bg-dark" id="head-cel-2">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-light text-left collapsed" type="button" data-toggle="collapse" data-target="#cel-2" aria-expanded="false" aria-controls="cel-2">
-                            Contato
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="cel-2" class="collapse" aria-labelledby="head-cel-2" data-parent="#footer-cel">
-                        <div class="card-body">
-                            <ul class="list-unstyled mt-3">
-                                <li>
-                                    <span><a href="perguntas-frequentes.html" class="text-dark"> Perguntas Frequentes</a></span>
-                                </li>
-                                <li class="my-1 my-xl-2">
-                                    <span class="mt-4"><a href="politica.html" class="text-dark"> Politica e Privacidade</a></span>
-                                </li>
-                                <li>
-                                    <span class="mt-4"><a href="fale-conosco.html" class="text-dark"> Fale Conosco</a></span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header bg-dark" id="head-cel-3">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-light text-left h2 collapsed" type="button" data-toggle="collapse" data-target="#cel-3" aria-expanded="false" aria-controls="cel-3">
-                            Recursos
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="cel-3" class="collapse" aria-labelledby="head-cel-3" data-parent="#footer-cel">
-                        <div class="card-body">
-                            <ul class="list-unstyled mt-3">
-                                <li>
-                                    <span><a href="prazo-entrega.html" class="text-dark"> Prazos de Entrega</a></span>
-                                </li>
-                                <li class="my-1 my-xl-2">
-                                    <span class="mt-4"><a href="trocas-devolucao.html" class="text-dark"> Trocas e Devoluções</a></span>
-                                </li>
-                                <li>
-                                    <span class="mt-4"><a href="perfil.html" class="text-dark"> Minha Conta</a></span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <div class="container text-center text-md-left d-none d-md-block pt-md-5">
+        <div class="row border-top pt-5 border-light">
+          <div class="col-12 col-md-4 col-xl-3">
+            <p class="text-light h6">Categorias</p>
+            <ul class="list-unstyled mt-3">
+              <li>
+                <span class="mt-4"
+                  ><a href="categoria-masc.html" class="text-light"> Masculino</a></span
+                >
+              </li>
+              <li class="my-1 my-lg-2">
+                <span><a href="categoria-fem.html" class="text-light"> Feminino</a></span>
+              </li>
+              <li>
+                <span class="mt-4"
+                  ><a href="categoria-inf.html" class="text-light"> Infantil</a></span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="d-none d-xl-block col-md-4 col-xl-3">
+            <p class="text-light h6">Menu</p>
+            <ul class="list-unstyled mt-3">
+              <li>
+                <span class="mt-4"><a href="index.html" class="text-light"> Home</a></span>
+              </li>
+              <li class="my-1 my-lg-2">
+                <span><a href="promocao.html" class="text-light"> Black Friday</a></span>
+              </li>
+              <li>
+                <span class="mt-4"
+                  ><a href="nossos-produtos.html" class="text-light"> Produtos</a></span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 col-xl-3">
+            <p class="text-light h6">Contato</p>
+            <ul class="list-unstyled mt-3">
+              <li>
+                <span
+                  ><a href="perguntas-frequentes.html" class="text-light">
+                    Perguntas Frequentes</a
+                  ></span
+                >
+              </li>
+              <li class="my-1 my-xl-2">
+                <span class="mt-4"
+                  ><a href="politica.html" class="text-light"> Politica e Privacidade</a></span
+                >
+              </li>
+              <li>
+                <span class="mt-4"
+                  ><a href="fale-conosco.html" class="text-light"> Fale Conosco</a></span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 col-xl-3">
+            <p class="text-light h6">Recursos</p>
+            <ul class="list-unstyled mt-3">
+              <li>
+                <span><a href="prazo-entrega.html" class="text-light"> Prazos de Entrega</a></span>
+              </li>
+              <li class="my-1 my-xl-2">
+                <span class="mt-4"
+                  ><a href="trocas-devolucao.html" class="text-light"> Trocas e Devoluções</a></span
+                >
+              </li>
+              <li>
+                <span class="mt-4"><a href="perfil.html" class="text-light"> Minha Conta</a></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="d-block d-md-none bg-white container-fluid px-0 pt-md-5">
+        <div class="accordion" id="footer-cel">
+          <div class="card">
+            <div class="card-header bg-dark" id="head-cel-1">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-light text-left"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#cel-1"
+                  aria-expanded="true"
+                  aria-controls="cel-1"
+                >
+                  Categorias
+                </button>
+              </h2>
             </div>
-        </div>
-        <div class="w-100">
-            <div class="d-md-none text-center pt-md-5 bg-dark text-light">
-                <small class="d-block d-md-inline pt-2"> © 2020 ACE Joinville SC - Todos os direitos reservados. </small>
-                <small class="d-block d-md-inline py-2">Desenvolvido por <span class="text-danger">MMdeveloper</span></small>
+            <div
+              id="cel-1"
+              class="collapse show"
+              aria-labelledby="head-cel-1"
+              data-parent="#footer-cel"
+            >
+              <div class="card-body">
+                <ul class="list-unstyled mt-3">
+                  <li>
+                    <span class="mt-4"
+                      ><a href="categoria-masc.html" class="text-dark"> Masculino</a></span
+                    >
+                  </li>
+                  <li class="my-1 my-lg-2">
+                    <span><a href="categoria-fem.html" class="text-dark"> Feminino</a></span>
+                  </li>
+                  <li>
+                    <span class="mt-4"
+                      ><a href="categoria-inf.html" class="text-dark"> Infantil</a></span
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
-        </div>
-        <div class="d-none d-md-block w-100">
-            <div class="text-center pt-md-5 text-light">
-                <small class="d-block d-md-inline p-2"><img src="img/icons/Bandeira-do-Brasil.png" class="img-brasil" alt=""> BRASIL </small>
-                <small class="d-block d-md-inline p-2">Desenvolvido por <span class="text-danger">MMdeveloper</span></small>
-                <small class="d-block d-md-inline p-2"> © 2020 ACE Joinville SC - Todos os direitos reservados. </small>
+          </div>
+          <div class="card">
+            <div class="card-header bg-dark" id="head-cel-2">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-light text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#cel-2"
+                  aria-expanded="false"
+                  aria-controls="cel-2"
+                >
+                  Contato
+                </button>
+              </h2>
             </div>
+            <div id="cel-2" class="collapse" aria-labelledby="head-cel-2" data-parent="#footer-cel">
+              <div class="card-body">
+                <ul class="list-unstyled mt-3">
+                  <li>
+                    <span
+                      ><a href="perguntas-frequentes.html" class="text-dark">
+                        Perguntas Frequentes</a
+                      ></span
+                    >
+                  </li>
+                  <li class="my-1 my-xl-2">
+                    <span class="mt-4"
+                      ><a href="politica.html" class="text-dark"> Politica e Privacidade</a></span
+                    >
+                  </li>
+                  <li>
+                    <span class="mt-4"
+                      ><a href="fale-conosco.html" class="text-dark"> Fale Conosco</a></span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header bg-dark" id="head-cel-3">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-light text-left h2 collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#cel-3"
+                  aria-expanded="false"
+                  aria-controls="cel-3"
+                >
+                  Recursos
+                </button>
+              </h2>
+            </div>
+            <div id="cel-3" class="collapse" aria-labelledby="head-cel-3" data-parent="#footer-cel">
+              <div class="card-body">
+                <ul class="list-unstyled mt-3">
+                  <li>
+                    <span
+                      ><a href="prazo-entrega.html" class="text-dark"> Prazos de Entrega</a></span
+                    >
+                  </li>
+                  <li class="my-1 my-xl-2">
+                    <span class="mt-4"
+                      ><a href="trocas-devolucao.html" class="text-dark">
+                        Trocas e Devoluções</a
+                      ></span
+                    >
+                  </li>
+                  <li>
+                    <span class="mt-4"
+                      ><a href="perfil.html" class="text-dark"> Minha Conta</a></span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-    </footer>     
+      </div>
+      <div class="w-100">
+        <div class="d-md-none text-center pt-md-5 bg-dark text-light">
+          <small class="d-block d-md-inline pt-2">
+            © 2020 ACE Joinville SC - Todos os direitos reservados.
+          </small>
+          <small class="d-block d-md-inline py-2"
+            >Desenvolvido por <span class="text-danger">MMdeveloper</span></small
+          >
+        </div>
+      </div>
+      <div class="d-none d-md-block w-100">
+        <div class="text-center pt-md-5 text-light">
+          <small class="d-block d-md-inline p-2"
+            ><img src="img/icons/Bandeira-do-Brasil.png" class="img-brasil" alt="" /> BRASIL
+          </small>
+          <small class="d-block d-md-inline p-2"
+            >Desenvolvido por <span class="text-danger">MMdeveloper</span></small
+          >
+          <small class="d-block d-md-inline p-2">
+            © 2020 ACE Joinville SC - Todos os direitos reservados.
+          </small>
+        </div>
+      </div>
+    </footer>
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
     <!-- Alert bonito -->
     <script src="https://unpkg.com/sweetalert2@9/dist/sweetalert2.all.js"></script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -458,5 +719,5 @@
     <script src="js/init.js"></script>
     <script src="js/main.js"></script>
     <script src="js/auth.js"></script>
-</body>
+  </body>
 </html>

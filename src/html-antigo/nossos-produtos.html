@@ -1,809 +1,1435 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
     <!-- SEO Meta Tags -->
-    <meta name="description" content=" ">
-    <meta name="author" content=" ">
+    <meta name="description" content=" " />
+    <meta name="author" content=" " />
 
     <!-- Website Title -->
     <title>ACE | Official Store</title>
-    
+
     <!-- Styles -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <link href="css/style-main.css" rel="stylesheet">
-	<!-- Favicon  --> 
-    <link rel="icon" href="img/icons/Bandeira-do-Brasil.png">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style-main.css" rel="stylesheet" />
+    <!-- Favicon  -->
+    <link rel="icon" href="img/icons/Bandeira-do-Brasil.png" />
+  </head>
+  <body>
     <!-- header top !-->
     <div class="container-fluid bg-top">
-        <div class="row">
-            <div class="col-12 col-md-7">
-                <small class="atc-msg">FRETE GRÁTIS A PARTIR DE R$ 399,90 PARA TODO BRASIL</small>
-            </div>    
-            <div class="d-none d-md-block col-md-5">
-                <small class="atc-links"><a href="#" class="text-dark">LOJAS</a> &nbsp;&nbsp; <a href="#" class="text-dark">ATENDIMENTO</a></small>
-            </div>    
+      <div class="row">
+        <div class="col-12 col-md-7">
+          <small class="atc-msg">FRETE GRÁTIS A PARTIR DE R$ 399,90 PARA TODO BRASIL</small>
         </div>
+        <div class="d-none d-md-block col-md-5">
+          <small class="atc-links"
+            ><a href="#" class="text-dark">LOJAS</a> &nbsp;&nbsp;
+            <a href="#" class="text-dark">ATENDIMENTO</a></small
+          >
+        </div>
+      </div>
     </div>
     <!-- header !-->
     <header id="header">
-        <div id="main">
-            <nav class="list-group list-group-flush">
-                <a href="index.html" class="list-group-item list-group-item-action">Home </a>
-                <a href="promocao.html" class="list-group-item list-group-item-action">Black friday</a>
-                <a href="nossos-produtos.html" class="list-group-item list-group-item-action">Produtos </a>
-                <a href="perfil.html" class="list-group-item list-group-item-action">Minha Conta </a>
-                <a href="#" class="list-group-item list-group-item-action" onclick="logout()">Sair </a>
-                <ul class="icons">
-                    <li class="icon">
-                        <i class="fab fa-youtube"></i>
-                    </li>
-                    <li class="icon">
-                        <i class="fab fa-twitter"></i>
-                    </li>
-                    <li class="icon">
-                        <i class="fab fa-instagram"></i>
-                    </li>
-                </ul>
-            </nav>
-            <button id="main-toggler-bottom" class="btn-close">
-                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x" fill="white" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                  </svg>
-            </button>
+      <div id="main">
+        <nav class="list-group list-group-flush">
+          <a href="index.html" class="list-group-item list-group-item-action">Home </a>
+          <a href="promocao.html" class="list-group-item list-group-item-action">Black friday</a>
+          <a href="nossos-produtos.html" class="list-group-item list-group-item-action"
+            >Produtos
+          </a>
+          <a href="perfil.html" class="list-group-item list-group-item-action">Minha Conta </a>
+          <a href="#" class="list-group-item list-group-item-action" onclick="logout()">Sair </a>
+          <ul class="icons">
+            <li class="icon">
+              <i class="fab fa-youtube"></i>
+            </li>
+            <li class="icon">
+              <i class="fab fa-twitter"></i>
+            </li>
+            <li class="icon">
+              <i class="fab fa-instagram"></i>
+            </li>
+          </ul>
+        </nav>
+        <button id="main-toggler-bottom" class="btn-close">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 16 16"
+            class="bi bi-x"
+            fill="white"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="navbar navbar-dark text-center bg-nav">
+        <a id="main-toggle" href="perfil.html" class="nav-link ml-3 text-white z-1">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 16 16"
+            class="bi bi-list"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+        </a>
+        <div class="logo">
+          <div class="container-logo">
+            <a href="index.html"><img src="img/logo-dark.png" alt="" /></a>
+          </div>
         </div>
-        <div class="navbar navbar-dark text-center bg-nav">
-            <a id="main-toggle" href="perfil.html" class="nav-link ml-3 text-white z-1">
-                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                </svg>
+        <a href="perfil-carrinho.html" class="d-none d-md-block nav-link ml-auto text-white z-1">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 16 16"
+            class="bi bi-cart3"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+            />
+          </svg>
+        </a>
+        <button class="nav-link btn usuario z-1" type="button">
+          <a
+            id="navbarDropdown"
+            href="#"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            class="nav-link text-dark dropdown-toggle"
+          >
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 16 16"
+              class="d-md-none bi bi-person-circle"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"
+              />
+              <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+              <path
+                fill-rule="evenodd"
+                d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"
+              />
+            </svg>
+            <span id="user2" class="d-none d-md-inline"> Entrar </span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item nav-link text-dark" href="perfil.html">
+              <span id="user" class="d-md-none">Usuário</span>
+              <span class="d-none d-md-block">Perfil</span>
             </a>
-            <div class="logo">
-                <div class="container-logo">
-                    <a href="index.html"><img src="img/logo-dark.png" alt=""></a>
-                </div>
-            </div>
-            <a href="perfil-carrinho.html" class="d-none d-md-block nav-link ml-auto text-white z-1">
-                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
-                </svg>
-            </a>
-            <button class="nav-link btn usuario z-1" type="button">
-                <a id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link text-dark dropdown-toggle">
-                    
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="d-md-none bi bi-person-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"/>
-                        <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                        <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
-                    </svg>
-                    <span id="user2" class="d-none d-md-inline">
-                        Entrar 
-                    </span>
-                </a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item nav-link text-dark" href="perfil.html">
-                        <span id="user" class="d-md-none">Usuário</span>
-                        <span class="d-none d-md-block">Perfil</span>
-                    </a>
-                    <a class="dropdown-item nav-link text-dark" href="#">Carrinho</a>
-                    <a class="dropdown-item nav-link text-dark" href="#" onclick="logout()">Sair</a>
-                </div>
-            </button>
-        </div>
-        <div class="row area-top-img"></div>
+            <a class="dropdown-item nav-link text-dark" href="#">Carrinho</a>
+            <a class="dropdown-item nav-link text-dark" href="#" onclick="logout()">Sair</a>
+          </div>
+        </button>
+      </div>
+      <div class="row area-top-img"></div>
     </header>
-    
+
     <!-- main !-->
     <main class="text-center text-md-left">
-        <div class="container-fluid bg-white">
-            <div class="container masc-destaque py-md-5 px-0">
-                <div class="row">
-                    <div class="col-12 d-md-none p-0 m-0 mb-5">
-                        <nav class="navbar navbar-expand-lg navbar-dark bg-0">
-                            <a class="navbar-brand" href="#">Filtro</a>
-                            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                                </svg>
+      <div class="container-fluid bg-white">
+        <div class="container masc-destaque py-md-5 px-0">
+          <div class="row">
+            <div class="col-12 d-md-none p-0 m-0 mb-5">
+              <nav class="navbar navbar-expand-lg navbar-dark bg-0">
+                <a class="navbar-brand" href="#">Filtro</a>
+                <button
+                  class="navbar-toggler border-0"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarNav"
+                  aria-controls="navbarNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <svg
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    class="bi bi-list"
+                    fill="white"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                    />
+                  </svg>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <div class="grade-especifica">
+                      <div class="row">
+                        <div class="col-12">
+                          <h6>Pesquisar</h6>
+                          <form class="form-inline my-2 my-lg-0">
+                            <input
+                              class="form-control col-lg-9 col-12"
+                              type="search"
+                              placeholder="Pesquisar..."
+                              aria-label="Pesquisar"
+                            />
+                            <button
+                              class="form-control col-12 col-lg-3 btn-search my-2 my-sm-0 mx-0"
+                              type="submit"
+                            >
+                              <svg
+                                width="1em"
+                                height="1em"
+                                viewBox="0 0 16 16"
+                                class="bi bi-search"
+                                fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"
+                                />
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"
+                                />
+                              </svg>
                             </button>
-                            <div class="collapse navbar-collapse" id="navbarNav">
-                              <ul class="navbar-nav">
-                                <div class="grade-especifica">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <h6>Pesquisar</h6>
-                                            <form class="form-inline my-2 my-lg-0">
-                                                <input class="form-control col-lg-9 col-12" type="search" placeholder="Pesquisar..." aria-label="Pesquisar">
-                                                <button class="form-control col-12 col-lg-3 btn-search my-2 my-sm-0 mx-0" type="submit">
-                                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
-                                                        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
-                                                      </svg>
-                                                </button>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <hr class="my-4">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <h6>Categorias</h6>
-                                            <ul class="nav flex-column">
-                                                <li class="nav-item">
-                                                    <a class="nav-link ml-0 pl-0 text-dark" href="#">Todos os Produtos</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link ml-0 pl-0 text-dark" href="#">Masculino</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link ml-0 pl-0 text-dark" href="#">Feminino</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link ml-0 pl-0 text-dark" href="#">Infantil</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <h6>Preço Máximo</h6>
-                                            <form>
-                                                <div class="form-group">
-                                                    <input type='range' class="form-control-range" id="formControlRange" value='250' max='1100'>
-                                                    <span>R$<span id="num">250</span>,00</span>
-                                                </div>
-                                              </form>
-                                        </div>
-                                    </div>
-                                    <hr class="my-4">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <h6>Descontos</h6>
-                                            <ul class="nav flex-column">
-                                                <li class="nav-item">
-                                                    <label class="label-container text-danger">70% de desconto
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                    </label>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <label class="label-container">50% desconto
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                    </label>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <label class="label-container">35% de desconto
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                    </label>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <label class="label-container">17% de desconto
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                    </label>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <hr class="my-4">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <h6>Avaliações</h6>
-                                            <ul class="nav stars flex-column">
-                                                <li class="nav-item">
-                                                    <label class="label-container text-warning">
-                                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                                                    </svg>
-                                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                                                    </svg>
-                                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                                                      </svg>
-                                                      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                                                      </svg>
-                                                      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                                                      </svg>
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                    </label>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <label class="label-container text-warning">
-                                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                                                        </svg>
-                                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                                                        </svg>
-                                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                                                        </svg>
-                                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                                                        </svg>
-                                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                            <path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
-                                                        </svg>
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                    </label>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <label class="label-container text-warning">
-                                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                                                        </svg>
-                                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                                                        </svg>
-                                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                                                        </svg>
-                                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                            <path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
-                                                        </svg>
-                                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                            <path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
-                                                        </svg>
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                    </label>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <label class="label-container text-warning">
-                                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                                                        </svg>
-                                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                                                        </svg>
-                                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                            <path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
-                                                        </svg>
-                                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                            <path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
-                                                        </svg>
-                                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                            <path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
-                                                        </svg>
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                    </label>
-                                                </li>
-                                            </ul>
-                                            <hr>
-                                            <a class="btn btn-dark btn-block mt-2" href="#">Atualizar</a>
-                                        </div>
-                                    </div>
-                                </div>
-                              </ul>
-                            </div>
-                          </nav>
-                    </div>
-                    <div class="d-none d-md-block col-md-3">
-                        <div class="grade-especifica">
-                            <div class="row">
-                                <div class="col-12">
-                                    <h6>Pesquisar</h6>
-                                    <form class="form-inline my-2 my-lg-0">
-                                        <input class="form-control col-lg-9 col-12" type="search" placeholder="Pesquisar..." aria-label="Pesquisar">
-                                        <button class="form-control col-12 col-lg-3 btn-search my-2 my-sm-0 mx-0" type="submit">
-                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
-                                                <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
-                                              </svg>
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                            <hr class="my-4">
-                            <div class="row">
-                                <div class="col-12">
-                                    <h6>Categorias</h6>
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item">
-                                            <a class="nav-link ml-0 pl-0 text-dark" href="#">Todos os Produtos</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link ml-0 pl-0 text-dark" href="#">Masculino</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link ml-0 pl-0 text-dark" href="#">Feminino</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link ml-0 pl-0 text-dark" href="#">Infantil</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="row">
-                                <div class="col-12">
-                                    <h6>Preço Máximo</h6>
-                                    <form>
-                                        <div class="form-group">
-                                            <input type='range' class="form-control-range" id="formControlRange" value='250' max='1100'>
-                                            <span>R$<span id="num">250</span>,00</span>
-                                        </div>
-                                      </form>
-                                </div>
-                            </div>
-                            <hr class="my-4">
-                            <div class="row">
-                                <div class="col-12">
-                                    <h6>Descontos</h6>
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item">
-                                            <label class="label-container text-danger">70% de desconto
-                                                <input type="checkbox">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </li>
-                                        <li class="nav-item">
-                                            <label class="label-container">50% desconto
-                                                <input type="checkbox">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </li>
-                                        <li class="nav-item">
-                                            <label class="label-container">35% de desconto
-                                                <input type="checkbox">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </li>
-                                        <li class="nav-item">
-                                            <label class="label-container">17% de desconto
-                                                <input type="checkbox">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <hr class="my-4">
-                            <div class="row">
-                                <div class="col-12">
-                                    <h6>Avaliações</h6>
-                                    <ul class="nav stars flex-column">
-                                        <li class="nav-item">
-                                            <label class="label-container text-warning">
-                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                                            </svg>
-                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                                            </svg>
-                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                                              </svg>
-                                              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                                              </svg>
-                                              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                                              </svg>
-                                                <input type="checkbox">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </li>
-                                        <li class="nav-item">
-                                            <label class="label-container text-warning">
-                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                                                </svg>
-                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                                                </svg>
-                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                                                </svg>
-                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                                                </svg>
-                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
-                                                </svg>
-                                                <input type="checkbox">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </li>
-                                        <li class="nav-item">
-                                            <label class="label-container text-warning">
-                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                                                </svg>
-                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                                                </svg>
-                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                                                </svg>
-                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
-                                                </svg>
-                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
-                                                </svg>
-                                                <input type="checkbox">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </li>
-                                        <li class="nav-item">
-                                            <label class="label-container text-warning">
-                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                                                </svg>
-                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                                                </svg>
-                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
-                                                </svg>
-                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
-                                                </svg>
-                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
-                                                </svg>
-                                                <input type="checkbox">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </li>
-                                    </ul>
-                                    <hr>
-                                    <a class="btn btn-dark btn-block mt-2" href="#">Atualizar</a>
-                                </div>
-                            </div>
+                          </form>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-9">
-                        <div class="row">
-                            <h2 class="col-12 h3">Produtos<hr><small class="h6">8 produtos <span class="d-none d-md-inline">disponíveis</span></small></h2>
-                            <div class="col-12 col-md-6 col-lg-4 mt-0">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <figure>
-                                            <img src="img/boots/M1.png" class="img-fluid" alt="tenis ACE 1">
-                                            <a href="#"><figcaption class="shadow btn-product">COMPRAR</figcaption></a>
-                                        </figure>
-                                        <h5>Tênis ACE Zoom Pegasus</h5>
-                                        <small class="category-boot">Corrida</small>
-                                        <small class="gender-masc">Masculino</small>
-                                        <p class="h5 pt-1">R$ 899,99</p>
-                                        <p>até 10x de 89,99</p>
-                                        <small class="text-muted">2 cores</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4 mt-0">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <figure>
-                                            <img src="img/boots/M2.png" class="img-fluid" alt="tenis ACE 2">
-                                            <a href="#"><figcaption class="shadow btn-product">COMPRAR</figcaption></a>
-                                        </figure>
-                                        <h5>Tênis ACE Raybow Dash</h5>
-                                        <small class="category-boot">Caminhada</small>
-                                        <small class="gender-masc">Masculino</small>
-                                        <p class="h5 py-1">R$ 249,99 <small class="text-danger"> 19% OFF</small></p>
-                                        <p>até 10x de 24,99</p>
-                                        <small class="text-muted">4 cores</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <figure>
-                                            <img src="img/boots/F4.png" class="img-fluid" alt="tenis ACE 3">
-                                            <a href="#"><figcaption class="shadow btn-product">COMPRAR</figcaption></a>
-                                        </figure>
-                                        <h5>Tênis ACE Joyride Run</h5>
-                                        <small class="category-boot">Corrida</small>
-                                        <small class="gender-uni">Unisex</small>
-                                        <p class="h5 py-1">R$ 699,99</p>
-                                        <p>até 10x de 39,99</p>
-                                        <small class="text-muted">1 cor</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4 mt-0">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <figure>
-                                            <img src="img/boots/M5.png" class="img-fluid" alt="tenis ACE 1">
-                                            <a href="#"><figcaption class="shadow btn-product">COMPRAR</figcaption></a>
-                                        </figure>
-                                        <h5>Tênis ACE Flex Contact</h5>
-                                        <small class="category-boot">Corrida</small>
-                                        <small class="gender-uni">Unisex</small>
-                                        <p class="h5 py-1">R$ 399,99 <small class="text-danger"> 50% OFF</small></p>
-                                        <p>até 10x de 89,99</p>
-                                        <small class="text-muted">2 cores</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <figure>
-                                            <img src="img/boots/F3.png" class="img-fluid" alt="tenis ACE 2">
-                                            <a href="#"><figcaption class="shadow btn-product">COMPRAR</figcaption></a>
-                                        </figure>
-                                        <h5>Tênis ACE Quest 2</h5>
-                                        <small class="category-boot">Caminhada</small>
-                                        <small class="gender-fem">Feminino</small>
-                                        <p>até 10x de 224,99</p>
-                                        <small class="text-muted">4 cores</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4 mt-0">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <figure>
-                                            <img src="img/boots/F1.png" class="img-fluid" alt="tenis ACE 1">
-                                            <a href="#"><figcaption class="shadow btn-product">COMPRAR</figcaption></a>
-                                        </figure>
-                                        <h5>Tênis ACE Cute Machines</h5>
-                                        <small class="category-boot">Casual</small>
-                                        <small class="gender-fem">Feminino</small>
-                                        <p class="h5 py-1">R$ 249,99 <small class="text-danger"> 35% OFF</small></p>
-                                        <p>até 10x de 89,99</p>
-                                        <small class="text-muted">2 cores</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <figure>
-                                            <img src="img/boots/F6.png" class="img-fluid" alt="tenis ACE 3">
-                                            <a href="#"><figcaption class="shadow btn-product">COMPRAR</figcaption></a>
-                                        </figure>
-                                        <h5>Tênis ACE Zoom Pegasus</h5>
-                                        <small class="category-boot">Corrida</small>
-                                        <small class="gender-fem">Feminino</small>
-                                        <p class="h5 py-1">R$ 899,99</p>
-                                        <p>até 10x de 39,99</p>
-                                        <small class="text-muted">2 cores</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <figure>
-                                            <img src="img/boots/F7.png" class="img-fluid" alt="tenis ACE 2">
-                                            <a href="#"><figcaption class="shadow btn-product">COMPRAR</figcaption></a>
-                                        </figure>
-                                        <h5>Tênis ACE Fast Jett</h5>
-                                        <small class="category-boot">Corrida</small>
-                                        <small class="gender-fem">Feminino</small>
-                                        <p class="h5 py-1">R$ 549,99 </p>
-                                        <p>até 10x de 24,99</p>
-                                        <small class="text-muted">4 cores</small>
-                                    </div>
-                                </div>
-                            </div>
+                      </div>
+                      <hr class="my-4" />
+                      <div class="row">
+                        <div class="col-12">
+                          <h6>Categorias</h6>
+                          <ul class="nav flex-column">
+                            <li class="nav-item">
+                              <a class="nav-link ml-0 pl-0 text-dark" href="#">Todos os Produtos</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link ml-0 pl-0 text-dark" href="#">Masculino</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link ml-0 pl-0 text-dark" href="#">Feminino</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link ml-0 pl-0 text-dark" href="#">Infantil</a>
+                            </li>
+                          </ul>
                         </div>
-                        <div class="row">
-                            <div class="ml-auto mr-0 mt-5">
-                                <nav aria-label="Page navigation example">
-                                    <ul class="pagination">
-                                      <li class="page-item disabled">
-                                        <a class="page-link bg-black text-light border-0 " href="#" aria-label="Previous">
-                                          <span aria-hidden="true">&laquo;</span>
-                                        </a>    
-                                      </li>
-                                      <li class="page-item"><a class="page-link bg-black m-0 border-0 text-light" href="#">1</a></li>
-                                      <li class="page-item"><p class="page-link bg-black m-0 border-0 text-muted hover-disabled">2</p></li>
-                                      <li class="page-item disabled">
-                                        <a class="page-link bg-black text-light border-0 " href="#" aria-label="Next">
-                                          <span aria-hidden="true">&raquo;</span>
-                                        </a>
-                                      </li>
-                                    </ul>
-                                  </nav>
+                      </div>
+                      <hr />
+                      <div class="row">
+                        <div class="col-12">
+                          <h6>Preço Máximo</h6>
+                          <form>
+                            <div class="form-group">
+                              <input
+                                type="range"
+                                class="form-control-range"
+                                id="formControlRange"
+                                value="250"
+                                max="1100"
+                              />
+                              <span>R$<span id="num">250</span>,00</span>
                             </div>
+                          </form>
                         </div>
+                      </div>
+                      <hr class="my-4" />
+                      <div class="row">
+                        <div class="col-12">
+                          <h6>Descontos</h6>
+                          <ul class="nav flex-column">
+                            <li class="nav-item">
+                              <label class="label-container text-danger"
+                                >70% de desconto
+                                <input type="checkbox" />
+                                <span class="checkmark"></span>
+                              </label>
+                            </li>
+                            <li class="nav-item">
+                              <label class="label-container"
+                                >50% desconto
+                                <input type="checkbox" />
+                                <span class="checkmark"></span>
+                              </label>
+                            </li>
+                            <li class="nav-item">
+                              <label class="label-container"
+                                >35% de desconto
+                                <input type="checkbox" />
+                                <span class="checkmark"></span>
+                              </label>
+                            </li>
+                            <li class="nav-item">
+                              <label class="label-container"
+                                >17% de desconto
+                                <input type="checkbox" />
+                                <span class="checkmark"></span>
+                              </label>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <hr class="my-4" />
+                      <div class="row">
+                        <div class="col-12">
+                          <h6>Avaliações</h6>
+                          <ul class="nav stars flex-column">
+                            <li class="nav-item">
+                              <label class="label-container text-warning">
+                                <svg
+                                  width="1em"
+                                  height="1em"
+                                  viewBox="0 0 16 16"
+                                  class="bi bi-star-fill"
+                                  fill="currentColor"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                  />
+                                </svg>
+                                <svg
+                                  width="1em"
+                                  height="1em"
+                                  viewBox="0 0 16 16"
+                                  class="bi bi-star-fill"
+                                  fill="currentColor"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                  />
+                                </svg>
+                                <svg
+                                  width="1em"
+                                  height="1em"
+                                  viewBox="0 0 16 16"
+                                  class="bi bi-star-fill"
+                                  fill="currentColor"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                  />
+                                </svg>
+                                <svg
+                                  width="1em"
+                                  height="1em"
+                                  viewBox="0 0 16 16"
+                                  class="bi bi-star-fill"
+                                  fill="currentColor"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                  />
+                                </svg>
+                                <svg
+                                  width="1em"
+                                  height="1em"
+                                  viewBox="0 0 16 16"
+                                  class="bi bi-star-fill"
+                                  fill="currentColor"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                  />
+                                </svg>
+                                <input type="checkbox" />
+                                <span class="checkmark"></span>
+                              </label>
+                            </li>
+                            <li class="nav-item">
+                              <label class="label-container text-warning">
+                                <svg
+                                  width="1em"
+                                  height="1em"
+                                  viewBox="0 0 16 16"
+                                  class="bi bi-star-fill"
+                                  fill="currentColor"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                  />
+                                </svg>
+                                <svg
+                                  width="1em"
+                                  height="1em"
+                                  viewBox="0 0 16 16"
+                                  class="bi bi-star-fill"
+                                  fill="currentColor"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                  />
+                                </svg>
+                                <svg
+                                  width="1em"
+                                  height="1em"
+                                  viewBox="0 0 16 16"
+                                  class="bi bi-star-fill"
+                                  fill="currentColor"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                  />
+                                </svg>
+                                <svg
+                                  width="1em"
+                                  height="1em"
+                                  viewBox="0 0 16 16"
+                                  class="bi bi-star-fill"
+                                  fill="currentColor"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                  />
+                                </svg>
+                                <svg
+                                  width="1em"
+                                  height="1em"
+                                  viewBox="0 0 16 16"
+                                  class="bi bi-star"
+                                  fill="currentColor"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    fill-rule="evenodd"
+                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                                  />
+                                </svg>
+                                <input type="checkbox" />
+                                <span class="checkmark"></span>
+                              </label>
+                            </li>
+                            <li class="nav-item">
+                              <label class="label-container text-warning">
+                                <svg
+                                  width="1em"
+                                  height="1em"
+                                  viewBox="0 0 16 16"
+                                  class="bi bi-star-fill"
+                                  fill="currentColor"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                  />
+                                </svg>
+                                <svg
+                                  width="1em"
+                                  height="1em"
+                                  viewBox="0 0 16 16"
+                                  class="bi bi-star-fill"
+                                  fill="currentColor"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                  />
+                                </svg>
+                                <svg
+                                  width="1em"
+                                  height="1em"
+                                  viewBox="0 0 16 16"
+                                  class="bi bi-star-fill"
+                                  fill="currentColor"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                  />
+                                </svg>
+                                <svg
+                                  width="1em"
+                                  height="1em"
+                                  viewBox="0 0 16 16"
+                                  class="bi bi-star"
+                                  fill="currentColor"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    fill-rule="evenodd"
+                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                                  />
+                                </svg>
+                                <svg
+                                  width="1em"
+                                  height="1em"
+                                  viewBox="0 0 16 16"
+                                  class="bi bi-star"
+                                  fill="currentColor"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    fill-rule="evenodd"
+                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                                  />
+                                </svg>
+                                <input type="checkbox" />
+                                <span class="checkmark"></span>
+                              </label>
+                            </li>
+                            <li class="nav-item">
+                              <label class="label-container text-warning">
+                                <svg
+                                  width="1em"
+                                  height="1em"
+                                  viewBox="0 0 16 16"
+                                  class="bi bi-star-fill"
+                                  fill="currentColor"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                  />
+                                </svg>
+                                <svg
+                                  width="1em"
+                                  height="1em"
+                                  viewBox="0 0 16 16"
+                                  class="bi bi-star-fill"
+                                  fill="currentColor"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                                  />
+                                </svg>
+                                <svg
+                                  width="1em"
+                                  height="1em"
+                                  viewBox="0 0 16 16"
+                                  class="bi bi-star"
+                                  fill="currentColor"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    fill-rule="evenodd"
+                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                                  />
+                                </svg>
+                                <svg
+                                  width="1em"
+                                  height="1em"
+                                  viewBox="0 0 16 16"
+                                  class="bi bi-star"
+                                  fill="currentColor"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    fill-rule="evenodd"
+                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                                  />
+                                </svg>
+                                <svg
+                                  width="1em"
+                                  height="1em"
+                                  viewBox="0 0 16 16"
+                                  class="bi bi-star"
+                                  fill="currentColor"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    fill-rule="evenodd"
+                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                                  />
+                                </svg>
+                                <input type="checkbox" />
+                                <span class="checkmark"></span>
+                              </label>
+                            </li>
+                          </ul>
+                          <hr />
+                          <a class="btn btn-dark btn-block mt-2" href="#">Atualizar</a>
+                        </div>
+                      </div>
                     </div>
+                  </ul>
                 </div>
+              </nav>
             </div>
+            <div class="d-none d-md-block col-md-3">
+              <div class="grade-especifica">
+                <div class="row">
+                  <div class="col-12">
+                    <h6>Pesquisar</h6>
+                    <form class="form-inline my-2 my-lg-0">
+                      <input
+                        class="form-control col-lg-9 col-12"
+                        type="search"
+                        placeholder="Pesquisar..."
+                        aria-label="Pesquisar"
+                      />
+                      <button
+                        class="form-control col-12 col-lg-3 btn-search my-2 my-sm-0 mx-0"
+                        type="submit"
+                      >
+                        <svg
+                          width="1em"
+                          height="1em"
+                          viewBox="0 0 16 16"
+                          class="bi bi-search"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"
+                          />
+                        </svg>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+                <hr class="my-4" />
+                <div class="row">
+                  <div class="col-12">
+                    <h6>Categorias</h6>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link ml-0 pl-0 text-dark" href="#">Todos os Produtos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link ml-0 pl-0 text-dark" href="#">Masculino</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link ml-0 pl-0 text-dark" href="#">Feminino</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link ml-0 pl-0 text-dark" href="#">Infantil</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <hr />
+                <div class="row">
+                  <div class="col-12">
+                    <h6>Preço Máximo</h6>
+                    <form>
+                      <div class="form-group">
+                        <input
+                          type="range"
+                          class="form-control-range"
+                          id="formControlRange"
+                          value="250"
+                          max="1100"
+                        />
+                        <span>R$<span id="num">250</span>,00</span>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <hr class="my-4" />
+                <div class="row">
+                  <div class="col-12">
+                    <h6>Descontos</h6>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <label class="label-container text-danger"
+                          >70% de desconto
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </li>
+                      <li class="nav-item">
+                        <label class="label-container"
+                          >50% desconto
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </li>
+                      <li class="nav-item">
+                        <label class="label-container"
+                          >35% de desconto
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </li>
+                      <li class="nav-item">
+                        <label class="label-container"
+                          >17% de desconto
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <hr class="my-4" />
+                <div class="row">
+                  <div class="col-12">
+                    <h6>Avaliações</h6>
+                    <ul class="nav stars flex-column">
+                      <li class="nav-item">
+                        <label class="label-container text-warning">
+                          <svg
+                            width="1em"
+                            height="1em"
+                            viewBox="0 0 16 16"
+                            class="bi bi-star-fill"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                            />
+                          </svg>
+                          <svg
+                            width="1em"
+                            height="1em"
+                            viewBox="0 0 16 16"
+                            class="bi bi-star-fill"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                            />
+                          </svg>
+                          <svg
+                            width="1em"
+                            height="1em"
+                            viewBox="0 0 16 16"
+                            class="bi bi-star-fill"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                            />
+                          </svg>
+                          <svg
+                            width="1em"
+                            height="1em"
+                            viewBox="0 0 16 16"
+                            class="bi bi-star-fill"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                            />
+                          </svg>
+                          <svg
+                            width="1em"
+                            height="1em"
+                            viewBox="0 0 16 16"
+                            class="bi bi-star-fill"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                            />
+                          </svg>
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </li>
+                      <li class="nav-item">
+                        <label class="label-container text-warning">
+                          <svg
+                            width="1em"
+                            height="1em"
+                            viewBox="0 0 16 16"
+                            class="bi bi-star-fill"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                            />
+                          </svg>
+                          <svg
+                            width="1em"
+                            height="1em"
+                            viewBox="0 0 16 16"
+                            class="bi bi-star-fill"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                            />
+                          </svg>
+                          <svg
+                            width="1em"
+                            height="1em"
+                            viewBox="0 0 16 16"
+                            class="bi bi-star-fill"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                            />
+                          </svg>
+                          <svg
+                            width="1em"
+                            height="1em"
+                            viewBox="0 0 16 16"
+                            class="bi bi-star-fill"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                            />
+                          </svg>
+                          <svg
+                            width="1em"
+                            height="1em"
+                            viewBox="0 0 16 16"
+                            class="bi bi-star"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                            />
+                          </svg>
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </li>
+                      <li class="nav-item">
+                        <label class="label-container text-warning">
+                          <svg
+                            width="1em"
+                            height="1em"
+                            viewBox="0 0 16 16"
+                            class="bi bi-star-fill"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                            />
+                          </svg>
+                          <svg
+                            width="1em"
+                            height="1em"
+                            viewBox="0 0 16 16"
+                            class="bi bi-star-fill"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                            />
+                          </svg>
+                          <svg
+                            width="1em"
+                            height="1em"
+                            viewBox="0 0 16 16"
+                            class="bi bi-star-fill"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                            />
+                          </svg>
+                          <svg
+                            width="1em"
+                            height="1em"
+                            viewBox="0 0 16 16"
+                            class="bi bi-star"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                            />
+                          </svg>
+                          <svg
+                            width="1em"
+                            height="1em"
+                            viewBox="0 0 16 16"
+                            class="bi bi-star"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                            />
+                          </svg>
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </li>
+                      <li class="nav-item">
+                        <label class="label-container text-warning">
+                          <svg
+                            width="1em"
+                            height="1em"
+                            viewBox="0 0 16 16"
+                            class="bi bi-star-fill"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                            />
+                          </svg>
+                          <svg
+                            width="1em"
+                            height="1em"
+                            viewBox="0 0 16 16"
+                            class="bi bi-star-fill"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                            />
+                          </svg>
+                          <svg
+                            width="1em"
+                            height="1em"
+                            viewBox="0 0 16 16"
+                            class="bi bi-star"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                            />
+                          </svg>
+                          <svg
+                            width="1em"
+                            height="1em"
+                            viewBox="0 0 16 16"
+                            class="bi bi-star"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                            />
+                          </svg>
+                          <svg
+                            width="1em"
+                            height="1em"
+                            viewBox="0 0 16 16"
+                            class="bi bi-star"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                            />
+                          </svg>
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </li>
+                    </ul>
+                    <hr />
+                    <a class="btn btn-dark btn-block mt-2" href="#">Atualizar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-9">
+              <div class="row">
+                <h2 class="col-12 h3">
+                  Produtos
+                  <hr />
+                  <small class="h6"
+                    >8 produtos <span class="d-none d-md-inline">disponíveis</span></small
+                  >
+                </h2>
+                <div class="col-12 col-md-6 col-lg-4 mt-0">
+                  <div class="card">
+                    <div class="card-body">
+                      <figure>
+                        <img src="img/boots/M1.png" class="img-fluid" alt="tenis ACE 1" />
+                        <a href="#"><figcaption class="shadow btn-product">COMPRAR</figcaption></a>
+                      </figure>
+                      <h5>Tênis ACE Zoom Pegasus</h5>
+                      <small class="category-boot">Corrida</small>
+                      <small class="gender-masc">Masculino</small>
+                      <p class="h5 pt-1">R$ 899,99</p>
+                      <p>até 10x de 89,99</p>
+                      <small class="text-muted">2 cores</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mt-0">
+                  <div class="card">
+                    <div class="card-body">
+                      <figure>
+                        <img src="img/boots/M2.png" class="img-fluid" alt="tenis ACE 2" />
+                        <a href="#"><figcaption class="shadow btn-product">COMPRAR</figcaption></a>
+                      </figure>
+                      <h5>Tênis ACE Raybow Dash</h5>
+                      <small class="category-boot">Caminhada</small>
+                      <small class="gender-masc">Masculino</small>
+                      <p class="h5 py-1">R$ 249,99 <small class="text-danger"> 19% OFF</small></p>
+                      <p>até 10x de 24,99</p>
+                      <small class="text-muted">4 cores</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <figure>
+                        <img src="img/boots/F4.png" class="img-fluid" alt="tenis ACE 3" />
+                        <a href="#"><figcaption class="shadow btn-product">COMPRAR</figcaption></a>
+                      </figure>
+                      <h5>Tênis ACE Joyride Run</h5>
+                      <small class="category-boot">Corrida</small>
+                      <small class="gender-uni">Unisex</small>
+                      <p class="h5 py-1">R$ 699,99</p>
+                      <p>até 10x de 39,99</p>
+                      <small class="text-muted">1 cor</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mt-0">
+                  <div class="card">
+                    <div class="card-body">
+                      <figure>
+                        <img src="img/boots/M5.png" class="img-fluid" alt="tenis ACE 1" />
+                        <a href="#"><figcaption class="shadow btn-product">COMPRAR</figcaption></a>
+                      </figure>
+                      <h5>Tênis ACE Flex Contact</h5>
+                      <small class="category-boot">Corrida</small>
+                      <small class="gender-uni">Unisex</small>
+                      <p class="h5 py-1">R$ 399,99 <small class="text-danger"> 50% OFF</small></p>
+                      <p>até 10x de 89,99</p>
+                      <small class="text-muted">2 cores</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <figure>
+                        <img src="img/boots/F3.png" class="img-fluid" alt="tenis ACE 2" />
+                        <a href="#"><figcaption class="shadow btn-product">COMPRAR</figcaption></a>
+                      </figure>
+                      <h5>Tênis ACE Quest 2</h5>
+                      <small class="category-boot">Caminhada</small>
+                      <small class="gender-fem">Feminino</small>
+                      <p>até 10x de 224,99</p>
+                      <small class="text-muted">4 cores</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mt-0">
+                  <div class="card">
+                    <div class="card-body">
+                      <figure>
+                        <img src="img/boots/F1.png" class="img-fluid" alt="tenis ACE 1" />
+                        <a href="#"><figcaption class="shadow btn-product">COMPRAR</figcaption></a>
+                      </figure>
+                      <h5>Tênis ACE Cute Machines</h5>
+                      <small class="category-boot">Casual</small>
+                      <small class="gender-fem">Feminino</small>
+                      <p class="h5 py-1">R$ 249,99 <small class="text-danger"> 35% OFF</small></p>
+                      <p>até 10x de 89,99</p>
+                      <small class="text-muted">2 cores</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <figure>
+                        <img src="img/boots/F6.png" class="img-fluid" alt="tenis ACE 3" />
+                        <a href="#"><figcaption class="shadow btn-product">COMPRAR</figcaption></a>
+                      </figure>
+                      <h5>Tênis ACE Zoom Pegasus</h5>
+                      <small class="category-boot">Corrida</small>
+                      <small class="gender-fem">Feminino</small>
+                      <p class="h5 py-1">R$ 899,99</p>
+                      <p>até 10x de 39,99</p>
+                      <small class="text-muted">2 cores</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <figure>
+                        <img src="img/boots/F7.png" class="img-fluid" alt="tenis ACE 2" />
+                        <a href="#"><figcaption class="shadow btn-product">COMPRAR</figcaption></a>
+                      </figure>
+                      <h5>Tênis ACE Fast Jett</h5>
+                      <small class="category-boot">Corrida</small>
+                      <small class="gender-fem">Feminino</small>
+                      <p class="h5 py-1">R$ 549,99</p>
+                      <p>até 10x de 24,99</p>
+                      <small class="text-muted">4 cores</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="ml-auto mr-0 mt-5">
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item disabled">
+                        <a
+                          class="page-link bg-black text-light border-0"
+                          href="#"
+                          aria-label="Previous"
+                        >
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link bg-black m-0 border-0 text-light" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <p class="page-link bg-black m-0 border-0 text-muted hover-disabled">2</p>
+                      </li>
+                      <li class="page-item disabled">
+                        <a
+                          class="page-link bg-black text-light border-0"
+                          href="#"
+                          aria-label="Next"
+                        >
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </main>
     <!-- Rodapé !-->
     <footer class="bg-perfil-footer pb-1">
-        <div class="container-fluid bg-black">
-            <div class="container text-center text-light py-5">
-                <div class="row">
-                    <div class="col-12">
-                        <a href="#"> <img src="img/logo.png" class="logo-footer" alt=""> </a>
-                        <p>Fundada em 1997 na cidade de São Paulo, estado Paulista, a intenção original da marca era criar calçados <br> casuais e baratos, para pequenas cidades da região. Ao longo do tempo, a marca tornou-se mais próxima do esporte.</p>
-                        <p class="text-secondary">"Se você não arriscar nunca será capaz de saber aonde poderia chegar."</p>
-                    </div>
-                    <div class="col-12 pt-3">
-                        <ul class="list-unstyled">
-                            <li class="d-inline px-2">
-                               <a href="" class="text-blue-light"><i class="fab fa-youtube"></i></a>
-                            </li>
-                            <li class="d-inline">
-                                <a href="" class="text-blue-light"><i class="fab fa-twitter"></i></a>
-                            </li>
-                            <li class="d-inline px-2">
-                                <a href="" class="text-blue-light"><i class="fab fa-instagram"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container-fluid bg-black">
+        <div class="container text-center text-light py-5">
+          <div class="row">
+            <div class="col-12">
+              <a href="#"> <img src="img/logo.png" class="logo-footer" alt="" /> </a>
+              <p>
+                Fundada em 1997 na cidade de São Paulo, estado Paulista, a intenção original da
+                marca era criar calçados <br />
+                casuais e baratos, para pequenas cidades da região. Ao longo do tempo, a marca
+                tornou-se mais próxima do esporte.
+              </p>
+              <p class="text-secondary">
+                "Se você não arriscar nunca será capaz de saber aonde poderia chegar."
+              </p>
             </div>
-        </div>
-        <div class="container text-center text-md-left d-none d-md-block pt-md-5">
-            <div class="row border-top pt-5 border-light">
-                <div class="col-12 col-md-4 col-xl-3">
-                    <p class="text-light h6">Categorias</p>
-                    <ul class="list-unstyled mt-3">
-                        <li>
-                            <span class="mt-4"><a href="categoria-masc.html" class="text-light"> Masculino</a></span>
-                        </li>
-                        <li class="my-1 my-lg-2">
-                            <span><a href="categoria-fem.html" class="text-light"> Feminino</a></span>
-                        </li>
-                        <li>
-                            <span class="mt-4"><a href="categoria-inf.html" class="text-light"> Infantil</a></span>
-                        </li>
-                    </ul> 
-                </div>
-                <div class="d-none d-xl-block col-md-4 col-xl-3"> 
-                    <p class="text-light h6">Menu</p>
-                    <ul class="list-unstyled mt-3">
-                        <li>
-                            <span class="mt-4"><a href="index.html" class="text-light"> Home</a></span>
-                        </li>
-                        <li class="my-1 my-lg-2">
-                            <span><a href="promocao.html" class="text-light"> Black Friday</a></span>
-                        </li>
-                        <li>
-                            <span class="mt-4"><a href="nossos-produtos.html" class="text-light"> Produtos</a></span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-12 col-md-4 col-xl-3"> 
-                    <p class="text-light h6">Contato</p>
-                    <ul class="list-unstyled mt-3">
-                        <li>
-                            <span><a href="perguntas-frequentes.html" class="text-light"> Perguntas Frequentes</a></span>
-                        </li>
-                        <li class="my-1 my-xl-2">
-                            <span class="mt-4"><a href="politica.html" class="text-light"> Politica e Privacidade</a></span>
-                        </li>
-                        <li>
-                            <span class="mt-4"><a href="fale-conosco.html" class="text-light"> Fale Conosco</a></span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-12 col-md-4 col-xl-3"> 
-                    <p class="text-light h6">Recursos</p>
-                    <ul class="list-unstyled mt-3">
-                        <li>
-                            <span><a href="prazo-entrega.html" class="text-light"> Prazos de Entrega</a></span>
-                        </li>
-                        <li class="my-1 my-xl-2">
-                            <span class="mt-4"><a href="trocas-devolucao.html" class="text-light"> Trocas e Devoluções</a></span>
-                        </li>
-                        <li>
-                            <span class="mt-4"><a href="perfil.html" class="text-light"> Minha Conta</a></span>
-                        </li>
-                    </ul>
-                </div>
+            <div class="col-12 pt-3">
+              <ul class="list-unstyled">
+                <li class="d-inline px-2">
+                  <a href="" class="text-blue-light"><i class="fab fa-youtube"></i></a>
+                </li>
+                <li class="d-inline">
+                  <a href="" class="text-blue-light"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="d-inline px-2">
+                  <a href="" class="text-blue-light"><i class="fab fa-instagram"></i></a>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
-        <div class="d-block d-md-none bg-white container-fluid px-0 pt-md-5">
-            <div class="accordion" id="footer-cel">
-                <div class="card">
-                    <div class="card-header bg-dark" id="head-cel-1">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-light text-left" type="button" data-toggle="collapse" data-target="#cel-1" aria-expanded="true" aria-controls="cel-1">
-                        Categorias
-                        </button>
-                    </h2>
-                </div>
-                <div id="cel-1" class="collapse show" aria-labelledby="head-cel-1" data-parent="#footer-cel">
-                    <div class="card-body">
-                        <ul class="list-unstyled mt-3">
-                            <li>
-                                <span class="mt-4"><a href="categoria-masc.html" class="text-dark"> Masculino</a></span>
-                            </li>
-                            <li class="my-1 my-lg-2">
-                                <span><a href="categoria-fem.html" class="text-dark"> Feminino</a></span>
-                            </li>
-                            <li>
-                                <span class="mt-4"><a href="categoria-inf.html" class="text-dark"> Infantil</a></span>
-                            </li>
-                        </ul> 
-                    </div>
-                </div>
-                </div>
-                <div class="card ">
-                    <div class="card-header bg-dark" id="head-cel-2">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-light text-left collapsed" type="button" data-toggle="collapse" data-target="#cel-2" aria-expanded="false" aria-controls="cel-2">
-                            Contato
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="cel-2" class="collapse" aria-labelledby="head-cel-2" data-parent="#footer-cel">
-                        <div class="card-body">
-                            <ul class="list-unstyled mt-3">
-                                <li>
-                                    <span><a href="perguntas-frequentes.html" class="text-dark"> Perguntas Frequentes</a></span>
-                                </li>
-                                <li class="my-1 my-xl-2">
-                                    <span class="mt-4"><a href="politica.html" class="text-dark"> Politica e Privacidade</a></span>
-                                </li>
-                                <li>
-                                    <span class="mt-4"><a href="fale-conosco.html" class="text-dark"> Fale Conosco</a></span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header bg-dark" id="head-cel-3">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-light text-left h2 collapsed" type="button" data-toggle="collapse" data-target="#cel-3" aria-expanded="false" aria-controls="cel-3">
-                            Recursos
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="cel-3" class="collapse" aria-labelledby="head-cel-3" data-parent="#footer-cel">
-                        <div class="card-body">
-                            <ul class="list-unstyled mt-3">
-                                <li>
-                                    <span><a href="prazo-entrega.html" class="text-dark"> Prazos de Entrega</a></span>
-                                </li>
-                                <li class="my-1 my-xl-2">
-                                    <span class="mt-4"><a href="trocas-devolucao.html" class="text-dark"> Trocas e Devoluções</a></span>
-                                </li>
-                                <li>
-                                    <span class="mt-4"><a href="perfil.html" class="text-dark"> Minha Conta</a></span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <div class="container text-center text-md-left d-none d-md-block pt-md-5">
+        <div class="row border-top pt-5 border-light">
+          <div class="col-12 col-md-4 col-xl-3">
+            <p class="text-light h6">Categorias</p>
+            <ul class="list-unstyled mt-3">
+              <li>
+                <span class="mt-4"
+                  ><a href="categoria-masc.html" class="text-light"> Masculino</a></span
+                >
+              </li>
+              <li class="my-1 my-lg-2">
+                <span><a href="categoria-fem.html" class="text-light"> Feminino</a></span>
+              </li>
+              <li>
+                <span class="mt-4"
+                  ><a href="categoria-inf.html" class="text-light"> Infantil</a></span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="d-none d-xl-block col-md-4 col-xl-3">
+            <p class="text-light h6">Menu</p>
+            <ul class="list-unstyled mt-3">
+              <li>
+                <span class="mt-4"><a href="index.html" class="text-light"> Home</a></span>
+              </li>
+              <li class="my-1 my-lg-2">
+                <span><a href="promocao.html" class="text-light"> Black Friday</a></span>
+              </li>
+              <li>
+                <span class="mt-4"
+                  ><a href="nossos-produtos.html" class="text-light"> Produtos</a></span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 col-xl-3">
+            <p class="text-light h6">Contato</p>
+            <ul class="list-unstyled mt-3">
+              <li>
+                <span
+                  ><a href="perguntas-frequentes.html" class="text-light">
+                    Perguntas Frequentes</a
+                  ></span
+                >
+              </li>
+              <li class="my-1 my-xl-2">
+                <span class="mt-4"
+                  ><a href="politica.html" class="text-light"> Politica e Privacidade</a></span
+                >
+              </li>
+              <li>
+                <span class="mt-4"
+                  ><a href="fale-conosco.html" class="text-light"> Fale Conosco</a></span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 col-xl-3">
+            <p class="text-light h6">Recursos</p>
+            <ul class="list-unstyled mt-3">
+              <li>
+                <span><a href="prazo-entrega.html" class="text-light"> Prazos de Entrega</a></span>
+              </li>
+              <li class="my-1 my-xl-2">
+                <span class="mt-4"
+                  ><a href="trocas-devolucao.html" class="text-light"> Trocas e Devoluções</a></span
+                >
+              </li>
+              <li>
+                <span class="mt-4"><a href="perfil.html" class="text-light"> Minha Conta</a></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="d-block d-md-none bg-white container-fluid px-0 pt-md-5">
+        <div class="accordion" id="footer-cel">
+          <div class="card">
+            <div class="card-header bg-dark" id="head-cel-1">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-light text-left"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#cel-1"
+                  aria-expanded="true"
+                  aria-controls="cel-1"
+                >
+                  Categorias
+                </button>
+              </h2>
             </div>
-        </div>
-        <div class="w-100">
-            <div class="d-md-none text-center pt-md-5 bg-dark text-light">
-                <small class="d-block d-md-inline pt-2"> © 2020 ACE Joinville SC - Todos os direitos reservados. </small>
-                <small class="d-block d-md-inline py-2">Desenvolvido por <span class="text-danger">MMdeveloper</span></small>
+            <div
+              id="cel-1"
+              class="collapse show"
+              aria-labelledby="head-cel-1"
+              data-parent="#footer-cel"
+            >
+              <div class="card-body">
+                <ul class="list-unstyled mt-3">
+                  <li>
+                    <span class="mt-4"
+                      ><a href="categoria-masc.html" class="text-dark"> Masculino</a></span
+                    >
+                  </li>
+                  <li class="my-1 my-lg-2">
+                    <span><a href="categoria-fem.html" class="text-dark"> Feminino</a></span>
+                  </li>
+                  <li>
+                    <span class="mt-4"
+                      ><a href="categoria-inf.html" class="text-dark"> Infantil</a></span
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
-        </div>
-        <div class="d-none d-md-block w-100">
-            <div class="text-center pt-md-5 text-light">
-                <small class="d-block d-md-inline p-2"><img src="img/icons/Bandeira-do-Brasil.png" class="img-brasil" alt=""> BRASIL </small>
-                <small class="d-block d-md-inline p-2">Desenvolvido por <span class="text-danger">MMdeveloper</span></small>
-                <small class="d-block d-md-inline p-2"> © 2020 ACE Joinville SC - Todos os direitos reservados. </small>
+          </div>
+          <div class="card">
+            <div class="card-header bg-dark" id="head-cel-2">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-light text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#cel-2"
+                  aria-expanded="false"
+                  aria-controls="cel-2"
+                >
+                  Contato
+                </button>
+              </h2>
             </div>
+            <div id="cel-2" class="collapse" aria-labelledby="head-cel-2" data-parent="#footer-cel">
+              <div class="card-body">
+                <ul class="list-unstyled mt-3">
+                  <li>
+                    <span
+                      ><a href="perguntas-frequentes.html" class="text-dark">
+                        Perguntas Frequentes</a
+                      ></span
+                    >
+                  </li>
+                  <li class="my-1 my-xl-2">
+                    <span class="mt-4"
+                      ><a href="politica.html" class="text-dark"> Politica e Privacidade</a></span
+                    >
+                  </li>
+                  <li>
+                    <span class="mt-4"
+                      ><a href="fale-conosco.html" class="text-dark"> Fale Conosco</a></span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header bg-dark" id="head-cel-3">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-light text-left h2 collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#cel-3"
+                  aria-expanded="false"
+                  aria-controls="cel-3"
+                >
+                  Recursos
+                </button>
+              </h2>
+            </div>
+            <div id="cel-3" class="collapse" aria-labelledby="head-cel-3" data-parent="#footer-cel">
+              <div class="card-body">
+                <ul class="list-unstyled mt-3">
+                  <li>
+                    <span
+                      ><a href="prazo-entrega.html" class="text-dark"> Prazos de Entrega</a></span
+                    >
+                  </li>
+                  <li class="my-1 my-xl-2">
+                    <span class="mt-4"
+                      ><a href="trocas-devolucao.html" class="text-dark">
+                        Trocas e Devoluções</a
+                      ></span
+                    >
+                  </li>
+                  <li>
+                    <span class="mt-4"
+                      ><a href="perfil.html" class="text-dark"> Minha Conta</a></span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-    </footer>      
+      </div>
+      <div class="w-100">
+        <div class="d-md-none text-center pt-md-5 bg-dark text-light">
+          <small class="d-block d-md-inline pt-2">
+            © 2020 ACE Joinville SC - Todos os direitos reservados.
+          </small>
+          <small class="d-block d-md-inline py-2"
+            >Desenvolvido por <span class="text-danger">MMdeveloper</span></small
+          >
+        </div>
+      </div>
+      <div class="d-none d-md-block w-100">
+        <div class="text-center pt-md-5 text-light">
+          <small class="d-block d-md-inline p-2"
+            ><img src="img/icons/Bandeira-do-Brasil.png" class="img-brasil" alt="" /> BRASIL
+          </small>
+          <small class="d-block d-md-inline p-2"
+            >Desenvolvido por <span class="text-danger">MMdeveloper</span></small
+          >
+          <small class="d-block d-md-inline p-2">
+            © 2020 ACE Joinville SC - Todos os direitos reservados.
+          </small>
+        </div>
+      </div>
+    </footer>
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
     <!-- Alert bonito -->
     <script src="https://unpkg.com/sweetalert2@9/dist/sweetalert2.all.js"></script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -813,13 +1439,13 @@
     <script src="js/init.js"></script>
     <script src="js/main.js"></script>
     <script src="js/auth.js"></script>
-    <script>    
-        var $range = document.querySelector('#formControlRange'),
-        $value = document.querySelector('#num');
+    <script>
+      var $range = document.querySelector('#formControlRange'),
+        $value = document.querySelector('#num')
 
-        $range.addEventListener('input', function() {
-        $value.textContent = this.value;
-        });
+      $range.addEventListener('input', function () {
+        $value.textContent = this.value
+      })
     </script>
-</body>
+  </body>
 </html>
