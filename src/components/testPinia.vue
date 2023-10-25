@@ -1,30 +1,39 @@
 <template>
-    <div>
-      <h1>Itens</h1>
-      <button @click="fetchItems">Buscar Itens</button>
+  <div>
+      <!-- Renderize os produtos da categoria "Corrida" usando o getter -->
       {{ items }}
-    </div>
-  </template>
-  
-  <script>
-  import { ref, defineComponent } from 'vue';
-  import { useItemsStore } from '@/stores/products';
-  
-  export default defineComponent({
-    setup() {
-      const items = ref([]);
-      
-      const fetchItems = async () => {
-        items.value = await useItemsStore().fetchItems();
-      };
+      <br />
+      ola
+      <br />
+      {{ corridaProducts }}
+  </div>
+</template>
 
-      fetchItems()
+<script>
+import { ref, defineComponent, onMounted } from 'vue';
+import { useItemsStore } from '@/stores/products';
 
-      return {
-        items,
-        fetchItems,
-      };
-    },
-  });
-  </script>
-  
+export default defineComponent({
+  setup() {
+    const items = ref([]);
+    const corridaProducts = ref([]);
+    const itemsStore = useItemsStore();
+
+    const fetchItems = async () => {
+      await itemsStore.fetchItems();
+      items.value = itemsStore.items; // Obtenha os itens diretamente do store
+      corridaProducts.value = itemsStore.corridaProducts; // Obtenha os produtos de corrida
+    };
+
+    onMounted(() => {
+      fetchItems();
+    });
+
+    return {
+      items,
+      corridaProducts,
+      fetchItems,
+    };
+  },
+});
+</script>

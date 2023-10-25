@@ -23,7 +23,9 @@
           <SectionHistory />
         </Container>
       </section>
-      <testPinia />
+      <div>
+        <testPinia />
+      </div>
     </TemplateView>
   </div>
 </template>
