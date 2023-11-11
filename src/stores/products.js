@@ -1,27 +1,33 @@
 import { fetchData } from '@/plugins/axios'
-import { defineStore } from 'pinia';
+import { defineStore } from 'pinia'
 import { ref } from 'vue'
 
-export const useItemsStore = defineStore('items', {
+export const useProductsStore = defineStore('allProducts', {
   state: () => ({
-    items: ref({}),
+    allProducts: ref([])
   }),
   actions: {
-    async fetchItems() {
+    async fetchProducts() {
       try {
-        const products = await fetchData('products');
-        this.items = products; // Atualize o estado com os produtos
+        this.allProducts = await fetchData('products')
       } catch (error) {
-        console.error('Erro ao buscar os itens:', error);
+        console.error('Erro ao buscar os products:', error)
+        return error
       }
-    },
+    }
   },
   getters: {
-    corridaProducts(state) {
-      // Use Array.filter para obter apenas os produtos da categoria "Corrida".
-      const items = state.items;
-      console.log(items);
-      return Object.values(items).filter(product => product.id === 14);
+    typeProducts: (state) => (type) => {
+      const allProducts = state.allProducts
+      if (type == 'offer')
+        return Object.values(allProducts).filter((product) => product.offer === true)
+      if (type == 'new') return Object.values(allProducts).filter((product) => product.new === true)
+      return Object.values(allProducts).filter((product) => product.type === type)
     },
-  },
-});
+    CatregoryProducts: (state) => (category) => {
+      // Use Array.filter para obter apenas os produtos da categoria especificada.
+      const allProducts = state.allProducts
+      return Object.values(allProducts).filter((product) => product.category.title === category)
+    }
+  }
+})

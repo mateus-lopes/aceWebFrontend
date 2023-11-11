@@ -1,7 +1,7 @@
 <template lang="">
   <main>
     <SectionTitle :dark="dark" :title="title" />
-    <ProductSlider :dark="dark" :products="products" />
+    <ProductSlider :dark="dark" :type="getProducts" />
   </main>
 </template>
 
@@ -9,10 +9,31 @@
 import SectionTitle from '@/components/SliderTitle.vue'
 import ProductSlider from '@/components/products/ProductSlider.vue'
 
+import { ref, onMounted } from 'vue'
+import { useProductsStore } from '@/stores/products'
+
 export default {
   components: {
     SectionTitle,
     ProductSlider
+  },
+  setup(props) {
+    const productsStore = useProductsStore()
+    const getProducts = ref([])
+    const productType = props.type
+
+    const fetchProducts = async () => {
+      await productsStore.fetchProducts()
+      getProducts.value = productsStore.typeProducts(productType)
+    }
+
+    onMounted(() => {
+      fetchProducts()
+    })
+
+    return {
+      getProducts
+    }
   },
   props: {
     dark: {
@@ -23,8 +44,8 @@ export default {
       type: String,
       required: true
     },
-    products: {
-      type: Array,
+    type: {
+      type: String,
       required: true
     }
   },

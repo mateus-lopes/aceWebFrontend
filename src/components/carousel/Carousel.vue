@@ -45,7 +45,6 @@
 </template>
 
 <script>
-import { ref } from 'vue'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Autoplay, Pagination, Navigation } from 'swiper/modules'
 
@@ -53,6 +52,8 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 
 import GetImg from '../GetImg.vue'
+import { useHighlightsStore } from '@/stores/images'
+import { ref, onMounted } from 'vue'
 
 export default {
   components: {
@@ -60,21 +61,31 @@ export default {
     SwiperSlide,
     GetImg
   },
-  props: {
-    urls1: {
-      type: Array,
-      required: true
-    },
-    urls2: {
-      type: Array,
-      required: true
-    }
-  },
   setup() {
+    const highlightsStore = useHighlightsStore()
+    const urls1 = ref('')
+    const urls2 = ref('')
+
+    const fetchHighlights = async () => {
+      await highlightsStore.fetchHighlights()
+      urls1.value = highlightsStore.typeHighlights('big-mobile').map((item) => {
+        return { url: item.image.file }
+      })
+      urls2.value = highlightsStore.typeHighlights('big-desktop').map((item) => {
+        return { url: item.image.file }
+      })
+    }
+
     const progressCircle = ref(null)
     const progressContent = ref(null)
 
+    onMounted(() => {
+      fetchHighlights()
+    })
+
     return {
+      urls1,
+      urls2,
       progressCircle,
       progressContent,
       modules: [Autoplay, Pagination, Navigation]

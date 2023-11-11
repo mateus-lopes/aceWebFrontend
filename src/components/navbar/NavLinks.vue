@@ -16,6 +16,19 @@
             >
               <!-- nome do link (popover) -->
               {{ category.name }}
+              <svg
+                :class="[open ? css_linkCategoryHover : css_linkCategory]"
+                class="-mr-1 h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                  clip-rule="evenodd"
+                />
+              </svg>
             </PopoverButton>
           </div>
           <transition
@@ -102,7 +115,7 @@ export default {
     PopoverGroup,
     PopoverPanel
   },
-  setup() {
+  setup( { categories, models, acessories } ) {
     const css_linkCategory = 'border-transparent text-gray-700 hover:text-black'
     const css_linkCategoryHover = 'text-black font-medium'
     const css_link = 'focus:font-medium'
@@ -110,8 +123,8 @@ export default {
     const navigation = {
       categories: [
         {
-          id: 'women',
-          name: 'Tênis',
+          id: 'produtcs_navbar',
+          name: 'Produtos',
           featured: [
             {
               name: 'ZOOMX',
@@ -130,11 +143,14 @@ export default {
             }
           ],
           sections: [
+            categories,
+            models,
+            acessories,
             {
-              id: 'destaques',
-              name: 'Destaques',
+              id: 'categories',
+              name: 'Categorias',
               items: [
-                { name: 'Tops', href: '#' },
+                { name: 'FDSS', href: '#' },
                 { name: 'Dresses', href: '#' },
                 { name: 'Pants', href: '#' },
                 { name: 'Denim', href: '#' },
@@ -146,8 +162,8 @@ export default {
               ]
             },
             {
-              id: 'corrida',
-              name: 'Masculino',
+              id: 'sneakers',
+              name: 'Modelos',
               items: [
                 { name: 'Watches', href: '#' },
                 { name: 'Wallets', href: '#' },
@@ -158,69 +174,8 @@ export default {
               ]
             },
             {
-              id: 'acessorios',
-              name: 'Feminino',
-              items: [
-                { name: 'Full Nelson', href: '#' },
-                { name: 'My Way', href: '#' },
-                { name: 'Re-Arranged', href: '#' },
-                { name: 'Counterfeit', href: '#' },
-                { name: 'Significant Other', href: '#' }
-              ]
-            }
-          ]
-        },
-        {
-          id: 'men',
-          name: 'Acessórios',
-          featured: [
-            {
-              href: '#',
-              name: 'CUT MACHINES',
-              imageSrc:
-                'https://res.cloudinary.com/drr2pxeyc/image/upload/v1695964438/media/images/b9ntcrfegmsal21ic2l7.png',
-              imageAlt: 'Models sitting back to back, wearing Basic Tee in black and bone.'
-            },
-            {
-              href: '#',
-              name: 'ZOOMX',
-              imageSrc:
-                'https://res.cloudinary.com/drr2pxeyc/image/upload/v1695964438/media/images/zk0l2c2nlziemawhsdxe.png',
-              imageAlt:
-                'Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees.'
-            }
-          ],
-          sections: [
-            {
-              id: 'destaques',
-              name: 'Destaques',
-              items: [
-                { name: 'Tops', href: '#' },
-                { name: 'Dresses', href: '#' },
-                { name: 'Pants', href: '#' },
-                { name: 'Denim', href: '#' },
-                { name: 'Sweaters', href: '#' },
-                { name: 'T-Shirts', href: '#' },
-                { name: 'Jackets', href: '#' },
-                { name: 'Activewear', href: '#' },
-                { name: 'Browse All', href: '#' }
-              ]
-            },
-            {
-              id: 'corrida',
-              name: 'Masculino',
-              items: [
-                { name: 'Watches', href: '#' },
-                { name: 'Wallets', href: '#' },
-                { name: 'Bags', href: '#' },
-                { name: 'Sunglasses', href: '#' },
-                { name: 'Hats', href: '#' },
-                { name: 'Belts', href: '#' }
-              ]
-            },
-            {
-              id: 'acessorios',
-              name: 'Feminino',
+              id: 'acessories',
+              name: 'Aceessórios',
               items: [
                 { name: 'Full Nelson', href: '#' },
                 { name: 'My Way', href: '#' },
@@ -250,6 +205,21 @@ export default {
     open: {
       type: Boolean,
       required: true
+    },
+    categories: {
+      type: Array,
+      required: true,
+      default: () => ['default']
+    },
+    models: {
+      type: Array,
+      required: true,
+      default: () => []
+    },
+    acessories: {
+      type: Array,
+      required: true,
+      default: () => []
     }
   }
 }

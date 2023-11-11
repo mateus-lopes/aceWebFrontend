@@ -12,7 +12,7 @@
       @slideChange="onSlideChange"
       :navigation="true"
     >
-      <swiper-slide v-for="product in products" :key="product.id">
+      <swiper-slide v-for="product in type" :key="product.id">
         <ProductItem class="m-auto" :product="product" />
       </swiper-slide>
     </swiper>
@@ -28,7 +28,7 @@
       @slideChange="onSlideChange"
       :navigation="true"
     >
-      <swiper-slide v-for="product in products" :key="product.id">
+      <swiper-slide v-for="product in type" :key="product.id">
         <ProductItem class="m-auto" :product="product" />
       </swiper-slide>
     </swiper>
@@ -44,7 +44,7 @@
       @slideChange="onSlideChange"
       :navigation="true"
     >
-      <swiper-slide v-for="product in products" :key="product.id">
+      <swiper-slide v-for="product in type" :key="product.id">
         <ProductItem class="m-auto" :product="product" />
       </swiper-slide>
     </swiper>
@@ -60,7 +60,7 @@
       @slideChange="onSlideChange"
       :navigation="true"
     >
-      <swiper-slide v-for="product in products" :key="product.id">
+      <swiper-slide v-for="product in type" :key="product.id">
         <ProductItem class="m-auto" :product="product" />
       </swiper-slide>
     </swiper>
@@ -76,7 +76,7 @@
       @slideChange="onSlideChange"
       :navigation="true"
     >
-      <swiper-slide v-for="product in products" :key="product.id">
+      <swiper-slide v-for="product in type" :key="product.id">
         <ProductItem class="m-auto" :product="product" />
       </swiper-slide>
     </swiper>
@@ -109,7 +109,7 @@ export default {
       type: String,
       required: true
     },
-    products: {
+    type: {
       type: Array,
       required: true
     }

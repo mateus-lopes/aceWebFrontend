@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
 ::-webkit-scrollbar {
   background: #333;
   width: 12px;
@@ -19,7 +20,6 @@
 } /* canto inferior direito da barra de rolagem */
 
 body {
-  /* font-family: 'Josefin Sans', sans-serif; */
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
 }
@@ -29,3 +29,77 @@ body {
 @tailwind utilities;
 
 @import '@tailwindcss/aspect-ratio';
+
+.bg-primary {
+  background: #004aad !important;
+}
+.bg-secondary {
+  background: #343a40 !important;
+}
+.bg-darkin {
+  background: #343a40 !important;
+}
+.bg-dark {
+  background: #111111 !important;
+}
+.bg-green {
+  background: #28a745 !important;
+}
+.bg-green-light {
+  background: #28a745 !important;
+}
+.bg-red {
+  background: #8f1823 !important;
+}
+.bg-blue-light {
+  background: #17a2b8 !important;
+}
+.bg-blue-dark {
+  background: #004aad !important;
+}
+.bg-pink {
+  background: #ffaebc !important;
+}
+.bg-yellow {
+  background: #f0d400 !important;
+}
+.bg-danger {
+  background: #dc3545 !important;
+}
+.bg-purple {
+  background: #6f42c1 !important;
+}
+.bg-indigo {
+  background: #6610f2 !important;
+}
+.bg-purple-escuro {
+  background: #4a154b !important;
+}
+.bg-indigo-blue {
+  background: #3b5998 !important;
+}
+.bg-pink-dark {
+  background: #e1306c !important;
+}
+.bg-orange {
+  background: #ea4335 !important;
+}
+.bg-orange-dark {
+  background: #dd4b39 !important;
+}
+.bg-orange-light {
+  background: #f39c12 !important;
+}
+.bg-green-light {
+  background: #00a65a !important;
+}
+.bg-green-dark {
+  background: #008d4c !important;
+}
+.bg-green-blue {
+  background: #0d47a1 !important;
+}
+
+.bg-topLine {
+  background: #f1f100 !important;
+}

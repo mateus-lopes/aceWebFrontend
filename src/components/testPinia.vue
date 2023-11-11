@@ -1,39 +1,45 @@
 <template>
   <div>
-      <!-- Renderize os produtos da categoria "Corrida" usando o getter -->
-      {{ items }}
-      <br />
-      ola
-      <br />
-      {{ corridaProducts }}
+    <!-- Renderize os produtos da categoria "Corrida" usando o getter -->
+    {{ allProducts }}
+    <br />
+    ola
+    <br />
+    {{ produtosDaCategoria }}
   </div>
 </template>
 
 <script>
-import { ref, defineComponent, onMounted } from 'vue';
-import { useItemsStore } from '@/stores/products';
+import { ref, defineComponent, onMounted } from 'vue'
+import { useProductsStore } from '@/stores/products'
 
 export default defineComponent({
-  setup() {
-    const items = ref([]);
-    const corridaProducts = ref([]);
-    const itemsStore = useItemsStore();
+  setup(props) {
+    const productsStore = useProductsStore()
+    const allProducts = ref([])
+    const produtosDaCategoria = ref([])
+    const categoriaDesejada = props.category
 
-    const fetchItems = async () => {
-      await itemsStore.fetchItems();
-      items.value = itemsStore.items; // Obtenha os itens diretamente do store
-      corridaProducts.value = itemsStore.corridaProducts; // Obtenha os produtos de corrida
-    };
+    const fetchProducts = async () => {
+      await productsStore.fetchProducts()
+      allProducts.value = productsStore.allProducts
+      produtosDaCategoria.value = productsStore.categoryProducts(categoriaDesejada)
+    }
 
     onMounted(() => {
-      fetchItems();
-    });
+      fetchProducts()
+    })
 
     return {
-      items,
-      corridaProducts,
-      fetchItems,
-    };
+      allProducts,
+      produtosDaCategoria
+    }
   },
-});
+  props: {
+    category: {
+      type: String,
+      required: true
+    }
+  }
+})
 </script>

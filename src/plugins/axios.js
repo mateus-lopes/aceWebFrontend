@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const token =
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk4MjAxNzI0LCJpYXQiOjE2OTgyMDE0MjQsImp0aSI6IjZhMTk5ZjZmYWUwMjQ3OWY5MzNiNTE5NDE1ZmFhMzdlIiwidXNlcl9pZCI6MX0.58-AiEfF2cdcWhC8b5twlcl5CvpeDGnpWcstcdSQOtE'
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk5Njc0ODcxLCJpYXQiOjE2OTk2NzQ1NzEsImp0aSI6ImVlNjNjOTA2ZTcyYzQyZGY4YTc0NzMxNjViMjVmNDRmIiwidXNlcl9pZCI6MX0.9bCVDg6hY4WyoPdeF23dDKzq2nqn99dp08wfVIwxP_g'
 
 const apiUrl = 'http://localhost:8000/api/'
 
@@ -21,3 +21,5 @@ export const fetchData = async (table) => {
     throw error
   }
 }
+
+

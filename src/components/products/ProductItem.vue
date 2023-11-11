@@ -12,14 +12,14 @@
     <div class="flex justify-start items-center">
       <button class="mr-2">
         <router-link :to="product.category.url">
-          <small class="p-1 text-white bg-primary" :class="getTagColor">
+          <small class="p-1 text-white" :class="product.category.color">
             {{ product.category.title }}
           </small>
         </router-link>
       </button>
       <button class="mr-2">
         <router-link :to="product.gender.url">
-          <small class="p-1 text-white bg-primary" :class="product.gender.color">
+          <small class="p-1 text-white" :class="product.gender.color">
             {{ product.gender.title }}
           </small>
         </router-link>
@@ -27,7 +27,7 @@
     </div>
     <p class="text-xl font-bold pt-2">
       R$ {{ getPromotion }}
-      <span v-if="product.promotion > 0" class="text-base text-danger">
+      <span v-if="product.promotion > 0" class="text-base text-red-500">
         {{ product.promotion }}% OFF
       </span>
     </p>
@@ -67,6 +67,9 @@ export default {
     }
   },
   computed: {
+    getTagColor() {
+      return this.product.category.color
+    },
     getCreditPrice() {
       return Math.floor((this.getPromotion / 10) * 100) / 100
     },
@@ -82,9 +85,6 @@ export default {
       } else {
         return this.getPrice(this.product.price)
       }
-    },
-    getTagColor() {
-      return this.product.category.color
     }
   }
 }

@@ -26,7 +26,7 @@
 
 div.show {
   opacity: 1;
-  animation: normal 2s ease-in-out 0s 1 fadeIn;
+  animation: normal 3s ease-in-out 0s 1 fadeIn;
 }
 
 @keyframes fadeIn {
@@ -42,7 +42,7 @@ div.show {
 <script setup>
 import { ref } from 'vue'
 
-const time = ref(2)
+const time = ref(3)
 
 setInterval(() => {
   time.value--
