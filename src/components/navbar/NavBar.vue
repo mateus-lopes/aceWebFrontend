@@ -169,7 +169,7 @@
                 </router-link>
               </div>
               <!-- Popover e links menu -->
-              <NavLinks />
+              <NavLinks  />
               <!-- Icon menu -->
               <NavIcons />
             </div>
@@ -199,6 +199,9 @@ import NavLinks from './NavLinks.vue'
 import NavIcons from './NavIcons.vue'
 
 const open = ref(false)
+
+
+
 </script>
 
 <style scoped>

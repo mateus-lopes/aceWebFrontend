@@ -70,20 +70,9 @@
                     </div>
                     <!--  -->
                     <div class="row-start-1 grid grid-cols-3 gap-x-8 gap-y-10 text-sm">
-                      <div v-for="section in category.sections" :key="section.name">
-                        <p :id="`${section.name}-heading`" class="font-medium text-gray-900">
-                          {{ section.name }}
-                        </p>
-                        <ul
-                          role="list"
-                          :aria-labelledby="`${section.name}-heading`"
-                          class="mt-6 space-y-6 sm:mt-4 sm:space-y-4"
-                        >
-                          <li v-for="item in section.items" :key="item.name" class="flex">
-                            <a :href="item.href" class="hover:text-black">{{ item.name }}</a>
-                          </li>
-                        </ul>
-                      </div>
+                      <NavLinksListVue :list="section_categories" />
+                      <NavLinksListVue :list="section_genders" />
+                      <NavLinksListVue :list="section_acessories" />
                     </div>
                   </div>
                 </div>
@@ -107,18 +96,58 @@
 </template>
 <script>
 import { Popover, PopoverButton, PopoverGroup, PopoverPanel } from '@headlessui/vue'
+import { useCategoriesStore } from '@/stores/categories'
+import { useGendersStore } from '@/stores/genders'
+import { useTypeAcessoryStore } from '@/stores/type_acessories'
+import { ref, onMounted } from 'vue'
+import NavLinksListVue from './NavLinksList.vue'
 
 export default {
   components: {
     Popover,
     PopoverButton,
     PopoverGroup,
-    PopoverPanel
+    PopoverPanel,
+    NavLinksListVue
   },
-  setup( { categories, models, acessories } ) {
+  setup() {
     const css_linkCategory = 'border-transparent text-gray-700 hover:text-black'
     const css_linkCategoryHover = 'text-black font-medium'
     const css_link = 'focus:font-medium'
+
+    const categoriesStore = useCategoriesStore()
+    const gendersStore = useGendersStore()
+    const typeAcessoryStore = useTypeAcessoryStore()
+
+
+    const section_categories = ref({
+      id: 'categories',
+      name: 'Categorias',
+      items: []
+    })
+    const section_genders = ref({
+      id: 'models',
+      name: 'Gêneros',
+      items: []
+    })
+    const section_acessories = ref({
+      id: 'acessories',
+      name: 'Acessórios',
+      items: []
+    })
+
+    const fetchCategories = async () => {
+      await categoriesStore.fetchCategories()
+      await gendersStore.fetchGenders()
+      await typeAcessoryStore.fetchTypeAcessory()
+      section_categories.value.items = categoriesStore.allCategories
+      section_genders.value.items = gendersStore.allGenders
+      section_acessories.value.items = typeAcessoryStore.allTypeAcessory
+    }
+
+    onMounted(() => {
+      fetchCategories()
+    })
 
     const navigation = {
       categories: [
@@ -143,47 +172,9 @@ export default {
             }
           ],
           sections: [
-            categories,
-            models,
-            acessories,
-            {
-              id: 'categories',
-              name: 'Categorias',
-              items: [
-                { name: 'FDSS', href: '#' },
-                { name: 'Dresses', href: '#' },
-                { name: 'Pants', href: '#' },
-                { name: 'Denim', href: '#' },
-                { name: 'Sweaters', href: '#' },
-                { name: 'T-Shirts', href: '#' },
-                { name: 'Jackets', href: '#' },
-                { name: 'Activewear', href: '#' },
-                { name: 'Browse All', href: '#' }
-              ]
-            },
-            {
-              id: 'sneakers',
-              name: 'Modelos',
-              items: [
-                { name: 'Watches', href: '#' },
-                { name: 'Wallets', href: '#' },
-                { name: 'Bags', href: '#' },
-                { name: 'Sunglasses', href: '#' },
-                { name: 'Hats', href: '#' },
-                { name: 'Belts', href: '#' }
-              ]
-            },
-            {
-              id: 'acessories',
-              name: 'Aceessórios',
-              items: [
-                { name: 'Full Nelson', href: '#' },
-                { name: 'My Way', href: '#' },
-                { name: 'Re-Arranged', href: '#' },
-                { name: 'Counterfeit', href: '#' },
-                { name: 'Significant Other', href: '#' }
-              ]
-            }
+            section_categories,
+            section_genders,
+            section_acessories,
           ]
         }
       ],
@@ -197,7 +188,10 @@ export default {
       navigation,
       css_linkCategory,
       css_linkCategoryHover,
-      css_link
+      css_link,
+      section_acessories,
+      section_categories,
+      section_genders
     }
   },
   props: {
@@ -206,21 +200,6 @@ export default {
       type: Boolean,
       required: true
     },
-    categories: {
-      type: Array,
-      required: true,
-      default: () => ['default']
-    },
-    models: {
-      type: Array,
-      required: true,
-      default: () => []
-    },
-    acessories: {
-      type: Array,
-      required: true,
-      default: () => []
-    }
-  }
+  },
 }
 </script>
