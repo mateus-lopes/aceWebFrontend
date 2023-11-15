@@ -1,9 +1,11 @@
 <template>
     <div>
-        <div v-if="conected">
-            Boas vindas Mateus
+        <div v-if="conected" class="w-72">
+            <p class="font-semibold pb-2">
+                Boas vindas Mateus
+            </p>
         </div>
-        <div v-else>
+        <div v-else class="w-96">
             <p class="font-semibold pb-2">
                 Boas vindas à ACE
             </p>

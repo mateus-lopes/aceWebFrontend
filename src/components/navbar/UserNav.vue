@@ -9,7 +9,17 @@
             src="../../assets/img/test.jpg"
             class="h-7 w-7 flex-shrink-0 hover:opacity-75 rounded-full"
             alt=""
+            @mouseover="open = true"
           />
+          <PopUpNav 
+            :open="open"
+            @mouseleave="open = false"
+          >
+            <MessageUser :conected="conected" />
+            <BtnLinkSm title="Minha Conta" />
+            <BtnLinkSm title="Meus Produtos" />
+            <BtnLinkSmStroke title="Sair" />
+          </PopUpNav>
         </button>
       </div>
       <div v-else>
@@ -26,7 +36,7 @@
             :open="open"
             @mouseleave="open = false"
           >
-            <MessageUser :conected="false" />
+            <MessageUser :conected="conected" />
             <BtnLinkSm title="Login" />
             <BtnLinkSmStroke title="Criar Conta" />
           </PopUpNav>
