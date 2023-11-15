@@ -9,7 +9,11 @@ export default {
       width: {
         'special': '300px',
         '3xl': '1600px',
-      }
+      },
+      colors: {
+        'primary': '#003375',
+        'primary-dark': '#004aad',
+      },
     },
     plugins: [
     ],

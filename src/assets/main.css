@@ -30,14 +30,11 @@ body {
 
 @import '@tailwindcss/aspect-ratio';
 
-.bg-primary {
-  background: #004aad !important;
-}
 .bg-secondary {
   background: #343a40 !important;
 }
 .bg-darkin {
-  background: #343a40 !important;
+  background: #003375 !important;
 }
 .bg-dark {
   background: #111111 !important;

@@ -3,7 +3,7 @@
     <GetImg :src="getCapa()" />
     <router-link to="#">
       <button
-        class="shadow-xl uppercase mt-2 opacity-1 lg:opacity-0 bg-primary hover:bg-black text-white w-full flex items-center justify-center py-4"
+        class="shadow-xl uppercase mt-2 opacity-1 lg:opacity-0 bg-primary hover:bg-primary-dark text-white w-full flex items-center justify-center py-4"
       >
         Comprar
       </button>

@@ -169,7 +169,9 @@
                 </router-link>
               </div>
               <!-- Popover e links menu -->
-              <NavLinks  />
+              <div class="ml-10">
+                <NavLinks  />
+              </div>
               <!-- Icon menu -->
               <NavIcons />
             </div>
