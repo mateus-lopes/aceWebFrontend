@@ -1,14 +1,14 @@
 import axios from 'axios'
 
 const token =
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk5NzM3Nzk5LCJpYXQiOjE2OTk3Mzc0OTksImp0aSI6Ijc4ZTFiNTRmNTYyYjQ2MWRhOTU3N2Q1MzkwZDZiNTk4IiwidXNlcl9pZCI6MX0.oQZNeJCMUvs-pYx2T47BaSMiz2XTyoegzkUwmOSDip8'
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAwMDQ4MjAzLCJpYXQiOjE3MDAwNDc5MDMsImp0aSI6ImRhZWZiMjU0OWE1NTQyN2NiYWU4M2E5MDc2MjExZmY1IiwidXNlcl9pZCI6MX0.pgWoPQC-zCveG9CbEEMQJE1ZMh8C66UEqphNeU35n-A'
 
 const apiUrl = 'http://localhost:8000/api/'
 
 const instance = axios.create({
   baseURL: apiUrl,
   headers: {
-    Authorization: `Bearer ${token}`
+    Authorization: `Bearer ${token}` 
   }
 })
 

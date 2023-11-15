@@ -10,24 +10,39 @@
     </router-link>
     <h1 class="text-xl my-4">{{ product.title }}</h1>
     <div class="flex justify-start items-center">
-      <button class="mr-2">
-        <router-link :to="product.category.url">
-          <small class="p-1 text-white" :class="product.category.color">
-            {{ product.category.title }}
-          </small>
-        </router-link>
-      </button>
-      <button class="mr-2">
-        <router-link :to="product.gender.url">
-          <small class="p-1 text-white" :class="product.gender.color">
-            {{ product.gender.title }}
-          </small>
-        </router-link>
-      </button>
+      <ButtonTag
+        :url="product.category.url"
+        :color="product.category.color"
+        :title="product.category.title"
+      />
+      <ButtonTag
+        :url="product.gender.url"
+        :color="product.gender.color"
+        :title="product.gender.title"
+      />
+      <div v-if="product.type_accessory !== null">
+        <ButtonTag
+          :url="product.type_accessory.url"
+          :color="product.type_accessory.color"
+          :title="product.type_accessory.title"
+        />
+      </div>
     </div>
-    <p class="text-xl font-bold pt-2">
-      R$ {{ getPromotion }}
-      <span v-if="product.promotion > 0" class="text-base text-red-500">
+    <p class="text-xl font-medium pt-2">
+      <span v-if="product.promotion > 0">
+        <div class="text-sm text-muted text-gray-500 font-normal block">
+          De <span class="line-through">R$ {{ getPrice(product.price) }}</span>
+        </div>
+        <div class="font-semibold inline-block">
+          R$ {{ getPromotion }}
+        </div>
+      </span>
+      <span v-else>
+        <div class="font-semibold pt-4">
+          R$ {{ getPrice(product.price) }}
+        </div>
+      </span>
+      <span v-if="product.promotion > 0" class="ml-2 text-base text-red-500">
         {{ product.promotion }}% OFF
       </span>
     </p>
@@ -39,10 +54,12 @@
 </template>
 <script>
 import GetImg from '@/components/GetImg.vue'
+import ButtonTag from '@/components/products/ButtonTag.vue'
 
 export default {
   components: {
-    GetImg
+    GetImg,
+    ButtonTag
   },
   props: {
     product: {

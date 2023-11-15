@@ -64,15 +64,13 @@
                           <span class="absolute inset-0 z-10" aria-hidden="true" />
                           {{ item.name }}
                         </a>
-                        <!-- menssagem em baixo da imagem -->
                         <p aria-hidden="true" class="mt-1">Compre Agora</p>
                       </div>
                     </div>
-                    <!--  -->
                     <div class="row-start-1 grid grid-cols-3 gap-x-8 gap-y-10 text-sm">
                       <NavLinksListVue :list="section_categories" />
-                      <NavLinksListVue :list="section_genders" />
                       <NavLinksListVue :list="section_acessories" />
+                      <NavLinksListVue :list="section_genders" />
                     </div>
                   </div>
                 </div>
@@ -173,8 +171,8 @@ export default {
           ],
           sections: [
             section_categories,
-            section_genders,
             section_acessories,
+            section_genders,
           ]
         }
       ],
