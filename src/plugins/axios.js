@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const token =
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAwMDU5MTgxLCJpYXQiOjE3MDAwNTg4ODEsImp0aSI6IjM5NTFmMDRmYzIyYzQzODY4MWEyZmUyNDZkZWMwZGVhIiwidXNlcl9pZCI6MX0._Bwlx892jNqE5kSOQCC02BQhl0xcZSmiIzs0JvIs1uY'
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAwMDYyMTk0LCJpYXQiOjE3MDAwNjE4OTQsImp0aSI6ImUyNzlhYmE5OGUwMzQ4NzRiYTNjNWM5N2U1YmU0OTkyIiwidXNlcl9pZCI6MX0.P_qgkFtHfEShWYFq_NevYDk1U7va-EvnzSzN8b7imXg'
 
 const apiUrl = 'http://localhost:8000/api/'
 
